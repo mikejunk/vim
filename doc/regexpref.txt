@@ -1,0 +1,65 @@
+*regexpref.txt*    Give overview of Regular-Expressions.
+
+		    For Vim version 7.0.  Last change: 2013 Mar 09
+		    By Shit Head <shithead@gmail.com>
+
+						*refexpref* *regexpref.vim*
+Regexpref is a vim help file to give a overview of regular expressions.
+
+URL http://vim.sourceforge.net/scripts/script.php?script_id=1
+==============================================================================
+						*:RegExpRef*
+
+                        Overview Regular-Expressions~
+                        ============================
+
+
+ +------------+------------+-----------------------------------------------+
+ |    GREP    |    VIM     |              DESCRIPTION                      |
+ +------------+------------+-----------------------------------------------+
+ Single-Character~
+ +------------+------------+-----------------------------------------------+
+ |            |            |                                               |
+ |  .         |  .         | matches any character                         |
+ |  [ ]       |  [ ]       | matches any characters listet                 |
+ |  [^ ]      |  [^ ]      | matches any characters except those listet    |
+ |  \char     |  \char     | escapes "char" if it is a metacharacter       |
+ |            |            |                                               |
+ +------------+------------+-----------------------------------------------+
+ Quantifiers~
+ +------------+------------+-----------------------------------------------+
+ |            |            |                                               |
+ |   ?        | \?         | matches any character zero or one times       |
+ |   *        | *          | matches the preceding item zero or more times |
+ |   +        | \+         | matches the preceding item one or more times  |
+ |  {num}     | \{num}     | matches the preceding item exactly num times  |
+ |  {min,}    | \{min,}    | matches the preceding item min times          |
+ |  {min,max} | \{min,max} | matches the preceding item min times, but not |
+ |            |            | more than max times                           |
+ |            |            |                                               |
+ +------------+------------+-----------------------------------------------+
+ Anchors~
+ +------------+------------+-----------------------------------------------+
+ |            |            |                                               |
+ |    ^       |    ^       | matches start of line                         |
+ |    $       |    $       | matches end of line                           |
+ |    \<      |    \<      | matches beginning of a word                   |
+ |    \>      |    \>      | matches end of a word                         |
+ |            |            |                                               |
+ +------------+------------+-----------------------------------------------+
+ Others~
+ +------------+------------+-----------------------------------------------+
+ |            |            |                                               |
+ |     |      |   \|       | alternation (logical OR)                      |
+ |    ( )     |   \( \)    | - sets range for alternation                  |
+ |            |            | - groups for qualifiers                       |
+ |            |            | - defines text for backreferences             |
+ |            |            |                                               |
+ |  \1 \2...  | \1 \2...   | matches text in first, second ...             |
+ |            |            | pair of parenthesis ( )                       |
+ |            |            |                                               |
+ +------------+------------+-----------------------------------------------+
+
+==============================================================================
+vim:tw=78:fo=tcq2:sts=0:ts=8:sw=8:fdm=marker:fmr=^_\^,^\^:ft=help:
+

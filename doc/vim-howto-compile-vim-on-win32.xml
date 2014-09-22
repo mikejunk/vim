@@ -1,0 +1,1508 @@
+<?xml version="1.0" ?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.2//EN" "../../dtd/docbookx.dtd"
+  [
+    <!ENTITY Vim-version "6.2">
+    <!ENTITY Vim-version-short "62">
+    <!ENTITY Vim-patchlevel "311">
+    <!ENTITY HOWTO-home "http://vimdoc.sf.net/howto/win32-compile">
+  ]
+>
+<article class="whitepaper">
+    <articleinfo>
+        <title>Compiling Vim on Win32 HOWTO</title>
+        <author>
+            <firstname>Dan</firstname>
+            <surname>Sharp</surname>
+            <affiliation>
+                <address><email>dwsharp at hotmail dot com</email></address>
+            </affiliation>
+        </author>
+        <copyright>
+            <year>2004</year>
+            <holder>Dan Sharp</holder>
+        </copyright>
+	<pubdate>2004-03-02</pubdate>
+        <revhistory>
+            <revision>
+                <revnumber>1.02</revnumber>
+		<date>2004-03-02</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Updated for changes through 6.2.311</revremark>
+            </revision>
+            <!--
+            <revision>
+                <revnumber>1.01</revnumber>
+		<date>2004-01-12</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Updated for changes through 6.2.180</revremark>
+            </revision>
+            <revision>
+                <revnumber>1.00</revnumber>
+		<date>2003-07-12</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Updated for changes to 6.2.21</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.95</revnumber>
+                <date>2003-05-22</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Updated for changes to 6.2e</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.91</revnumber>
+                <date>2003-05-01</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Added some hints for Cscope and the Borland 5.0x compiler</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.9</revnumber>
+                <date>2003-04-30</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Updated for Vim 6.2</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.8</revnumber>
+                <date>2003-03-24</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Updated to include changes from the latest patches.</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.7</revnumber>
+                <date>2003-01-24</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>More tweaks and updates.</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.6</revnumber>
+                <date>2003-01-16</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Removed some sections and replaced with pointers to docs in source distribution.</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.5</revnumber>
+                <date>2003-01-15</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Additional content included.  Reorganized some sections.</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.4</revnumber>
+                <date>2003-01-12</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Additional content included.  Reorganized some sections.</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.3</revnumber>
+                <date>2003-01-07</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Converted to DocBook</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.2</revnumber>
+                <date>2003-01-07</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Expanded content</revremark>
+            </revision>
+            <revision>
+                <revnumber>0.1</revnumber>
+                <date>2002-12-26</date>
+                <authorinitials>dws</authorinitials>
+                <revremark>Initial Version</revremark>
+            </revision>
+            -->
+        </revhistory>
+
+        <abstract>
+            <para>
+                The goal of this HOWTO is to provide information on compiling Vim 
+                &Vim-version; on Win32 systems with one of the supported compilers: 
+                MSVC++, BCC, and GCC (MinGW and Cygwin).  If you already have an
+                executable version of Vim that contains the features you want, 
+                then you probably don't need this file.
+            </para>
+            <para>
+                This document is published under the Vim License. See
+                <ulink url="http://vimdoc.sf.net/htmldoc/uganda.html#license">
+                    http://vimdoc.sf.net/htmldoc/uganda.html#license</ulink>
+                for information.
+            </para>
+            <para>
+                This document is available in HTML, PDF, and plain text formats
+                from &HOWTO-home;
+            </para>
+        </abstract>
+    </articleinfo>
+
+    <!-- ================================================================ -->
+
+    <section id="intro"><title>Introduction</title>
+        <para>
+            This HOWTO is an attempt to provide information on compiling Vim on Win32
+            systems.  It will walk you through the steps of acquiring the source, getting
+            additional external libraries, and compiling them all into a Vim that
+            suits your editing needs.  The general information presented should be
+            applicable to any 6.x version of Vim, though specific patches may be required
+            to enable some specific features, which will be noted when this is the case.
+            This version of the HOWTO is based on features available with the &Vim-version;
+            version of Vim.
+        </para>
+
+        <para>
+            An assumption of this HOWTO is that the required compilers and external
+            interfaces are installed according to the respective program's documentation.
+            While where to get the programs and any special modifications 
+            necessary to use them will be noted, general installation information
+            will not.
+        </para>
+    </section>
+
+    <!-- ================================================================ -->
+
+    <section id="preparation"><title>Preparation</title>
+        <para> In order to compile Vim, you need three things: a compiler, the Vim source
+        code, and utilities to get and extract the source code.  Optionally, you may
+        need to install extra programs to enable certain interfaces in Vim (such as
+        Vim's built-in Perl or Python support).</para>
+
+        <section><title>Getting the Source</title>
+            <para>Vim's source code is available through three different methods: FTP, CVS, and
+            A-A-P.  The simplest method is probably CVS, which requires only a CVS client
+            utility in addition to the compiler.</para>
+
+            <section><title>CVS</title>
+                <para>
+                    The prepatched source code is available via CVS at <ulink url="http://cvs.vim.org">http://cvs.vim.org</ulink> .
+                    The CVS archive is manually updated by a volunteer as new patches are
+                    released, so it may briefly lag behind the currently released patches, but
+                    usually no more than a day or two.  Check out the code using your preferred
+                    CVS client, then simply update your local archive as new patches come out so
+                    that you can always have the latest version.
+                </para>
+
+                <para>
+                    You will only need a CVS client to get your source this way.  You can get a
+                    command line CVS client as part of the Cygwin tools or from the msys-DTK package
+                    with the MinGW tools.  Alternatively, you can get WinCVS, a native Win32 GUI 
+                    application, from <ulink url="www.wincvs.org">www.wincvs.org</ulink>.
+                </para>
+
+                <para>
+                    The command to initially checkout the code is:
+                    <programlisting>C:\TEMP>cvs -z3 -d :pserver:anonymous@cvs.vim.sourceforge.net:/cvsroot/vim co vim</programlisting>
+                    No password is required, so if you are prompted for one, just hit enter.  
+                    The code will be downloaded from the CVS server and placed in a vim/ 
+                    subdirectory of your current directory.  The -z3 option will compress the 
+                    files during transit.  <note><para>If you are unable to access the above site due to 
+                    firewall / proxy problems, you can try the command
+                    <programlisting>C:\TEMP>cvs -z3 -d :pserver:anonymous@cvs-pserver.sf.net:80/cvsroot/vim co vim</programlisting>
+                    which will attempt the download via port 80, which most firewalls will allow 
+                    through, since it is the standard HTTP port.</para></note>
+                </para>
+
+                <para>
+                    After the initial checkout, you can keep your archive updated by changing
+                    to the <filename class="directory">vim</filename> subdirectory and issuing the 
+                    command: <programlisting>C:\TEMP\Vim>cvs -z3 update -Pd</programlisting>
+                    The update command will pull down any files modified since your last checkout 
+                    / update.  The -d flag will cause any new directories created on the CVS 
+                    server since the last checkout / update to be created locally as well.  The -P 
+                    flag will remove any directories that are made empty by the current update.
+                    Similar instructions can be found at 
+                    <ulink url="http://www.vim.org/cvs.php">http://www.vim.org/cvs.php</ulink> ,
+                    including links to other CVS guides and information.
+                </para>
+            </section>
+
+            <section><title>FTP</title>
+                <para>This manual process requires that you download all the archives, extract them,
+                patch them, and compile them yourself.  You need various additional utilities and
+                time.  When using this method, it is a good idea to create some batch files to
+                save a lot of retyping and to script tedious commands (like applying the 
+                individual patches.  Vim 6.1 had 474 of them).</para>
+                <section><title>Source</title>
+                    <para>
+                        The most up-to-date code is available via ftp from ftp.vim.org and its mirrors
+                        ftp.xx.vim.org, where xx is replaced with a country code like us, ca, or uk.
+                        See <ulink
+                            url="http://www.vim.org/mirrors.php">http://www.vim.org/mirrors.php</ulink>
+                        for a more complete list of mirror sites.  The <filename
+                            class="directory">/pub/vim/pc</filename> directory has the DOS-formatted
+                        source code in zip archives.  You will want the
+                        <filename>vim&Vim-version-short;src.zip</filename>, <filename>vim&Vim-version-short;lang.zip</filename> and
+                        either the <filename>vim&Vim-version-short;rt.zip</filename> or the
+                        <filename>vim&Vim-version-short;rt1.zip</filename> and <filename>vim&Vim-version-short;rt2.zip</filename> files.
+                        Alternatively, you can get the UNIX-formatted, gzipped or bzipped tarballs
+                        from <filename class="directory">/pub/vim/unix</filename> (either
+                        <filename>vim-&Vim-version;.tar.bz2</filename> or all four of
+                        <filename>vim-&Vim-version;-rt1.tar.gz</filename>,
+                        <filename>vim-&Vim-version;-rt2.tar.gz</filename>,
+                        <filename>vim-&Vim-version;-src1.tar.gz</filename>, and
+                        <filename>vim-&Vim-version;-src2.tar.gz</filename>) and 
+                        <filename class="directory">/pub/vim/extra</filename>
+                        (<filename>vim-&Vim-version;-lang.tar.gz</filename> and
+                        <filename>vim-&Vim-version;-extra.tar.gz</filename>).
+                    </para>
+                    <para> To extract the source from these archives, you will need several
+                    utilities.  For the zip archives, you will need an unzip program.
+                    For the tar archives, you will need a tar program, a gunzip
+                    program, and perhaps a bunzip2 program.   These utilities are
+                    available with the Cygwin distribution or in the MSYS package of
+                    the MinGW distribution.  Finally, you can get the individual 
+                    executables from sites like
+                    <ulink url="http://unxutils.sf.net">http://unxutils.sf.net</ulink>
+                    or <ulink url="http://gnuwin32.sf.net">http://gnuwin32.sf.net</ulink> .
+                    If you prefer a GUI program, you can get WinZip (which handles zip, 
+                    tar, and gzip) from <ulink url="http://www.winzip.com">http://www.winzip.com</ulink> 
+                    or 7-Zip (which handles zip, tar, gzip, and bzip2) from
+                    <ulink url="http://www.7-zip.org">http://www.7-zip.org</ulink>.</para>
+
+		    <para> Whichever source archives you get, place them in the
+                    <filename class="directory">C:\TEMP</filename> directory 
+                    together.  These archives hold the base &Vim-version;.0 code.
+                    Extract the files into the current directory.  If you are using
+                    the zip archives, you will have a new 
+                    <filename class="directory">vim</filename> subdirectory, and the source will be located 
+                    in <filename class="directory">C:\TEMP\vim\vim&Vim-version-short;\src</filename>; otherwise, with the tar archives,
+                    you will have a <filename class="directory">vim&Vim-version-short;</filename> subdirectory, and the source
+                    will be located in <filename class="directory">C:\TEMP\vim&Vim-version-short;\src</filename>.</para>
+                </section>
+
+                <section><title>Patches</title>
+                    <para> To get the latest version of Vim, you must apply all the patches from
+                    the <filename class="directory">/pub/vim/patches</filename> directory for the version
+                    of Vim you are compiling.  Download all the files starting with &Vim-version; and 
+                    place them in the <filename class="directory">C:\TEMP</filename> directory with
+                    the source archive files.  To save some downloading time, every one hundred patches are
+                    combined into a single patch file that you can get instead of the one hundred individual
+                    patches.  If available, they will have filenames like <filename>&Vim-version;.1-100</filename>
+                    and <filename>&Vim-version;.101-200</filename>.  You will still have to get the remaining 
+                    patches individually.  For reference, the README file in the
+                    <filename class="directory">/pub/vim/patches</filename> directory gives a quick 
+                    synopsis of the bug or feature addressed by each patch, and the header of each 
+                    patch gives a more complete description of the bug, the way the bug was fixed, 
+                    and a list of the files affected by the patch.</para>
+
+                    <para> Some patches address other operating system ports and are not needed by the
+                    Win32 version.  If you got your source from the tar archives, this is not
+                    a problem, because all the source files for all operating systems will be
+                    present and get patched, even if they aren't used in the compile.  If you got
+                    your source from the zip archives, some extra preparation is required.</para>
+
+                    <para> Files not needed in a Win32 compile are not included in the zip archives.  If
+                    you try to apply a patch for one of these missing files, you will get a 'File
+                    not found' error which can be safely ignored.  Some patches, though, patch
+                    files in the 'runtime' directory, which doesn't exist in the zip archives.  You
+                    will get 'File not found' errors for these files as well, but instead of
+                    ignoring it, you will want to specify the path to the file.  Fortunately, this
+                    is as easy as specifying the path it just tried, but leaving off the
+                    'runtime/' part.  If you want to avoid retyping a lot of things, you can edit
+                    the patch files manually and remove the 'runtime/' from the path.  For
+                    example, if you have an older version of Vim already installed, you could do:
+                    <programlisting>C:\TEMP>vim -c "set lz" -c "bufdo! %s#--- runtime/#--- # | w" -c q &Vim-version;.*</programlisting>
+                    to open all the patch files in Vim and loop through each one, removing the
+                    'runtime/' path from the 'to be patched' file specification.</para>
+
+                    <para> You will need the patch program to apply the patches. Then,
+                    simply change to the vim&Vim-version-short; directory (of which src and runtime are subdirectories)
+                    and issue the command
+                    <programlisting>C:\TEMP\vim&Vim-version-short;>patch -p0 &lt; ../&Vim-version;.001</programlisting>
+                    or, if you have a more recent version of GNU patch,
+                    <programlisting>C:\TEMP\vim&Vim-version-short;>patch -p0 -i ../&Vim-version;.001</programlisting>
+                    <note><para>Some patch programs
+                    (like those from UnxUtils and GnuWin32) appear to have problems with unix file
+                    formats, which is the format of the patches downloaded from the FTP site.  If
+                    you get an error like:
+<programlisting>
+C:\TEMP\vim&Vim-version-short;>patch -p0 -i ../&Vim-version;.001                            
+patching file src/edit.c
+Assertion failed: hunk, file patch.c, line 341
+
+abnormal program termination
+
+C:\TEMP\vim&Vim-version-short;>
+</programlisting>
+                    trying to apply the patches, run the unix2dos
+                    utility against all the patch files to convert them to a DOS file format.  The
+                    patches should apply cleanly after that.  An alternate (and much simpler) approach
+                    is to use the --binary option, so that the command line becomes
+                    <programlisting>C:\Temp\vim&Vim-version-short;>patch -p0 --binary -i ../&Vim-version;.001</programlisting></para></note>
+                    </para>
+
+                    <para> This process is then repeated for each patch in order, since some later
+                    patches are dependent on earlier patches.  To apply all the patches at once,
+                    it would be a good idea to combine all the individual patches into a single
+                    large patch and apply them all at once.  For example:
+<programlisting>
+C:\TEMP>copy &Vim-version;.* &Vim-version;-all.patch
+C:\TEMP>cd vim&Vim-version-short;
+C:\TEMP\vim&Vim-version-short;>patch -p0 &lt; ../&Vim-version;-all.patch
+</programlisting>
+                    </para>
+                </section>
+            </section>
+
+            <section><title>A-A-P</title>
+                <para>
+                    The newest way to get the latest source is with the A-A-P project created by
+                    Vim's author, Bram Moolenaar.  The project is currently in the alpha stage, so
+                    all usual warnings apply.  Install the necessary files by follwing the
+                    instructions at <ulink url="http://www.a-a-p.org/download.html">http://www.a-a-p.org/download.html</ulink> .
+                    We will assume that the program is installed into <filename class="directory">C:\Exec</filename>.
+                    Since it is a Python application, you will also need a
+                    working Python distribution (2.2.x recommended).  The program currently runs well with Cygwin's
+                    Python, and will run well with ActiveState's Python if you use A-A-P version 0.138 or greater.
+                </para>
+
+                <para>
+                    Once you have an operational A-A-P installation, download the Vim recipe from
+                    <ulink url="http://www.a-a-p.org/vim/main.aap">http://www.a-a-p.org/vim/main.aap</ulink>
+                    and place it into the directory where you want to build Vim.  From a command line in that
+                    directory run the aap program with the command
+                    <programlisting>C:\TEMP>python C:\Exec\main.py fetch</programlisting>
+                    By default, this will extract the source from CVS.  Running the program with
+                    the command
+		    <programlisting>C:\TEMP>python C:\Exec\main.py fetch CVS=no</programlisting>
+                    will instead automatically download all the source archives and patches from
+                    the FTP site, expand the source, and apply the patches.
+                </para>
+
+                <para>
+                    As new patches are released, you can run the command again to update your
+                    sources from the CVS archive or download and apply them from FTP.  Only the
+                    new and modified files will be retrieved on the subsequent updates.
+                </para>
+
+                <para>
+                    More instructions can be found at <ulink url="http://www.a-a-p.org/ports.html">http://www.a-a-p.org/ports.html</ulink>  Note that
+                    running aap with no arguments will download and compile the sources, but it currently
+                    uses the Unix configure and Makefile, which won't work for building a Win32
+                    application, so you will only want to use aap with the 'fetch' option for now.
+                </para>
+            </section>
+        </section>
+
+        <section><title>External Interfaces</title>
+            <para>
+                Vim can interface with several external libraries to extend its editing
+                functionality.  For example, Perl and Python support can be used to enhance
+                Vim's scripting capabilities.  The Iconv and Gettext libraries can be
+                used to improve multilingual support.  In order to use these features,
+                support for them must be enabled at compile time.  Also, the appropriate
+                headers and libraries must be available.  Self-installing binary distributions
+                are available for almost all the libraries Vim can use, and installing them will
+                also install the necessary development files Vim requires.
+            </para>
+
+            <para>
+                Below is a list of the external libraries which Vim can use, where to get
+                them, and what extra features they provide.  Not addressed is how to use the
+                extra features; help on that subject can be found in Vim's help files.
+            </para>
+
+            <section><title>Scripting Interfaces</title>
+                <para>
+                    Vim can work with four external scripting engines to supplement its own
+                    built-in scripting language.  
+                </para>
+
+                <section><title>Perl</title>
+                    <para>
+                        Vim can work with Perl versions 5.004 through 5.8.  You can download a binary
+                        distribution of the latest Perl release from 
+                        <ulink url="http://www.activestate.com/activeperl">http://www.activestate.com/activeperl</ulink>
+                        and install it on your system.  With a Perl-enabled Vim, you can use the :perl and
+                        :perldo commands to execute Perl functions.  Read :help perl and especially
+                        :help perl-using for a description of the Vim's interface with Perl.
+                    </para>
+                </section>
+
+                <section><title>Python</title>
+                    <para>
+                        Vim can work with Python 1.5 through 2.2.2.  You can download a binary
+                        distribution of the latest Python release from 
+                        <ulink url="http://www.activestate.com/activepython">http://www.activestate.com/activepython</ulink>
+                        and install it on your system.  With a Python-enabled Vim, you can use the :python
+                        and :pyfile commands to execute Python functions.  Read :help python and
+                        especially :help python-vim for a description of Vim's interface with Python.
+                    </para>
+                </section>
+
+                <section><title>Ruby</title>
+                    <para>
+                        Vim can work with Ruby 1.6.x.  You can download a binary distribution of the
+                        latest Ruby release from 
+                        <ulink url="http://rubyinstaller.sourceforge.net">http://rubyinstaller.sourceforge.net</ulink>
+                        and install it on your system.  With a Ruby-enabled Vim, you can use the :ruby,
+                        :rubyfile, and :rubydo commands to execute Ruby functions.  Read :help ruby and
+                        especially :help ruby-vim for a description of Vim's interface with Ruby.
+                    </para>
+                </section>
+
+                <section><title>Tcl</title>
+                    <para>
+                        Vim can work with Tcl 8.x.  You can download a binary distribution of the
+                        latest Tcl release from
+                        <ulink url="http://www.activestate.com/activetcl">http://www.activestate.com/activetcl</ulink>
+                        and install it on your system.  With a Tcl-enabled Vim, you can use the :tcl,
+                        :tclfile, and :tcldo commands to execute Tcl functions.  Read :help tcl and 
+                        especially :help tcl-commands for a description of Vim's interface with Tcl.
+                    </para>
+                </section>
+            </section>
+
+            <section><title>Multilanguage Support</title>
+                <para>
+                    Vim can also utilize libraries to improve its support for character encodings
+                    and different languages.  Technically, you do not need them preinstalled in
+                    order to compile Vim, but they must be present in your PATH or in your vim
+                    install directory to enable their features in Vim.
+                </para>
+
+                <section><title>IConv</title>
+                    <para>
+                        The iconv library allows Vim to translate strings (via the iconv() function)
+                        from one encoding to another.  Vim natively supports translating between UTF-8
+                        and latin1, and among all Windows codepages, but translation to any other 
+                        encoding will require that support for the iconv library be compiled into Vim.
+                        You can get a copy of the iconv library for Win32 from 
+                        <ulink url="http://sourceforge.net/projects/gettext">http://sourceforge.net/projects/gettext</ulink>
+                        See :help iconv() for more information.
+                    </para>
+                </section>
+
+                <section><title>Gettext</title>
+                    <para>
+                        Locale and multi-language support can be enabled in Vim with the gettext
+                        library.  With gettext, messages and menus will appear in the language
+                        specified by the user's locale.  You can get a copy of the gettext library for
+                        Win32 from <ulink url="http://sourceforge.net/projects/gettext">http://sourceforge.net/projects/gettext</ulink>
+                        See :help multilang for more information.
+                    </para>
+
+                    <para>
+                        <note><para>If you have already installed Vim with the self-extracting installer
+                        from <ulink url="ftp://ftp.vim.org/pub/vim/pc/gvim&Vim-version-short;.exe">ftp://ftp.vim.org/pub/vim/pc/gvim&Vim-version-short;.exe</ulink> then you already have libintl.dll
+                        in your vim\vim&Vim-version-short; install directory and do not need to download it again.</para></note>
+                    </para>
+                </section>
+            </section>
+            <section><title>Source Code Browsers</title>
+                <para>Vim currently supports a couple interfaces that ease traversal of source files.</para>
+                <section><title>Cscope</title>
+                    <para>New with version 6.2 is Win32 Cscope support, which lets you browse through your
+                        source code finding things like all locations a C token is used, what functions
+                        call a particular function, and what functions are called by a particular
+                        function.  See :help cscope and the web sites 
+                        <ulink url="http://iamphet.nm.ru/cscope/index.html">http://iamphet.nm.ru/cscope/index.html</ulink>
+                        and <ulink url="http://cscope.sf.net/cscope_vim_tutorial.html">http://cscope.sf.net/cscope_vim_tutorial.html</ulink>
+                        for more information.
+                        <note><para>You will need to use the 16.0a binary from http://iamphet.nm.ru/cscope/index.html
+                        to use cscope, as the 15.4 binary from http://cscope.sf.net does not appear to
+                        work correctly with Vim.</para></note>
+                    </para>
+                </section>
+                <section><title>SNiFF+</title>
+                    <para>When compiling with Microsoft Visual C++, you can add support for SNiFF+, a source code
+                        analysis environment, allowing Vim to display the source files for SNiFF+.
+                        See :help sniff for more information.
+                    </para>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- ================================================================ -->
+
+    <section id="compiling"><title>Compiling</title>
+        <para>Once you have downloaded the source and installed the desired external
+        interfaces, it is time to compile the program.  We will assume for the 
+        following instructions that you acquired the source via CVS and so the files
+        are found in <filename class="directory">C:\TEMP\Vim</filename>.</para>
+
+        <para>The file <filename>feature.h</filename> can be edited to match your
+        preferences, though you can skip this to get the default behavior, which should
+        be fine for most people.  You can also enable various features by supplying 
+        arguments to the make command during the compilation.</para>
+
+        <para>All the supported compilers provide a command-line method for compiling Vim.
+        The Vim source contains a makefile in <filename class="directory">C:\TEMP\Vim\src</filename>
+        for each compiler.  These makefiles provide options specific to each compiler, as
+        well as a common set of options available to all the makefiles.  The files are 
+        <filename>Make_mvc.mak</filename> and <filename>Make_ivc.mak</filename> 
+        (Microsoft Visual C++), <filename>Make_bc5.mak</filename> (Borland C++ 5.x),
+        <filename>Make_ming.mak</filename> (MinGW GCC) and <filename>Make_cyg.mak</filename>
+        (Cygwin GCC).  These files have been supplied by George V. Reilly, Ben Singer,
+        Ken Scott and Ron Aaron and have been well tested.</para>
+                
+        <para>The options for the compiler can be set in three different ways.</para>
+    
+        <para>1) The simplest is to edit the makefile directly and comment/uncomment the
+        options to build exactly what you want.  The problem with this method is that
+        your changes may be lost by updating the files with newer patches.</para>
+        
+        <para>2) The second method is to define environment variables for the options.
+        For example, to build a GUI and OLE-enabled Vim with the MSVC++ compiler, you
+        could issue the commands:
+<programlisting>
+C:\TEMP\VIM\SRC>set GUI=yes
+C:\TEMP\VIM\SRC>set OLE=yes
+C:\TEMP\VIM\SRC>nmake -f Make_mvc.mak
+</programlisting>
+        </para>
+
+        <para>The options would remain in effect for any subsequent builds from the same
+        console window.  To change a setting you would change the environment
+        variable.</para>
+        <para>3) Finally, you can specify the options on the command line itself,
+        like:
+<programlisting>
+C:\TEMP\VIM\SRC>make -f Make_cyg.mak GUI=yes OLE=yes
+</programlisting>
+
+        This method has the disadvantage that the options must be specified each time,
+        but the advantage that you can see at a glance what options were used for a
+        specific compile.  You can avoid retyping all the options for subsequent
+        compiles by using the command history of the console window or putting the
+        command into a script.</para>
+
+    <note><para>If you compile with one set of options and decide to add or remove an 
+	    option, you will want to do a 'clean' to delete the already-compiled object files.
+	    If not, you will probably get errors when compiling or linking the program.
+	    Just add 'clean' to the end of the command you used for the compile, and any
+	    files generated during the previous compile will be removed.  Be sure to include
+	    all the same options for the 'clean' as you did for the compile, otherwise you
+	    may not get all the right files removed.  To clean up after the compile from
+	    example three above, use the command:
+<programlisting>
+C:\TEMP\VIM\SRC>make -f Make_cyg.mak GUI=yes OLE=yes clean
+</programlisting>
+    </para></note>
+
+        <section><title>Commonalities</title>
+            <para>
+                Attempts have been made to use the same option name for the same feature in
+                each makefile.  Enable or disable the feature with a yes or no option.
+                Features common to all the makefiles are:
+            </para>
+
+            <informaltable>
+            <tgroup cols="3">
+		<colspec colnum="1" colwidth="*" />
+		<colspec colnum="2" colwidth="3*" />
+		<colspec colnum="3" colwidth="*" />
+                <thead>
+                    <row>
+                        <entry>Option</entry>
+                        <entry>Description</entry>
+                        <entry>Default</entry>
+                    </row>
+                </thead>
+                <tbody>
+                <row>
+                    <entry>GUI</entry>
+                    <entry>'yes' builds a GUI Vim, 'no' builds a console Vim.</entry>
+                    <entry align="center">yes</entry>
+                </row>
+                <row>
+                    <entry>OLE</entry>
+                    <entry>'yes' builds an OLE-enabled Vim.</entry>
+                    <entry align="center">no</entry>
+                </row>
+                <row>
+                    <entry>ICONV</entry>
+                    <entry>'yes' dynamically loads <filename>libiconv.dll</filename> to do character encoding conversions.</entry>
+                    <entry align="center">yes</entry>
+                </row>
+                <row>
+                    <entry>GETTEXT</entry>
+                    <entry>Dynamically load the gettext library <filename>libintl.dll</filename> for multilanguage support.</entry>
+                    <entry align="center">yes</entry>
+                </row>
+                <row>
+                    <entry>MBYTE</entry>
+                    <entry>Enables multibyte support (viewing, not input)</entry>
+                    <entry align="center">no</entry>
+                </row>
+                <row>
+                    <entry>IME</entry>
+                    <entry>Enables IME support</entry>
+                    <entry align="center">yes</entry>
+                </row>
+                <row>
+                    <entry>DYNAMIC_IME</entry>
+                    <entry>Loads the <filename>imm32.dll</filename> library dynamically</entry>
+                    <entry align="center">yes</entry>
+                </row>
+                <row>
+                    <entry>CSCOPE</entry>
+                    <entry>Enables support for the Cscope interface to Vim.</entry>
+                    <entry align="center">yes</entry>
+                </row>
+                <row>
+                    <entry>DEBUG</entry>
+                    <entry>'yes' builds an executable with debug support</entry>
+                    <entry align="center">no</entry>
+                </row>
+                <row>
+                    <entry>CPUNR</entry>
+                    <entry> Specifies the target CPU for the executable.  MSVC++, BCC 5.5, and GCC
+                    2.95.x allow i386 through i686, while GCC 3.x.x adds options for pentium2,
+                    pentium3, pentium4, athlon, etc.  (Check the gcc man page for all the 
+                    supported targets) </entry>
+                    <entry align="center">i386</entry>
+                </row>
+                <row>
+                    <entry>OPTIMIZE</entry>
+                    <entry>
+                        Specifies the optimization level of the executable.
+                        Available settings are SPACE (for the smallest executable,
+                        SPEED (for a well-balanced executable),
+                        and MAXSPEED (for a large but fast executable).
+                    </entry>
+                    <entry align="center">MAXSPEED</entry>
+                </row>
+                <row>
+                    <entry>POSTSCRIPT</entry>
+                    <entry>Enables Postscript output for the :hardcopy command</entry>
+                    <entry align="center">no</entry>
+                </row>
+                <row>
+                    <entry>FEATURES</entry>
+                    <entry>
+                        Specifies what optional features to use, as given in
+                        feature.h of the Vim source.  Available options are
+                        TINY, SMALL, NORMAL, BIG, and HUGE
+                    </entry>
+                    <entry align="center">BIG</entry>
+                </row>
+                <row>
+                    <entry>WINVER</entry>
+                    <entry>Specifies the minimum version of Windows supported by the binary.
+                    0x400 means the binary will run on anything from Win95 on up.  0x500 requires
+                    Win2k or higher.
+                    </entry>
+                    <entry align="center">0x400</entry>
+                </row>
+                <row>
+                    <entry>NETBEANS</entry>
+                    <entry>
+                        Enables the Netbeans integration interface to allow Gvim to
+                        be used as the editor for the Netbeans IDE.  This option also
+                        allows integration with the Agide GUI of the A-A-P project.
+                    </entry>
+                    <entry align="center">yes</entry>
+                </row>
+                <row>
+                    <entry>XPM</entry>
+                    <entry>
+                        Specifies the location of the XPM headers and library.  This option
+                        allows Gvim to display XPM graphics with the 'signs' feature.
+                    </entry>
+                    <entry align="center"></entry>
+                </row>
+                <row>
+                    <entry>PERL</entry>
+                    <entry>Specifies the directory where Perl is installed.</entry>
+                    <entry align="center"></entry>
+                </row>
+                <row>
+                    <entry>PERL_VER</entry>
+                    <entry>Specifies the version of Perl being used.</entry>
+                    <entry align="center">56</entry>
+                </row>
+                <row>
+                    <entry>DYNAMIC_PERL</entry>
+                    <entry>
+                        Indicates whether to statically link the Perl runtime
+                        to Vim or to dynamically load it only when needed.
+                    </entry>
+                    <entry align="center">yes</entry>
+                </row>
+                <row>
+                    <entry>PYTHON</entry>
+                    <entry>Specifies the directory where Python is installed.</entry>
+                    <entry align="center"></entry>
+                </row>
+                <row>
+                    <entry>PYTHON_VER</entry>
+                    <entry>Specifies the version of Python being used.</entry>
+                    <entry align="center">22</entry>
+                </row>
+                <row>
+                    <entry>DYNAMIC_PYTHON</entry>
+                    <entry>
+                        Indicates whether to statically link the Python runtime
+                        to Vim or to dynamically load it only when needed.
+                    </entry>
+                    <entry align="center">yes</entry>
+                </row>
+                <row>
+                    <entry>RUBY</entry>
+                    <entry>Specifies the directory where Ruby is installed.</entry>
+                    <entry align="center"></entry>
+                </row>
+                <row>
+                    <entry>RUBY_VER</entry>
+                    <entry>Specifies the version of Ruby being used.</entry>
+                    <entry align="center">16</entry>
+                </row>
+                <row>
+                    <entry>RUBY_VER_LONG</entry>
+                    <entry>Specifies the "long" version of Ruby being used.</entry>
+                    <entry align="center">1.6</entry>
+                </row>
+                <row>
+                    <entry>DYNAMIC_RUBY</entry>
+                    <entry>
+                        Indicates whether to statically link the Ruby runtime
+                        to Vim or to dynamically load it only when needed.
+                    </entry>
+                    <entry align="center">yes</entry>
+                </row>
+                <row>
+                    <entry>RUBY_PLATFORM</entry>
+                    <entry>
+                        Platform for which this version of Ruby was compiled.  The
+                        default is for Ruby 1.6.  For Ruby 1.8 or higher, the default
+                        is i386-mswin32.
+                    </entry>
+                    <entry align="center">i586-mswin32</entry>
+                </row>
+                <row>
+                    <entry>RUBY_INSTALL_NAME</entry>
+                    <entry>
+                        The name of the main Ruby DLL.  For Ruby 1.6, the default
+                        value is mswin32-ruby16 and for Ruby 1.8 or higher the 
+                        default is msvcrt-ruby18.
+                    </entry>
+                    <entry align="center">mswin32-ruby16</entry>
+                </row>
+                <row>
+                    <entry>TCL</entry>
+                    <entry>Specifies the directory where Tcl is installed.</entry>
+                    <entry align="center"></entry>
+                </row>
+                <row>
+                    <entry>TCL_VER</entry>
+                    <entry>Specifies the version of Tcl being used.</entry>
+                    <entry align="center">83</entry>
+                </row>
+                <row>
+                    <entry>TCL_LONG_VER</entry>
+                    <entry>Specifies the "long" version of Tcl being used.</entry>
+                    <entry align="center">8.3</entry>
+                </row>
+                <row>
+                    <entry>DYNAMIC_TCL</entry>
+                    <entry>
+                        Indicates whether to statically link the Tcl runtime
+                        to Vim or to dynamically load it only when needed.
+                    </entry>
+                    <entry align="center">yes</entry>
+                </row>
+            </tbody>
+        </tgroup>
+        </informaltable>
+
+        </section>
+
+        <section><title>Compiler Specifics</title>
+            <para>
+                Vim can be compiled for Win32 systemss using various versions of the Microsoft Visual
+                C++ (versions 4-7), Borland (version 5 and 5.5), or GCC (2.95.x and 3.x.x from
+                Cygwin or MinGW32).  Each compiler has its own makefile and 
+                its own set of options and features it provides in addition to the ones listed above.
+            </para>
+
+            <section><title>MSVC++</title>
+                <para>
+                    Microsoft's Visual C++ program is a commercial product and is not available
+                    for download.  You have two options when compiling Vim with MSVC++: command line and IDE.
+                </para>
+                <section><title>Command line</title>
+                    <para>
+                        The most flexible method for compiling Vim from the command line is
+                        to use the <filename>Make_mvc.mak</filename> file.  The advantage of using this makefile instead of <filename>Make_ivc.mak</filename> is
+                        that you have much greater control over the options used to compile Vim.  
+                        Extra options available are:
+                    </para>
+                    <informaltable>
+                        <tgroup cols="3">
+			    <colspec colnum="1" colwidth="*" />
+			    <colspec colnum="2" colwidth="3*" />
+			    <colspec colnum="3" colwidth="*" />
+                            <thead>
+                                <row>
+                                    <entry>Option</entry>
+                                    <entry>Description</entry>
+                                    <entry>Default</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry>GIME</entry>
+                                    <entry>Enables global IME support</entry>
+                                    <entry align="center">no</entry>
+                                </row>
+                                <row>
+                                    <entry>MAP</entry>
+                                    <entry>Create a mapfile during compilation</entry>
+                                    <entry align="center">yes</entry>
+                                </row>
+                                <row>
+                                    <entry>SNIFF</entry>
+                                    <entry>Enable the SNiFF+ interface</entry>
+                                    <entry align="center">no</entry>
+                                </row>
+                                <row>
+                                    <entry>VC6</entry>
+                                    <entry>Delays loading seldom-used DLLs to improve startup time</entry>
+                                    <entry align="center">no</entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </informaltable>
+
+                    <para>
+                        To debug an executable built with <filename>Make_mvc.mak</filename> in the MSDev IDE, you need
+                        to use <filename>Make_dvc.mak</filename> in the IDE.  From <filename>Make_mvc.mak</filename>:
+                    </para>
+                    <procedure>
+                        <para><filename>Make_mvc.mak</filename> gives a fineness of control which is not supported in
+                            Visual C++ configuration files.  Therefore, debugging requires a bit of extra work.
+                            <filename>Make_dvc.mak</filename> is a Visual C++ project to access that support.
+                            To use <filename>Make_dvc.mak</filename>:
+                        </para>
+                        <step><para>Build Vim with <filename>Make_mvc.mak</filename>.
+                                Use a "DEBUG=yes" argument to build Vim with debug support.
+                                E.g. the following builds <filename>gvimd.exe</filename>:
+                                <programlisting>C:\TEMP\Vim\src>nmake -f Make_mvc.mak debug=yes gui=yes</programlisting>
+                            </para>
+                        </step>
+                        <step><para>Use MS Devstudio and set it up to allow that file to be debugged:</para>
+                            <substeps>
+                                <step><para>Pass <filename>Make_dvc.mak</filename> to the IDE.
+                                        Use the <menuchoice><guimenu>File</guimenu><guimenuitem>'Open Workspace'</guimenuitem></menuchoice> menu entry to load <filename>Make_dvc.mak</filename>.
+                                        Alternatively, from the command line:
+                                        <programlisting>C:\TEMP\Vim\src>msdev /nologo Make_dvc.mak</programlisting>
+
+                                        <emphasis>Note</emphasis>: <filename>Make_dvc.mak</filename> is in VC4.0 format.
+                                        Later VC versions see this and offer to convert it to their own format. Accept that.
+                                        It creates a file called <filename>Make_dvc.dsw</filename> which can then be used
+                                        for further operations.  E.g.
+                                        <programlisting>C:\TEMP\Vim\src>msdev /nologo Make_dvc.dsw</programlisting>
+                                        Also, if you got the file from the tar archives, you will need to convert
+                                        <filename>Make_dvc.mak</filename> with a unix2dos utility before attempting to 
+                                        open it.</para>
+                                </step>                  
+                                <step><para>Set the built executable for debugging:</para>
+                                    <substeps>
+                                        <step><para><menuchoice><shortcut><keycombo><keycap>Alt</keycap><keycap>F7</keycap></keycombo></shortcut><guimenu>Project</guimenu><guimenuitem>Settings</guimenuitem></menuchoice> takes you to the Debug dialog.</para></step> 
+                                        <step><para>Fill "Executable for debug session". e.g. <filename>gvimd.exe</filename></para></step> 
+                                        <step><para>Fill "Program arguments". e.g. -R dosinst.c</para></step> 
+                                        <step><para>Click <guibutton>OK</guibutton> to close the dialog</para></step> 
+                                    </substeps>
+                                </step>
+                            </substeps>
+                        </step>
+                        <step><para>You can now debug the executable you built with <filename>Make_mvc.mak</filename></para></step>
+                    </procedure>
+                    <para>
+                    <emphasis>Note:</emphasis> <filename>Make_dvc.mak</filename> builds <filename>vimrun.exe</filename>, because it must build something
+                    to be a valid makefile.</para>
+                </section>
+                
+                <section><title>IDE</title>
+                    <para>
+                        Vim can be compiled in the MSDev IDE using the <filename>Make_ivc.mak</filename> makefile.  From
+                        the IDE, go to <menuchoice><guimenu>File</guimenu><guimenuitem>Open Workspace</guimenuitem></menuchoice>
+                        and select <filename>Make_ivc.mak</filename> and click <guibutton>OK</guibutton>.  You
+                        can then select targets such as Release and/or Debug version of Console Vim or
+                        GUI Vim.
+
+                        <note><para><filename>Make_ivc.mak</filename> must be in the DOS file format to successfully be opened 
+                        by the MSDev IDE.  If you get your source from the tar archives
+                        or CVS, you will have to convert the file to DOS format using a unix2dos utility.
+                        If you have a previous version of Vim installed, then an alternative to
+                        the unix2dos utiltity would be the command
+                        <programlisting>C:\TEMP>vim -c ":set nomore | bufdo set ff=dos | w" -c q &lt;filenames&gt;</programlisting>
+                        Also, a unix2dos batch file that uses gzip to perform the conversion has been supplied
+                        by Walter Briscoe and is available from <ulink url="&HOWTO-home;/unix2dos.bat">&HOWTO-home;/unix2dos.bat</ulink>.
+                        For those who don't want to download the file, he also suggests the "quick-n-dirty" 
+                        <programlisting>C:\TEMP>gzip -c %1 | gzip -acd > %2</programlisting> command,
+                        which is what his unix2dos.bat does, minus all the error-checking.  </para></note>
+                    </para>
+                    <para>
+                        You can also use <filename>Make_ivc.mak</filename> to compile from the command line, though
+                        you are very limited in the types of executables you can build.  Issuing the command
+                        <programlisting>C:\TEMP\Vim\src>nmake -f Make_ivc.mak CFG="Vim - Win32 Release gvim OLE"</programlisting> will
+                        build a GUI and OLE-enabled Vim.  The other available targets are
+                        <simplelist type="vert">
+                            <member>CFG="Vim - Win32 Debug gvim OLE"</member> 
+                            <member>CFG="Vim - Win32 Release gvim"</member> 
+                            <member>CFG="Vim - Win32 Debug gvim"</member> 
+                            <member>CFG="Vim - Win32 Release vim"</member> 
+                            <member>CFG="Vim - Win32 Debug vim"</member> 
+                        </simplelist>
+                    </para>
+                </section>
+            </section>
+
+            <section><title>BCC 5.x</title>
+                <para>Borland C++Builder 5.0 can
+                    be purchased at a local retailer, or the Borland C++ 5.5 command line tools
+                    and two service packs are available for download from
+                    <ulink url="http://www.borland.com/products/downloads/download_cbuilder.html">http://www.borland.com/products/downloads/download_cbuilder.html</ulink> (While there,
+                    you may want to pick up the Borland TurboDebugger).  
+                    Use the <filename>Make_bc5.mak</filename> makefile to build Vim using either of these compilers.
+                    Extra options available are:
+                </para>
+
+                <informaltable>
+                        <tgroup cols="3">
+			    <colspec colnum="1" colwidth="*" />
+			    <colspec colnum="2" colwidth="3*" />
+			    <colspec colnum="3" colwidth="*" />
+                            <thead>
+                                <row>
+                                    <entry>Option</entry>
+                                    <entry>Description</entry>
+                                    <entry>Default</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                    <row>
+                        <entry>BOR</entry>
+                        <entry>Specifies the installation directory of the BCC Compiler.</entry>
+                        <entry align="center">C:\BC5</entry>
+                    </row>
+                    <row>
+                        <entry>LINK</entry>
+                        <entry>Specifies the name of the linker</entry>
+                        <entry align="center">$(BOR)\bin\ilink32</entry>
+                    </row>
+                    <row>
+                        <entry>OSTYPE</entry>
+                        <entry>Build a Win32 executable</entry>
+                        <entry align="center">WIN32</entry>
+                    </row>
+                    <row>
+                        <entry>CODEGUARD</entry>
+                        <entry>Enables CodeGuard support in the executable</entry>
+                        <entry align="center">no</entry>
+                    </row>
+                    <row>
+                        <entry>USEDLL</entry>
+                        <entry>
+                            Use the Borland runtime dll.  Reduces size of the
+                            executable, but requires <filename>cc3250.dll</filename> to be in the PATH
+                        </entry>
+                        <entry align="center">no</entry>
+                    </row>
+                    <row>
+                        <entry>VIMDLL</entry>
+                        <entry>
+                            Creates a backend <filename>vim32.dll</filename> with a stub frontend
+                            executable.
+                        </entry>
+                        <entry align="center">no</entry>
+                    </row>
+                    <row>
+                        <entry>ALIGN</entry>
+                        <entry>Specifies byte alignment</entry>
+                        <entry align="center">4</entry>
+                    </row>
+                    <row>
+                        <entry>FASTCALL</entry>
+                        <entry>
+                            Use register based parameter passing for function calls.
+                            Improves performance, but breaks interface to external
+                            DLLs, thus is disabled when also compiling with PERL,
+                            PYTHON, RUBY, or TCL support.
+                        </entry>
+                        <entry align="center">yes</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+                </informaltable>
+
+                <para>
+                    To build a TCL-enabled vim with DYNAMIC_TCL=yes, you need to download a stub
+                    library for version 8.3.x (<ulink url="http://mywebpage.netscape.com/sharppeople/vim/tclstub83-bor.lib">http://mywebpage.netscape.com/sharppeople/vim/tclstub83-bor.lib</ulink>)
+                    or 8.4.x (<ulink url="http://mywebpage.netscape.com/sharppeople/vim/tclstub84-bor.lib">http://mywebpage.netscape.com/sharppeople/vim/tclstub84-bor.lib</ulink>)
+                    due to the difference in binary formats between MSVC++ and BCC compiled
+                    programs.
+                    <note>
+                        <para>If you are using a 5.0x version compiler, you will need to convert the 
+                        vim.rc file from Unix to DOS format
+                        if you did not get it from the zip archives.  You can do this with a unix2dos
+                        utility as described above in the MSVC++ IDE section.</para>
+                    </note>
+                </para>
+            </section>
+
+            <section><title>GCC - MinGW</title>
+                <para>The MinGW collection can be downloaded from
+                    <ulink url="http://www.mingw.org">http://www.mingw.org</ulink> .
+
+                    Use the <filename>Make_ming.mak</filename> makefile to build Vim with the MinGW GCC compiler.  A
+                    special feature of this makefile is the ability to cross-compile a Win32
+                    executable from Linux.  Features include:
+                </para>
+
+                <informaltable>
+                    <tgroup cols="3">
+			<colspec colnum="1" colwidth="*" />
+			<colspec colnum="2" colwidth="3*" />
+			<colspec colnum="3" colwidth="*" />
+                        <thead>
+                            <row>
+                                <entry>Option</entry>
+                                <entry>Description</entry>
+                                <entry>Default</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>ARCH</entry>
+                                <entry>
+                                    Specifies the target ARCH for the executable.  GCC
+                                    2.95.x allows i386 through i686, while GCC 3.x.x adds
+                                    options for pentium2, pentium3, pentium4, athlon, etc.
+                                    Check the gcc man page for all the supported targets.
+                                </entry>
+                                <entry align="center">i386</entry>
+                            </row>
+                            <row>
+                                <entry>CROSS</entry>
+                                <entry>Cross-compile from UNIX.</entry>
+                                <entry align="center">no</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </informaltable>
+                <note>
+                <para>NLS support with Mingw (by Eduardo F. Amatria &lt;eferna1 at platea.pntic.mec.es&gt;):</para>
+                <para>If you want National Language Support, read the file
+                    <filename>src/po/README_mingw.txt</filename>.
+                    You need to uncomment lines in Make_ming.mak to have NLS defined.</para>
+                </note>
+                <section><title>Cross-compiling from Linux</title>
+                    <para>
+                        (written by Ron Aaron: &lt;ron at mossbayeng.com&gt; with help from
+                        Martin Kahlert &lt;martin.kahlert at infineon.com&gt;)
+                    </para>
+
+                    <para>
+                        If you like, you can compile the MinGW Win32 version from the comfort of
+                        your Linux (or other unix) box.  To do this, you need to follow a few steps:
+                    </para>
+
+                    <procedure>
+                        <step>
+                            <para>Install the MinGW32 cross-compiler (if you have it, go to step 2)</para>
+                            <substeps>
+                                <step><para>From <ulink url="ftp://ftp.nanotech.wisc.edu/pub/khan/gnu-win32/mingw32/snapshots/gcc-2.95.2-1">ftp://ftp.nanotech.wisc.edu/pub/khan/gnu-win32/mingw32/snapshots/gcc-2.95.2-1</ulink>,
+                                        get:
+                                        <simplelist type="vert">
+                                            <member><filename>binutils-19990818-1-src.tar.gz</filename></member>
+                                            <member><filename>mingw-msvcrt-20000203.zip</filename></member>
+                                            <member><filename>gcc-2.95.2-1-x86-win32.diff.gz</filename></member>
+                                        </simplelist>        
+                                    </para>
+                                </step>
+                                <step><para>From <ulink url="http://gcc.gnu.org/">http://gcc.gnu.org/</ulink> get:
+                                        <simplelist type="vert">
+                                            <member><filename>gcc-2.95.2.tar.gz</filename></member>
+                                        </simplelist>
+                                    </para>
+                                </step>
+                                <step>
+                                    <para>Create a place to put the compiler source and binaries
+                                        (assuming you are in the home directory):
+<programlisting>
+$ mkdir gcc-bin
+$ mkdir gcc-src
+</programlisting>
+                                    </para>
+                                </step>
+
+                                <step><para>Unpack the sources:
+<programlisting>
+$ cd gcc-src
+$ tar xzf ../binutils-19990818-1-src.tar.gz
+$ tar xzf ../gcc-2.95.2.tar.gz
+$ unzip ../mingw-msvcrt-20000203
+</programlisting>
+                                    </para>
+                                </step> 
+                                <step><para>Build the different tools:
+<programlisting>
+$ export PREFIX=~/gcc-bin/
+$ cd gcc-2.95.2
+$ zcat ../gcc-2.95.2-1-x86-win32.diff.gz | patch -p1 -E
+$ cd ../binutils-19990818
+$ ./configure --target=i586-pc-mingw32msvc --prefix=$PREFIX
+$ make
+$ make install
+$ cd ../gcc-2.95.2
+$ ./configure --target=i586-pc-mingw32msvc \
+$ --with-libs=~/gcc-bin/i386-mingw32msvc/lib \
+$ --with-headers=~/gcc-bin/i386-mingw32msvc/include \
+$ --enable-languages=c++ \
+$ --prefix=$PREFIX
+$ make
+$ make install
+</programlisting>
+                                    </para>
+                                </step>
+                                <step>
+                                    <para>Add <filename class="directory">$PREFIX/bin</filename> to your <envar>$PATH</envar>.</para>
+                                </step>
+                            </substeps>
+                        </step>
+                        <step><para>Get the <emphasis>unix</emphasis> version of the vim sources from the tar archives.</para></step>
+                        <step><para>In <filename>Make_ming.mak</filename>, set <envar>CROSS</envar> to 1 instead of 0.</para></step>
+                        <step><para>Start your compile:
+                            <programlisting>$ make -f Make_ming.mak gvim.exe</programlisting></para>
+                        </step>
+                    </procedure>
+
+                    <para>
+                        Now you have created the Windows binary from your Linux box!  Have fun...
+                    </para>
+                    <para>
+                        <note><para>If you are cross-compiling on Linux with the mingw32 setup and are
+                            including the Perl, Python, Ruby, or TCL interfaces, you need to also convert each
+                            interpreter's include files to <emphasis>unix</emphasis> line-endings.  This
+                            bash command will do it easily:
+                            <programlisting>$ for fil in *.h ; do vim -e -c 'set ff=unix|w|q' $fil</programlisting>
+                        </para></note>
+                    </para>
+
+                </section>
+                <section><title>Building with non-dynamic interpreter support</title>
+                    <para>
+                        If for some reason you want to build an executable that does
+                        not dynamically load the interpreter DLLs, you need to do a 
+                        little extra work.  Libraries compiled by MSVC++ (like those
+                        in the ActiveState distributions) do not link well with GCC.
+                        You need to manually create a GCC-compatible library.
+                    </para>
+                    <para>The following instruction were originally written by Ron Aaron 
+                        &lt;ron at mossbayeng.com&gt; for the Python interpreter, but the
+                        same instructions apply to other interpreters as well.</para>
+
+                    <para>This has been tested with the MinGW32 compiler, and the ActiveState ActivePython:
+                        <ulink url="http://www.ActiveState.com/Products/ActivePython">http://www.ActiveState.com/Products/ActivePython/</ulink></para>
+
+                    <para>After installing the ActivePython, you will have to create a 'MinGW32'
+                        <filename>libpython20.a</filename> to link with:
+<programlisting>
+$ cd $PYTHON/libs
+$ pexports python20.dll > python20.def
+$ dlltool -d python20.def -l libpython20.a
+</programlisting>
+                    </para>
+                    <para>Once that is done, edit the <filename>Make_ming.mak</filename> so the PYTHON variable points to
+                        the root of the Python installation (<filename class="directory">C:\Python20</filename>, for example).  If you are
+                        cross-compiling on Linux with the MinGW32 setup, you need to also convert all
+                        the 'Include' files to *unix* line-endings.  This bash command will do it
+                        easily:
+                        <programlisting>$ for fil in *.h ; do vim -e -c 'set ff=unix|w|q' $fil</programlisting> 
+                    </para>
+                    <para>
+                        Now just do:
+                        <programlisting>$ make -f Make_ming.mak gvim.exe</programlisting>
+                        and you will end up with a Python-enabled, Win32 version.  Enjoy!
+                    </para>              
+                </section>
+            </section>
+
+            <section><title>GCC - Cygwin</title>
+                <para>The Cygwin collection is available from <ulink url="http://www.cygwin.com">http://www.cygwin.com</ulink>
+                    and provides a Unix-like operating environment under Win32.</para> 
+                <section><title>Win32 vs. Unix</title>
+                    <para>
+                        One important item to mention here is that Cygwin can compile two different
+                        types of Vim that will run under Windows.  One type is a Unix application, the
+                        other is a Win32 application.  Differences are as follows:
+                    </para>
+
+                    <orderedlist>
+                        <listitem>
+                            <para>The Win32 version is compiled with the Make_cyg.mak makefile, while the
+                                Unix version uses the standard <filename>./configure</filename>;
+                                <filename>make</filename>;<filename>make install</filename> process.</para>
+                        </listitem>
+
+                        <listitem>
+                            <para>The Win32 version compiles a GUI application that runs like any other
+                                native Windows app.  The Unix version has GUI support, but it requires an X
+                                server (like XFree86) to compile and use it.</para>
+                        </listitem>
+
+                        <listitem>
+                            <para>The Win32 version understands normal DOS paths, like 
+                                <filename class="directory">C:\Windows</filename>.  The Unix
+                                version understands Unix / Cygwin paths like 
+                                <filename class="directory">/var/log</filename> or 
+                                <filename class="directory">C:/Windows</filename>.</para>
+                        </listitem>
+                    </orderedlist>
+
+                    <para>
+                        Currently there is no way (and no plans to implement a way) to have a version
+                        that runs like the Unix version but sports a native Win32 GUI.  With the
+                        cygpath.exe utility in the Cygwin distribution and a little work, though, you
+                        can help the Win32 version understand Unix / Cygwin paths.  Search the tips at
+                        <ulink url="http://www.vim.org">http://www.vim.org</ulink> and the Vim Mailing List Archives at
+                        <ulink url="http://groups.yahoo.com/group/vim">http://groups.yahoo.com/group/vim</ulink> for information on how to do this.
+                    </para>
+
+                    <note>
+                        <para>With the release of XFree86 4.3.0, the Cygwin X server offers
+                            two new options, -rootless and -multiwindow.  These options
+                            allow you to run X programs and have them managed by the native
+                            Windows window manager, so they appear like any other standard
+                            Windows application.</para>
+                    </note>
+                </section>
+
+                <section><title>Win32</title>
+                    <para>
+                        Use the <filename>Make_cyg.mak</filename> makefile to build Vim with the Cygwin
+                        GCC compiler.  The initial version of this makefile only supports building a 
+                        vanilla console Vim (or a vanilla GUI Vim after editing the makefile).  Patch 
+                        6.1.253 adds many more features to this makefile.  In addition to the common 
+                        ones listed above, it also provides:
+                    </para>
+
+                    <informaltable>
+                        <tgroup cols="3">
+			    <colspec colnum="1" colwidth="*" />
+			    <colspec colnum="2" colwidth="3*" />
+			    <colspec colnum="3" colwidth="*" />
+                            <thead>
+                                <row>
+                                    <entry>Option</entry>
+                                    <entry>Description</entry>
+                                    <entry>Default</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                        <row>
+                            <entry>ARCH</entry>
+                            <entry>
+                                Specifies the target ARCH for the executable.  GCC
+                                2.95.x allows i386 through i686, while GCC 3.x.x adds
+                                options for pentium2, pentium3, pentium4, athlon, etc.
+                                Check the gcc man page for all the supported targets.
+                            </entry>
+                            <entry align="center">i386</entry>
+                        </row>
+                        <row>
+                            <entry>USEDLL</entry>
+                            <entry>
+                                Use the Cygwin runtime DLL.  Reduces the size of the
+                                executable, but requires that cygwin1.dll be in the PATH.
+                            </entry>
+                            <entry align="center">no</entry>
+                        </row>
+                        </tbody>
+                        </tgroup>
+                    </informaltable>
+                </section>
+            </section>
+        </section>
+        <section>
+            <title>Additional Goodies</title>
+            <para>Once you compile your binaries, you are ready to go.  In the
+                C:\TEMP\vim\src directory you should have either a <filename>vim.exe</filename> and / or
+                a <filename>gvim.exe</filename>, as well as <filename>install.exe</filename>, 
+                <filename>uninstal.exe</filename>, and <filename>vimrun.exe</filename>.  There is also 
+                <filename>xxd.exe</filename> in <filename class="directory">C:\TEMP\vim\src\xxd</filename>
+                and <filename>gvimext.dll</filename> in <filename class="directory">C:\TEMP\vim\src\GvimExt</filename>.
+                If you want, you can do a couple more steps to round out your installation.
+                <itemizedlist>
+           <listitem><para>Installing <filename>gvimext.dll</filename> will add the 
+                "Edit with Vim" set of entries to the context menu when you right-click 
+                on files.  Prior to version 6.2, you had to manually compile the DLL from 
+                the <filename class="directory">C:\TEMP\vim\GvimExt</filename> directory.
+                As of 6.2, though, the DLL is compiled as part of the normal build process.
+                To compile it by itself, just go to the 
+                <filename class="directory">C:\TEMP\vim\src\GVimExt</filename> directory 
+                and read the <filename>README.txt</filename> for instructions.</para>
+           </listitem> 
+           <listitem><para>If you use Visual Studio 6, you may also be interested in the 
+                <filename>visvim.dll</filename> extension, which will help integrate Vim
+                into the MSDev IDE (version 6).  Go to 
+                <filename class="directory">C:\TEMP\vim\VisVim</filename> and read the 
+                <filename>README.txt</filename> for instructions on compiling (MSVC++ only)
+                and installing the DLL.</para>
+           </listitem> 
+           <listitem><para>One final step you may want to take is to compress your binaries.  The
+                UPX utility (available from <ulink url="http://upx.sf.net">http://upx.sf.net</ulink>
+                will compress each executable to approximately 50% of its original size without 
+                creating a noticable penalty in startup time.  The MinGW
+                makefile includes a target to run UPX on the compiled Vim or GVim binary.  For the
+                others, you can compress all the executable files with the command
+                <programlisting>C:\TEMP\Vim\src>copy xxd\xxd.exe . &amp;&amp; upx *.exe</programlisting>
+            </para></listitem> 
+            </itemizedlist>
+        </para>
+        </section>
+    </section>
+
+    <!-- ================================================================ -->
+
+    <section id="links"><title>Links</title>
+        <para>
+            <simplelist type="vert">
+                <member>Vim Homepage:   <ulink url="http://www.vim.org">http://www.vim.org</ulink></member> 
+                <member>Home of this HOWTO:   <ulink url="&HOWTO-home;">&HOWTO-home;</ulink></member> 
+            </simplelist>
+        </para>
+        <para>
+            <simplelist type="vert">
+                <member>Utilities:</member>
+                <member><ulink url="http://www.a-a-p.org">http://www.a-a-p.org</ulink></member>
+                <member><ulink url="http://gnuwin32.sf.net">http://gnuwin32.sf.net</ulink></member>
+                <member><ulink url="http://unxutils.sf.net">http://unxutils.sf.net</ulink></member>
+                <member><ulink url="http://www.cygwin.com">http://www.cygwin.com</ulink></member>
+                <member><ulink url="http://www.mingw.org">http://www.mingw.org</ulink></member>
+                <member><ulink url="http://www.wincvs.org">http://www.wincvs.org</ulink></member>
+                <member><ulink url="http://upx.sf.net">http://upx.sf.net</ulink></member>
+            </simplelist>
+        </para>
+        <para>
+            <simplelist type="vert">
+                <member>External Interfaces:</member>
+                <member><ulink url="http://www.activestate.com/activeperl">http://www.activestate.com/activeperl</ulink></member>
+                <member><ulink url="http://www.activestate.com/activepython">http://www.activestate.com/activepython</ulink></member>
+                <member><ulink url="http://www.activestate.com/activetcl">http://www.activestate.com/activetcl</ulink></member>
+                <member><ulink url="http://rubyinstaller.sourceforge.net"> http://rubyinstaller.sourceforge.net</ulink></member>
+                <member><ulink url="http://sourceforge.net/projects/gettext"> http://sourceforge.net/projects/gettext</ulink></member>
+            </simplelist>
+        </para>
+        <para>
+            <simplelist type="vert">
+                <member>Compilers:</member>
+                <member>Cygwin (GCC): <ulink url="http://www.cygwin.com">http://www.cygwin.com</ulink></member>
+                <member>MinGW (GCC):  <ulink url="http://www.mingw.org">http://www.mingw.org</ulink></member>
+                <member>BCC 5.5:      <ulink url="http://www.borland.com/products/downloads/download_cbuilder.html">http://www.borland.com/products/downloads/download_cbuilder.html</ulink></member>
+            </simplelist>
+        </para>
+    </section>
+
+    <!-- ================================================================ -->
+
+    <section id="appendix-A"><title>Appendix A: Pre-Win32 Systems</title>
+        <para>
+        Vim can be compiled on DOS-based systems as well as Win32 systems.  These (usually
+        16-bit) executables do not support all the options found in the Win32
+        versions, but they support the basics.</para>
+        <section id="A-dos"><title>MS-DOS</title> 
+           <para>Summary:</para> 
+            <para>16 bit, Borland C++ and Turbo C++
+<programlisting>
+C:\TEMP\Vim\src>ren Make_bc3.mak Makefile
+C:\TEMP\Vim\src>make
+</programlisting>
+            </para>
+            <para>16 bit, Turbo C
+<programlisting>
+C:\TEMP\Vim\src>ren Make_tcc.mak Makefile
+C:\TEMP\Vim\src>make
+</programlisting>
+            </para>
+            <para>32 bit, DJGPP 2.0
+                <programlisting>C:\TEMP\Vim\src>make -f Make_djg.mak</programlisting>
+            </para>
+            <para>32 bit, Borland C++ 5.0 (make sure OSTYPE=DOS16)
+                <programlisting>C:\TEMP\Vim\src>make -f Make_bc5.mak</programlisting>
+            </para>
+
+            <para>Warning: Be sure to use the right make.exe.  Microsoft C make doesn't work;
+                Borland make only works with <filename>Make_bc3.mak</filename>, 
+                <filename>Make_bc5.mak</filename> and <filename>Make_tcc.mak</filename>;
+                DJGPP/GNU make must be used for <filename>Make_djg.mak</filename>.</para>
+
+            <para>The Borland C++ compiler has been used to generate the MS-DOS executable; it
+                should work without problems. You will probably have to change the paths for
+                <envar>LIBPATH</envar> and <envar>INCLUDEPATH</envar> in the start of the makefile.
+                You will get two warnings which can be ignored (one about _chmod and one about precompiled
+                header files).</para>
+
+            <para>The "spawno" library by Ralf Brown was used in order to free memory when Vim
+                starts a shell or other external command.  Only about 200 bytes are taken from
+                conventional memory.  When recompiling get the spawno library from Simtel,
+                directory <filename class="directory">msdos/c</filename>.  It is called something like <filename>spwno413.zip</filename>.  Or follow
+                the instructions in the Makefile to remove the library.</para>
+
+            <para>The Turbo C makefile has not been tested much lately. It is included for those
+                that don't have C++. You may need to make a few changes to get it to work.</para>
+
+            <para>DJGPP needs to be installed properly to compile Vim; you need a lot of things
+                before it works. When your setup is OK, Vim should compile with just one
+                warning (about an argument to signal()).</para>
+
+            <para><filename>Make_bc5.mak</filename> is for those that have Borland C++ 5.0 or later.  At the top of
+                the file, there are some variables you can change to make either a 32-bit
+                Windows exe (GUI or console mode), or a 16-bit MS-DOS version.</para>
+
+            <para>If you get all kinds of strange error messages when compiling, try adding &lt;CR&gt;
+                characters at the end of each line.</para>
+        </section>
+
+        <section id="A-Win16"><title>Windows 3.1x</title> 
+            <para>16 bit, Borland C++ 5.0
+                <programlisting>C:\TEMP\Vim\src>make -f Make_w16.mak</programlisting>
+            </para>
+
+            <para>Warning: Be sure to use the right make.exe.  It should be Borland make.
+            Also, the vim16.def file must be in the DOS file format.  If you get your sources
+            from CVS or the UNIX tar archives, you will need to convert this file with unix2dos.</para>
+
+            <para>You will almost certainly have to change the paths for libs and include files
+                in the makefile.  Look for <filename class="directory">D:\BC5</filename> and
+                <filename>ctl3dv2</filename>.  You will get a number of
+                warnings which can be ignored ( _chmod, precompiled header files, and
+                "possibly incorrect assignment").</para>
+
+            <para>The makefile should also work for BC++ 4.0 and 4.5, but may need tweaking to
+                remove unsupported compiler &amp; linker options.</para>
+        </section>
+        <section id="A-OpenNT"><title>Windows NT with OpenNT</title>
+            <para>(contributed by Michael A. Benzinger)</para>
+            <para>Building Vim on OpenNT 2.0 on Windows NT 4.0, with Softway's prerelease gcc:</para>
+                <procedure>
+                    <step><para>Prepare configure to run the OpenNT shell.
+                        <programlisting>$ export CONFIG_SHELL=//D/OpenNT/bin/sh</programlisting></para>
+                    </step>
+                    <step><para>Make the following exports for modifying config.mk:
+<programlisting>
+$ export CFLAGS=-O -Wshadow
+$ export X_PRE_LIBS=-lXmu
+</programlisting> </para>
+                    </step>
+                    <step>
+                        <para>Run configure as follows:
+                        <programlisting>$ configure --prefix=/vim --bindir=/bin/opennt --enable-gui=Motif</programlisting>	
+                        If you don't have OpenNTif (Motif support), use this:
+                        <programlisting>$ configure --prefix=/vim --bindir=/bin/opennt --enable-gui=Athena</programlisting></para>
+                    </step>
+                    <step>
+                        <para>Edit Makefile to perform the following:</para>
+                            <substeps>
+                                <step>
+                                    <para>Since the Makefile include syntax differs from that of gmake, change
+                                    #include config.mk to .include "config.mk"</para>
+                                </step>
+                            <step><para>Change all install links to be "ln -f" and not "ln -s".</para></step>
+                            </substeps>
+                    </step>
+                    <step><para>Now build the executable<programlisting>$ make</programlisting></para></step>
+            </procedure>
+        </section>
+    </section>
+</article>
