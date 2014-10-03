@@ -1,8 +1,12 @@
 set nocompatible
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim options
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 set ruler
 set showcmd
 set showmatch
-set expandtab
 set visualbell
 set notimeout
 set backup
@@ -11,8 +15,8 @@ set ignorecase
 set smartcase
 set nowrap
 set nowrapscan
-set textwidth=78
-set tabstop=8
+set expandtab
+set tabstop=4
 set shiftwidth=4
 set textwidth=0
 set updatecount=100
@@ -20,6 +24,10 @@ set updatetime=3000
 set backspace=indent,eol,start
 set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<,conceal:*,nbsp:+
 set sessionoptions=blank,curdir,folds,help,tabpages,winpos
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" vim keymaps, commands, autocommands, functions
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " use cygstart to launch the windows program for the given str/buf
 nmap gx :LaunchAssocCursor<cr>
@@ -125,17 +133,41 @@ function! TrimSpaces() range
     let &hlsearch=oldhlsearch
 endfunction
 
+function! Readpdf()
+    if (!executable("pdftotext"))
+        echo "Error: pdftotext not installed or not in path"
+        return
+    endif
+    let tmp = tempname()
+    call system("pdftotext '" . escape (expand("<afile>"), "'") . "' " . tmp)
+    setlocal nobin
+	execute "silent '[-1r " . tmp
+    call delete(tmp)
+    set nowrite
+endfun
+
+function! Readps()
+    if (!executable("pstotext"))
+        echo "Error: pstotext not installed or not in path"
+        return
+    endif
+    let tmp = tempname()
+    call system("pstotext -output " . tmp . "'" . escape (expand("<afile>"), "'") . "'")
+    setlocal nobin
+	execute "silent '[-1r " . tmp
+    call delete(tmp)
+    set nowrite
+endfun
+
 if has("autocmd")
     augroup vimrcEx
         au!
         autocmd GUIEnter * simalt ~x
+        "autocmd BufReadPost,FileReadPost *.ps call Readps()
+        "autocmd BufReadPost,FileReadPost *.pdf call Readpdf()
         autocmd FileType startify setlocal buftype=
-        autocmd FileType text setlocal textwidth=78
         autocmd User Startified call AirlineRefresh
-        autocmd BufReadPost *
-                    \ if line("'\"") > 1 && line("'\"") <= line("$") |
-                    \   exe "normal! g`\"" |
-                    \ endif
+        autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
     augroup END
 else
     set autoindent
@@ -145,7 +177,6 @@ endif
 " pathogen plugin
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 execute pathogen#infect()
-syntax on
 filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vimirc plugin
@@ -253,6 +284,10 @@ let g:startify_custom_footer = [
 :syntax enable
 :set background=dark
 :colorscheme solarized
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" eof
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " vim:tw=78:ts=8:sw=4:ft=vim:norl
 
