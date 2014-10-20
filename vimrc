@@ -1,9 +1,4 @@
 set nocompatible
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim options
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 set ruler
 set showcmd
 set showmatch
@@ -13,9 +8,9 @@ set backup
 set hlsearch
 set ignorecase
 set smartcase
-set nowrap
 set nowrapscan
 set expandtab
+set laststatus=2
 set tabstop=4
 set shiftwidth=4
 set textwidth=0
@@ -25,9 +20,9 @@ set backspace=indent,eol,start
 set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<,conceal:*,nbsp:+
 set sessionoptions=blank,curdir,folds,help,tabpages,winpos
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim keymaps, commands, autocommands, functions
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
 
 " use cygstart to launch the windows program for the given str/buf
 nmap gx :LaunchAssocCursor<cr>
@@ -90,28 +85,6 @@ function! Wipeout(bang)
     echon "Deleted " . l:tally . " buffers"
 endfun
 
-" open help file(s) without leaving current window
-command! -nargs=? -bang -complete=help Help call Help('<bang>', <f-args>)
-function! Help(bang, ...)
-    let l:start_bt = &buftype
-    if a:0 > 0
-        let l:xs = ""
-        if a:bang
-            let l:xs = l:xs . "help! "
-        else
-            let l:xs = l:xs . "help "
-        endif
-        let l:xs = l:xs . join(a:000)
-        execute l:xs
-        if l:start_bt != 'help'
-            wincmd p
-            wincmd c
-        endif
-    else
-        help
-    endif
-endfunction
-
 nnoremap <f12>   :ShowSpaces 1<CR>
 nnoremap <s-f12> m`:TrimSpaces<CR>``
 vnoremap <s-f12> :TrimSpaces<CR>
@@ -172,36 +145,24 @@ if has("autocmd")
 else
     set autoindent
 endif
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" pathogen plugin
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-execute pathogen#infect()
-filetype plugin indent on
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vimirc plugin
+" vim plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:vimirc_nick="michaeljunk"
 let g:vimirc_user="mikejunk"
 let g:vimirc_realname="Michael Alan Junk"
 let g:vimrc_server="irc.freenode.net:6667"
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" nerdtree plugin
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 "let NERDTreeHijackNetrw=0
 let g:NERDTreeCaseSensitiveSort=1
 let g:NERDTreeShowBookmarks=1
 let g:NERDTreeShowFiles=1
 let g:NERDTreeShowHidden=1
 let g:NERDTreeChDirMode=2 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" tagbar plugin
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:tagbar_autoclose=1
 nnoremap <silent> <f9> :TagbarToggle<cr>
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" taglist plugin
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:Tlist_GainFocus_On_ToggleOpen=1
 let g:Tlist_Auto_Highlight_Tag=1
 let g:Tlist_Auto_Open=0
@@ -214,27 +175,19 @@ let g:Tlist_Process_File_Always=0
 let g:Tlist_Show_Menu=1
 let g:Tlist_Show_One_File=1
 nnoremap <silent> <f8> :TlistToggle<cr>
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vimshell plugin
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:vimshell_interactive_cygwin_path='c:/users/delluser/cygwin64/bin'
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" conque term plugin
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:ConqueTerm_FastMode=1
 let g:ConqueTerm_Color=0
 let g:ConqueTerm_ReadUnfocused = 1
 let g:ConqueTerm_Syntax = 'conque_term'
 let g:ConqueTerm_TERM = 'vt100'
 let g:ConqueTerm_ColorMode = 'conceal'
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" airline plugin
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:airline_inactive_collapse=1
 let g:airline_theme='lucius'
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" startify plugin
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 let g:startify_list_order = ['bookmarks', 'sessions', 'dir', 'files']
 let g:startify_files_number=10
 let g:startify_session_autoload=0
@@ -278,16 +231,8 @@ let g:startify_custom_footer = [
             \ '                                                         ',
             \ '                                                         ',
             \ '                                                         ',]
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" solarized plugin
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:syntax enable
-:set background=dark
-:colorscheme solarized
 
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" eof
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-" vim:tw=78:ts=8:sw=4:ft=vim:norl
+syntax enable
+set background=dark
+colorscheme solarized
 
