@@ -1,21 +1,19 @@
 set nocompatible
 set ruler
 set showcmd
+set showmode
 set showmatch
 set visualbell
 set notimeout
 set backup
-set hlsearch
 set ignorecase
-set smartcase
 set nowrapscan
 set expandtab
-set laststatus=2
 set tabstop=4
 set shiftwidth=4
 set textwidth=0
-set updatecount=100
-set updatetime=3000
+set laststatus=2
+set shortmess=I
 set backspace=indent,eol,start
 set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<,conceal:*,nbsp:+
 set sessionoptions=blank,curdir,folds,help,tabpages,winpos
@@ -23,6 +21,11 @@ set sessionoptions=blank,curdir,folds,help,tabpages,winpos
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+set background=dark
+colorscheme torte
+syntax enable
+
+runtime! ftplugin/man.vim
 
 " use cygstart to launch the windows program for the given str/buf
 nmap gx :LaunchAssocCursor<cr>
@@ -85,26 +88,26 @@ function! Wipeout(bang)
     echon "Deleted " . l:tally . " buffers"
 endfun
 
-nnoremap <f12>   :ShowSpaces 1<CR>
-nnoremap <s-f12> m`:TrimSpaces<CR>``
-vnoremap <s-f12> :TrimSpaces<CR>
-command! -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
-command! -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
-function! ShowSpaces(...)
-    let @/='\v(\s+$)|( +\ze\t)'
-    let oldhlsearch=&hlsearch
-    if !a:0
-        let &hlsearch=!&hlsearch
-    else
-        let &hlsearch=a:1
-    end
-    return oldhlsearch
-endfunction
-function! TrimSpaces() range
-    let oldhlsearch=ShowSpaces(1)
-    execute a:firstline.",".a:lastline."substitute ///gec"
-    let &hlsearch=oldhlsearch
-endfunction
+"nnoremap <f12>   :ShowSpaces 1<CR>
+"nnoremap <s-f12> m`:TrimSpaces<CR>``
+"vnoremap <s-f12> :TrimSpaces<CR>
+"command! -bar -nargs=? ShowSpaces call ShowSpaces(<args>)
+"command! -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
+"function! ShowSpaces(...)
+"    let @/='\v(\s+$)|( +\ze\t)'
+"    let oldhlsearch=&hlsearch
+"    if !a:0
+"        let &hlsearch=!&hlsearch
+"    else
+"        let &hlsearch=a:1
+"    end
+"    return oldhlsearch
+"endfunction
+"function! TrimSpaces() range
+"    let oldhlsearch=ShowSpaces(1)
+"    execute a:firstline.",".a:lastline."substitute ///gec"
+"    let &hlsearch=oldhlsearch
+"endfunction
 
 function! Readpdf()
     if (!executable("pdftotext"))
@@ -136,8 +139,6 @@ if has("autocmd")
     augroup vimrcEx
         au!
         autocmd GUIEnter * simalt ~x
-        "autocmd BufReadPost,FileReadPost *.ps call Readps()
-        "autocmd BufReadPost,FileReadPost *.pdf call Readpdf()
         autocmd FileType startify setlocal buftype=
         autocmd User Startified call AirlineRefresh
         autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
@@ -145,20 +146,17 @@ if has("autocmd")
 else
     set autoindent
 endif
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim plugins
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:vimirc_nick="michaeljunk"
-let g:vimirc_user="mikejunk"
-let g:vimirc_realname="Michael Alan Junk"
-let g:vimrc_server="irc.freenode.net:6667"
 
-"let NERDTreeHijackNetrw=0
+let g:showmarks_enable=0
+
 let g:NERDTreeCaseSensitiveSort=1
 let g:NERDTreeShowBookmarks=1
 let g:NERDTreeShowFiles=1
 let g:NERDTreeShowHidden=1
 let g:NERDTreeChDirMode=2 
+
+"set tags=./tags;
+let g:easytags_dynamic_files=1
 
 let g:tagbar_autoclose=1
 nnoremap <silent> <f9> :TagbarToggle<cr>
@@ -176,63 +174,11 @@ let g:Tlist_Show_Menu=1
 let g:Tlist_Show_One_File=1
 nnoremap <silent> <f8> :TlistToggle<cr>
 
-let g:vimshell_interactive_cygwin_path='c:/users/delluser/cygwin64/bin'
-
+let g:ConqueTerm_PyVersion=3
 let g:ConqueTerm_FastMode=1
-let g:ConqueTerm_Color=0
 let g:ConqueTerm_ReadUnfocused = 1
+let g:ConqueTerm_CloseOnEnd = 0
+let g:ConqueTerm_StartMessages = 1
 let g:ConqueTerm_Syntax = 'conque_term'
-let g:ConqueTerm_TERM = 'vt100'
-let g:ConqueTerm_ColorMode = 'conceal'
 
-let g:airline_inactive_collapse=1
-let g:airline_theme='lucius'
-
-let g:startify_list_order = ['bookmarks', 'sessions', 'dir', 'files']
-let g:startify_files_number=10
-let g:startify_session_autoload=0
-let g:startify_change_to_dir=1
-let g:startify_relative_path=1
-let g:startify_skiplist = [
-            \ 'COMMIT_EDITMSG',
-            \ $VIMRUNTIME .'/doc',
-            \ 'bundle/.*/doc',
-            \ '\.DS_Store'
-            \ ]
-let g:startify_custom_header = [
-            \ '                                                         ',
-            \ '                                                         ',
-            \ '                                 ________  __ __         ',
-            \ '            __                  /\_____  \/\ \\ \        ',
-            \ '    __  __ /\_\    ___ ___      \/___//''/''\ \ \\ \     ',
-            \ '   /\ \/\ \\/\ \ /'' __` __`\        /'' /''  \ \ \\ \_  ',
-            \ '   \ \ \_/ |\ \ \/\ \/\ \/\ \      /'' /''__  \ \__ ,__\ ',
-            \ '    \ \___/  \ \_\ \_\ \_\ \_\    /\_/ /\_\  \/_/\_\_/   ',
-            \ '     \/__/    \/_/\/_/\/_/\/_/    \//  \/_/     \/_/     ',
-            \ '                                                         ',
-            \ '                                                         ',
-            \ '                       header                            ',
-            \ '                                                         ',
-            \ '                                                         ',
-            \ '                                                         ',]
-let g:startify_custom_footer = [
-            \ '                                                         ',
-            \ '                                                         ',
-            \ '                                                         ',
-            \ '                       footer                            ',
-            \ '                                                         ',
-            \ '                                 ________  __ __         ',
-            \ '            __                  /\_____  \/\ \\ \        ',
-            \ '    __  __ /\_\    ___ ___      \/___//''/''\ \ \\ \     ',
-            \ '   /\ \/\ \\/\ \ /'' __` __`\        /'' /''  \ \ \\ \_  ',
-            \ '   \ \ \_/ |\ \ \/\ \/\ \/\ \      /'' /''__  \ \__ ,__\ ',
-            \ '    \ \___/  \ \_\ \_\ \_\ \_\    /\_/ /\_\  \/_/\_\_/   ',
-            \ '     \/__/    \/_/\/_/\/_/\/_/    \//  \/_/     \/_/     ',
-            \ '                                                         ',
-            \ '                                                         ',
-            \ '                                                         ',]
-
-syntax enable
-set background=dark
-colorscheme solarized
-
+let g:airline_theme='hybrid'

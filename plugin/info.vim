@@ -28,7 +28,7 @@
 " $Id: info.vim,v 1.7 2002/11/30 21:59:05 rnd Exp $
 
 let s:infoCmd = 'info --output=-'
-if has('win32')
+if has('windows')
     let s:infoBufferName = '-Info- '
 else
     let s:infoBufferName = 'Info: '
