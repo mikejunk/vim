@@ -1,0 +1,3296 @@
+cplusplus.html:<index 1 pdf>
+cplusplus.html:<index 2 http://sourceforge.net/projects/cppannotations/>
+cplusplus02.html:<index 3 http://publications.gbdirect.co.uk/c_book/>
+cplusplus02.html:<index 4 trigraphs>
+cplusplus02.html:<index 5 bigraphs>
+cplusplus02.html:<index 6 http://www.gnu.org/licenses/>
+cplusplus02.html:<index 7 Yodl>
+cplusplus02.html:<index 8 http://yodl.sourceforge.net>
+cplusplus02.html:<index 9 http://en.wikipedia.org/wiki/C++11>
+cplusplus02.html:<index 10 Gnu>
+cplusplus02.html:<index 11 compiler>
+cplusplus02.html:<index 12 g++>
+cplusplus02.html:<index 13 Internet>
+cplusplus02.html:<index 14 hyperlinks>
+cplusplus02.html:<index 15 http://www.cplusplus.com/ref>
+cplusplus02.html:<index 16 http://www.csci.csusb.edu/dick/c++std>
+cplusplus02.html:<index 17 ANSI/ISO>
+cplusplus02.html:<index 18 sizeof>
+cplusplus02.html:<index 19 prototyping>
+cplusplus02.html:<index 20 extern>
+cplusplus02.html:<index 21 compiler>
+cplusplus02.html:<index 22 free compiler>
+cplusplus02.html:<index 23 Free Software Foundation>
+cplusplus02.html:<index 24 FSF>
+cplusplus02.html:<index 25 http://www.gnu.org>
+cplusplus02.html:<index 26 Debian>
+cplusplus02.html:<index 27 http://www.debian.org>
+cplusplus02.html:<index 28 Linux>
+cplusplus02.html:<index 29 http://www.linux.org>
+cplusplus02.html:<index 30 compiler flag>
+cplusplus02.html:<index 31 --std=c++11>
+cplusplus02.html:<index 32 MS-Windows>
+cplusplus02.html:<index 33 Cygnus>
+cplusplus02.html:<index 34 http://sources.redhat.com>
+cplusplus02.html:<index 35 Gnu>
+cplusplus02.html:<index 36 g++>
+cplusplus02.html:<index 37 compiler>
+cplusplus02.html:<index 38 free compiler>
+cplusplus02.html:<index 39 setup.exe>
+cplusplus02.html:<index 40 Cygwin>
+cplusplus02.html:<index 41 http://gcc.gnu.org>
+cplusplus02.html:<index 42 compiler option>
+cplusplus02.html:<index 43 --std=c++11>
+cplusplus02.html:<index 44 make>
+cplusplus02.html:<index 45 icmake>
+cplusplus02.html:<index 46 ccbuild>
+cplusplus02.html:<index 47 data hiding>
+cplusplus02.html:<index 48 Lisp>
+cplusplus02.html:<index 49 Prolog>
+cplusplus02.html:<index 50 BASIC>
+cplusplus02.html:<index 51 assembly language>
+cplusplus02.html:<index 52 restrictions>
+cplusplus02.html:<index 53 static>
+cplusplus02.html:<index 54 procedural approach>
+cplusplus02.html:<index 55 object oriented approach>
+cplusplus02.html:<index 56 coupling>
+cplusplus02.html:<index 57 design patterns>
+cplusplus02.html:<index 58 class>
+cplusplus02.html:<index 59 encapsulation>
+cplusplus02.html:<index 60 data hiding>
+cplusplus02.html:<index 61 main>
+cplusplus02.html:<index 62 environ>
+cplusplus02.html:<index 63 ANSI/ISO>
+cplusplus02.html:<index 64 end of line comment>
+cplusplus02.html:<index 65 //>
+cplusplus02.html:<index 66 rule of thumb>
+cplusplus02.html:<index 67 type checking>
+cplusplus02.html:<index 68 printf()>
+cplusplus02.html:<index 69 stdio.h>
+cplusplus02.html:<index 70 cstdio>
+cplusplus02.html:<index 71 main>
+cplusplus02.html:<index 72 return value>
+cplusplus02.html:<index 73 main>
+cplusplus02.html:<index 74 functions having identical names>
+cplusplus02.html:<index 75 parameter list>
+cplusplus02.html:<index 76 const function attribute>
+cplusplus02.html:<index 77 function overloading>
+cplusplus02.html:<index 78 name mangling>
+cplusplus02.html:<index 79 member functions: overloading>
+cplusplus02.html:<index 80 overloading: by const attribute>
+cplusplus02.html:<index 81 default arguments>
+cplusplus02.html:<index 82 compile-time>
+cplusplus02.html:<index 83 NULL>
+cplusplus02.html:<index 84 macro>
+cplusplus02.html:<index 85 NULL>
+cplusplus02.html:<index 86 nullptr>
+cplusplus02.html:<index 87 empty parameter list>
+cplusplus02.html:<index 88 void>
+cplusplus02.html:<index 89 ANSI/ISO>
+cplusplus02.html:<index 90 __cplusplus>
+cplusplus02.html:<index 91 preprocessor directive>
+cplusplus02.html:<index 92 #define __cplusplus>
+cplusplus02.html:<index 93 extern "C">
+cplusplus02.html:<index 94 __cplusplus>
+cplusplus02.html:<index 95 extern "C">
+cplusplus02.html:<index 96 #ifdef>
+cplusplus02.html:<index 97 stdio.h>
+cplusplus02.html:<index 98 include guard>
+cplusplus02.html:<index 99 #ifndef>
+cplusplus02.html:<index 100 .h>
+cplusplus02.html:<index 101 iostream>
+cplusplus02.html:<index 102 iostream.h>
+cplusplus02.html:<index 103 local variables>
+cplusplus02.html:<index 104 name lookup>
+cplusplus02.html:<index 105 obsolete binding>
+cplusplus02.html:<index 106 local variables>
+cplusplus02.html:<index 107 rule of thumb>
+cplusplus02.html:<index 108 global variables: avoid>
+cplusplus02.html:<index 109 avoid global variables>
+cplusplus02.html:<index 110 nested blocks>
+cplusplus02.html:<index 111 typedef>
+cplusplus02.html:<index 112 union>
+cplusplus02.html:<index 113 struct>
+cplusplus02.html:<index 114 enum>
+cplusplus02.html:<index 115 functions as members of structs>
+cplusplus02.html:<index 116 object>
+cplusplus02.html:<index 117 functions having identical names>
+cplusplus03.html:<index 118 namespace>
+cplusplus03.html:<index 119 name conflicts>
+cplusplus03.html:<index 120 standard namespace>
+cplusplus03.html:<index 121 using namespace std>
+cplusplus03.html:<index 122 scope resolution operator>
+cplusplus03.html:<index 123 ::>
+cplusplus03.html:<index 124 const>
+cplusplus03.html:<index 125 rule of thumb>
+cplusplus03.html:<index 126 Stroustrup>
+cplusplus03.html:<index 127 http://www.research.att.com/...>
+cplusplus03.html:<index 128 const functions>
+cplusplus03.html:<index 129 Cline>
+cplusplus03.html:<index 130 http://www/parashift.com/c++-faq-lite/>
+cplusplus03.html:<index 131 Marshall Cline>
+cplusplus03.html:<index 132 cout>
+cplusplus03.html:<index 133 stdout>
+cplusplus03.html:<index 134 cin>
+cplusplus03.html:<index 135 stdin>
+cplusplus03.html:<index 136 cerr>
+cplusplus03.html:<index 137 stderr>
+cplusplus03.html:<index 138 insertion operator>
+cplusplus03.html:<index 139 extraction operator>
+cplusplus03.html:<index 140 iostream>
+cplusplus03.html:<index 141 class>
+cplusplus03.html:<index 142 extraction operator>
+cplusplus03.html:<index 143 type safe>
+cplusplus03.html:<index 144 white space>
+cplusplus03.html:<index 145 skipping leading blanks>
+cplusplus03.html:<index 146 symbolic constants>
+cplusplus03.html:<index 147 endl>
+cplusplus03.html:<index 148 type-safe>
+cplusplus03.html:<index 149 printf>
+cplusplus03.html:<index 150 member functions>
+cplusplus03.html:<index 151 data hiding>
+cplusplus03.html:<index 152 private>
+cplusplus03.html:<index 153 protected>
+cplusplus03.html:<index 154 public>
+cplusplus03.html:<index 155 buffer overflow>
+cplusplus03.html:<index 156 encapsulation>
+cplusplus03.html:<index 157 references>
+cplusplus03.html:<index 158 reference operator>
+cplusplus03.html:<index 159 operator &amp;>
+cplusplus03.html:<index 160 return by argument>
+cplusplus03.html:<index 161 address-of operator>
+cplusplus03.html:<index 162 operator &amp;>
+cplusplus03.html:<index 163 &amp;>
+cplusplus03.html:<index 164 rvalue reference>
+cplusplus03.html:<index 165 typename &amp;&amp;>
+cplusplus03.html:<index 166 lvalue>
+cplusplus03.html:<index 167 rvalue>
+cplusplus03.html:<index 168 lvalue reference>
+cplusplus03.html:<index 169 anonymous variable>
+cplusplus03.html:<index 170 move semantics>
+cplusplus03.html:<index 171 perfect forwarding>
+cplusplus03.html:<index 172 move semantics>
+cplusplus03.html:<index 173 move-aware>
+cplusplus03.html:<index 174 enum class>
+cplusplus03.html:<index 175 forward declaration: enum class>
+cplusplus03.html:<index 176 initializer list>
+cplusplus03.html:<index 177 initializer_list&lt;Type&gt;>
+cplusplus03.html:<index 178 initializer_list: header file>
+cplusplus03.html:<index 179 auto>
+cplusplus03.html:<index 180 iterator>
+cplusplus03.html:<index 181 decltype>
+cplusplus03.html:<index 182 pointer protection>
+cplusplus03.html:<index 183 late-specified return type>
+cplusplus03.html:<index 184 using>
+cplusplus03.html:<index 185 range based for>
+cplusplus03.html:<index 186 range>
+cplusplus03.html:<index 187 for-statement>
+cplusplus03.html:<index 188 for range declaration>
+cplusplus03.html:<index 189 escape sequence>
+cplusplus03.html:<index 190 raw string literal>
+cplusplus03.html:<index 191 built-in>
+cplusplus03.html:<index 192 bool>
+cplusplus03.html:<index 193 wchar_t>
+cplusplus03.html:<index 194 long long>
+cplusplus03.html:<index 195 long double>
+cplusplus03.html:<index 196 ANSI/ISO>
+cplusplus03.html:<index 197 long long>
+cplusplus03.html:<index 198 long double>
+cplusplus03.html:<index 199 primitive types>
+cplusplus03.html:<index 200 type: primitive>
+cplusplus03.html:<index 201 literal constants>
+cplusplus03.html:<index 202 letters in literal constants>
+cplusplus03.html:<index 203 b>
+cplusplus03.html:<index 204 binary constant>
+cplusplus03.html:<index 205 E>
+cplusplus03.html:<index 206 literal floating point value using E>
+cplusplus03.html:<index 207 exponentiation>
+cplusplus03.html:<index 208 F>
+cplusplus03.html:<index 209 literal float using F>
+cplusplus03.html:<index 210 L>
+cplusplus03.html:<index 211 literal wchar_t string L>
+cplusplus03.html:<index 212 literal long int using L>
+cplusplus03.html:<index 213 p>
+cplusplus03.html:<index 214 power specification using p>
+cplusplus03.html:<index 215 U>
+cplusplus03.html:<index 216 literal unsigned using U>
+cplusplus03.html:<index 217 true>
+cplusplus03.html:<index 218 false>
+cplusplus03.html:<index 219 conversion rules>
+cplusplus03.html:<index 220 access>
+cplusplus03.html:<index 221 stat>
+cplusplus03.html:<index 222 wchar_t>
+cplusplus03.html:<index 223 Unicode>
+cplusplus03.html:<index 224 UTF-16>
+cplusplus03.html:<index 225 UTF-32>
+cplusplus03.html:<index 226 UTF-8>
+cplusplus03.html:<index 227 \u>
+cplusplus03.html:<index 228 long long int>
+cplusplus03.html:<index 229 size_t>
+cplusplus03.html:<index 230 POSIX>
+cplusplus03.html:<index 231 unsigned int>
+cplusplus03.html:<index 232 cstddef>
+cplusplus03.html:<index 233 amd>
+cplusplus03.html:<index 234 X-windows>
+cplusplus03.html:<index 235 XQueryPointer>
+cplusplus03.html:<index 236 uint32_t>
+cplusplus03.html:<index 237 int32_t>
+cplusplus03.html:<index 238 cstdint>
+cplusplus03.html:<index 239 constructor notation>
+cplusplus03.html:<index 240 new-style casts>
+cplusplus03.html:<index 241 static_cast&lt;type&gt;(expression)>
+cplusplus03.html:<index 242 integer division>
+cplusplus03.html:<index 243 const_cast&lt;type&gt;(expression)>
+cplusplus03.html:<index 244 rule of thumb>
+cplusplus03.html:<index 245 shared_ptr>
+cplusplus03.html:<index 246 keywords>
+cplusplus03.html:<index 247 export>
+cplusplus03.html:<index 248 operator keywords>
+cplusplus03.html:<index 249 identifiers starting with an underscore>
+cplusplus03.html:<index 250 global namespace>
+cplusplus03.html:<index 251 reserved identifiers>
+cplusplus04.html:<index 252 namespace>
+cplusplus04.html:<index 253 ANSI/ISO>
+cplusplus04.html:<index 254 class>
+cplusplus04.html:<index 255 header file>
+cplusplus04.html:<index 256 declarative region>
+cplusplus04.html:<index 257 namespace declarations>
+cplusplus04.html:<index 258 namespace: anonymous>
+cplusplus04.html:<index 259 static>
+cplusplus04.html:<index 260 namespace: closed>
+cplusplus04.html:<index 261 scope resolution operator>
+cplusplus04.html:<index 262 using declaration>
+cplusplus04.html:<index 263 using directive>
+cplusplus04.html:<index 264 namespace: import all names>
+cplusplus04.html:<index 265 Koenig lookup>
+cplusplus04.html:<index 266 Ludlum>
+cplusplus04.html:<index 267 rule of thumb>
+cplusplus04.html:<index 268 using: restrictions>
+cplusplus04.html:<index 269 fully qualified names>
+cplusplus04.html:<index 270 namespace alias>
+cplusplus04.html:<index 271 define members of namespaces>
+cplusplus05.html:<index 272 NTBS>
+cplusplus05.html:<index 273 NTB string>
+cplusplus05.html:<index 274 string>
+cplusplus05.html:<index 275 member function>
+cplusplus05.html:<index 276 string: header file>
+cplusplus05.html:<index 277 string: declaring>
+cplusplus05.html:<index 278 iosfwd>
+cplusplus05.html:<index 279 std::wstring>
+cplusplus05.html:<index 280 std::u16string>
+cplusplus05.html:<index 281 std::u32string>
+cplusplus05.html:<index 282 npos>
+cplusplus05.html:<index 283 size_type>
+cplusplus05.html:<index 284 string::size_type>
+cplusplus05.html:<index 285 case-insensitive>
+cplusplus05.html:<index 286 strcasecmp>
+cplusplus05.html:<index 287 valid state>
+cplusplus05.html:<index 288 string constructors>
+cplusplus05.html:<index 289 string: iterator types>
+cplusplus05.html:<index 290 forward iterators>
+cplusplus05.html:<index 291 forward iterators>
+cplusplus05.html:<index 292 at>
+cplusplus05.html:<index 293 append>
+cplusplus05.html:<index 294 assign>
+cplusplus05.html:<index 295 back>
+cplusplus05.html:<index 296 begin>
+cplusplus05.html:<index 297 capacity>
+cplusplus05.html:<index 298 cbegin>
+cplusplus05.html:<index 299 cend>
+cplusplus05.html:<index 300 compare>
+cplusplus05.html:<index 301 copy>
+cplusplus05.html:<index 302 crbegin>
+cplusplus05.html:<index 303 crend>
+cplusplus05.html:<index 304 c_str>
+cplusplus05.html:<index 305 data>
+cplusplus05.html:<index 306 empty>
+cplusplus05.html:<index 307 end>
+cplusplus05.html:<index 308 erase>
+cplusplus05.html:<index 309 find>
+cplusplus05.html:<index 310 find_first_of>
+cplusplus05.html:<index 311 find_last_of>
+cplusplus05.html:<index 312 find_last_not_of>
+cplusplus05.html:<index 313 front>
+cplusplus05.html:<index 314 get_allocator>
+cplusplus05.html:<index 315 getline>
+cplusplus05.html:<index 316 insert>
+cplusplus05.html:<index 317 length>
+cplusplus05.html:<index 318 max_size>
+cplusplus05.html:<index 319 pop_back>
+cplusplus05.html:<index 320 push_back>
+cplusplus05.html:<index 321 push_front>
+cplusplus05.html:<index 322 rbegin>
+cplusplus05.html:<index 323 rend>
+cplusplus05.html:<index 324 replace>
+cplusplus05.html:<index 325 reserve>
+cplusplus05.html:<index 326 length_error>
+cplusplus05.html:<index 327 stdexcept>
+cplusplus05.html:<index 328 resize>
+cplusplus05.html:<index 329 rfind>
+cplusplus05.html:<index 330 shrink_to_fit>
+cplusplus05.html:<index 331 size>
+cplusplus05.html:<index 332 substr>
+cplusplus05.html:<index 333 swap>
+cplusplus05.html:<index 334 string: header file>
+cplusplus05.html:<index 335 stof>
+cplusplus05.html:<index 336 stod>
+cplusplus05.html:<index 337 stold>
+cplusplus05.html:<index 338 stoi>
+cplusplus05.html:<index 339 stol>
+cplusplus05.html:<index 340 stoll>
+cplusplus05.html:<index 341 stoul>
+cplusplus05.html:<index 342 stoull>
+cplusplus05.html:<index 343 to_string>
+cplusplus05.html:<index 344 to_wstring>
+cplusplus05.html:<index 345 std::wstring>
+cplusplus06.html:<index 346 FILE>
+cplusplus06.html:<index 347 I/O>
+cplusplus06.html:<index 348 I/O library>
+cplusplus06.html:<index 349 std>
+cplusplus06.html:<index 350 basic_>
+cplusplus06.html:<index 351 basic_>
+cplusplus06.html:<index 352 typedef>
+cplusplus06.html:<index 353 char>
+cplusplus06.html:<index 354 wchar_t>
+cplusplus06.html:<index 355 template>
+cplusplus06.html:<index 356 generic software>
+cplusplus06.html:<index 357 forward declarations>
+cplusplus06.html:<index 358 declare iostream classes>
+cplusplus06.html:<index 359 iosfwd>
+cplusplus06.html:<index 360 type safety>
+cplusplus06.html:<index 361 fprintf>
+cplusplus06.html:<index 362 ANSI/ISO>
+cplusplus06.html:<index 363 ios_base>
+cplusplus06.html:<index 364 state of I/O streams>
+cplusplus06.html:<index 365 output formatting>
+cplusplus06.html:<index 366 ios>
+cplusplus06.html:<index 367 streambuf>
+cplusplus06.html:<index 368 ostream>
+cplusplus06.html:<index 369 insertion operator>
+cplusplus06.html:<index 370 memory buffers>
+cplusplus06.html:<index 371 ostringstream>
+cplusplus06.html:<index 372 formatting commands>
+cplusplus06.html:<index 373 manipulators>
+cplusplus06.html:<index 374 istream>
+cplusplus06.html:<index 375 extraction operator>
+cplusplus06.html:<index 376 istringstream>
+cplusplus06.html:<index 377 reading and writing>
+cplusplus06.html:<index 378 mixing <strong>C</strong> and <strong>C++</strong> I/O>
+cplusplus06.html:<index 379 filebuf>
+cplusplus06.html:<index 380 device>
+cplusplus06.html:<index 381 sockets>
+cplusplus06.html:<index 382 file descriptors>
+cplusplus06.html:<index 383 wrapper class>
+cplusplus06.html:<index 384 header file>
+cplusplus06.html:<index 385 iosfwd>
+cplusplus06.html:<index 386 ios: header file>
+cplusplus06.html:<index 387 streambuf: header file>
+cplusplus06.html:<index 388 filebuf>
+cplusplus06.html:<index 389 istream: header file>
+cplusplus06.html:<index 390 ostream: header file>
+cplusplus06.html:<index 391 ostream>
+cplusplus06.html:<index 392 iostream: header file>
+cplusplus06.html:<index 393 cin>
+cplusplus06.html:<index 394 cout>
+cplusplus06.html:<index 395 fstream: header file>
+cplusplus06.html:<index 396 sstream: header file>
+cplusplus06.html:<index 397 iomanip: header file>
+cplusplus06.html:<index 398 ios_base>
+cplusplus06.html:<index 399 state of I/O streams>
+cplusplus06.html:<index 400 output formatting>
+cplusplus06.html:<index 401 ios>
+cplusplus06.html:<index 402 ANSI/ISO>
+cplusplus06.html:<index 403 streambuf>
+cplusplus06.html:<index 404 ios>
+cplusplus06.html:<index 405 ios_base.h>
+cplusplus06.html:<index 406 basic_ios.h>
+cplusplus06.html:<index 407 ios>
+cplusplus06.html:<index 408 ios_base>
+cplusplus06.html:<index 409 ios>
+cplusplus06.html:<index 410 formatting>
+cplusplus06.html:<index 411 rdbuf>
+cplusplus06.html:<index 412 tie>
+cplusplus06.html:<index 413 ostream>
+cplusplus06.html:<index 414 condition state>
+cplusplus06.html:<index 415 condition flags>
+cplusplus06.html:<index 416 badbit>
+cplusplus06.html:<index 417 eofbit>
+cplusplus06.html:<index 418 failbit>
+cplusplus06.html:<index 419 goodbit>
+cplusplus06.html:<index 420 condition member functions>
+cplusplus06.html:<index 421 bad>
+cplusplus06.html:<index 422 eof>
+cplusplus06.html:<index 423 getline>
+cplusplus06.html:<index 424 fail>
+cplusplus06.html:<index 425 good>
+cplusplus06.html:<index 426 ios object: as bool value>
+cplusplus06.html:<index 427 stream: as bool value>
+cplusplus06.html:<index 428 clear>
+cplusplus06.html:<index 429 rdstate>
+cplusplus06.html:<index 430 stream state flags>
+cplusplus06.html:<index 431 flags: of ios objects>
+cplusplus06.html:<index 432 bitwise and>
+cplusplus06.html:<index 433 setstate>
+cplusplus06.html:<index 434 exception>
+cplusplus06.html:<index 435 ANSI/ISO>
+cplusplus06.html:<index 436 formatting flags>
+cplusplus06.html:<index 437 radix>
+cplusplus06.html:<index 438 iomanip>
+cplusplus06.html:<index 439 formatting>
+cplusplus06.html:<index 440 copyfmt>
+cplusplus06.html:<index 441 fill>
+cplusplus06.html:<index 442 padding>
+cplusplus06.html:<index 443 setfill>
+cplusplus06.html:<index 444 flags>
+cplusplus06.html:<index 445 precision>
+cplusplus06.html:<index 446 display floating point numbers>
+cplusplus06.html:<index 447 setprecision>
+cplusplus06.html:<index 448 setf>
+cplusplus06.html:<index 449 setiosflags>
+cplusplus06.html:<index 450 unsetf>
+cplusplus06.html:<index 451 resetiosflags>
+cplusplus06.html:<index 452 width>
+cplusplus06.html:<index 453 display field width>
+cplusplus06.html:<index 454 setw>
+cplusplus06.html:<index 455 formatting flags>
+cplusplus06.html:<index 456 binary output>
+cplusplus06.html:<index 457 human-readable>
+cplusplus06.html:<index 458 formatted output>
+cplusplus06.html:<index 459 internal>
+cplusplus06.html:<index 460 adjustfield>
+cplusplus06.html:<index 461 fill characters>
+cplusplus06.html:<index 462 left>
+cplusplus06.html:<index 463 right>
+cplusplus06.html:<index 464 dec>
+cplusplus06.html:<index 465 hex>
+cplusplus06.html:<index 466 oct>
+cplusplus06.html:<index 467 setbase>
+cplusplus06.html:<index 468 boolalpha>
+cplusplus06.html:<index 469 noboolalpha>
+cplusplus06.html:<index 470 showbase>
+cplusplus06.html:<index 471 noshowbase>
+cplusplus06.html:<index 472 showpos>
+cplusplus06.html:<index 473 noshowpos>
+cplusplus06.html:<index 474 uppercase>
+cplusplus06.html:<index 475 nouppercase>
+cplusplus06.html:<index 476 fixed>
+cplusplus06.html:<index 477 floatfield>
+cplusplus06.html:<index 478 display floating point numbers>
+cplusplus06.html:<index 479 scientific>
+cplusplus06.html:<index 480 scientific notation>
+cplusplus06.html:<index 481 showpoint>
+cplusplus06.html:<index 482 noshowpoint>
+cplusplus06.html:<index 483 endl>
+cplusplus06.html:<index 484 ends>
+cplusplus06.html:<index 485 flush>
+cplusplus06.html:<index 486 skipws>
+cplusplus06.html:<index 487 white space>
+cplusplus06.html:<index 488 unitbuf>
+cplusplus06.html:<index 489 nounitbuf>
+cplusplus06.html:<index 490 ws>
+cplusplus06.html:<index 491 white space>
+cplusplus06.html:<index 492 ostream>
+cplusplus06.html:<index 493 insertion operator>
+cplusplus06.html:<index 494 ofstream>
+cplusplus06.html:<index 495 fopen>
+cplusplus06.html:<index 496 ostringstream>
+cplusplus06.html:<index 497 sprintf>
+cplusplus06.html:<index 498 ostream>
+cplusplus06.html:<index 499 cout>
+cplusplus06.html:<index 500 clog>
+cplusplus06.html:<index 501 cerr>
+cplusplus06.html:<index 502 ostream constructor>
+cplusplus06.html:<index 503 ostream: define using 0-pointer>
+cplusplus06.html:<index 504 ostream>
+cplusplus06.html:<index 505 iostream>
+cplusplus06.html:<index 506 ostream>
+cplusplus06.html:<index 507 binary output>
+cplusplus06.html:<index 508 insertion operator>
+cplusplus06.html:<index 509 formatted output>
+cplusplus06.html:<index 510 ASCII>
+cplusplus06.html:<index 511 printf>
+cplusplus06.html:<index 512 vprintf>
+cplusplus06.html:<index 513 binary file>
+cplusplus06.html:<index 514 ASCII>
+cplusplus06.html:<index 515 put>
+cplusplus06.html:<index 516 write>
+cplusplus06.html:<index 517 endian>
+cplusplus06.html:<index 518 repositioning>
+cplusplus06.html:<index 519 tellp>
+cplusplus06.html:<index 520 seekp>
+cplusplus06.html:<index 521 off_type>
+cplusplus06.html:<index 522 seekdir>
+cplusplus06.html:<index 523 beg>
+cplusplus06.html:<index 524 cur>
+cplusplus06.html:<index 525 end>
+cplusplus06.html:<index 526 write beyond end of file>
+cplusplus06.html:<index 527 seek beyond file boundaries>
+cplusplus06.html:<index 528 null-bytes>
+cplusplus06.html:<index 529 fail>
+cplusplus06.html:<index 530 internal buffer>
+cplusplus06.html:<index 531 flush>
+cplusplus06.html:<index 532 close>
+cplusplus06.html:<index 533 ofstream>
+cplusplus06.html:<index 534 access files>
+cplusplus06.html:<index 535 create files>
+cplusplus06.html:<index 536 fstream>
+cplusplus06.html:<index 537 iostream>
+cplusplus06.html:<index 538 ofstream constructors>
+cplusplus06.html:<index 539 file descriptor>
+cplusplus06.html:<index 540 open>
+cplusplus06.html:<index 541 close>
+cplusplus06.html:<index 542 ios::fail>
+cplusplus06.html:<index 543 is_open>
+cplusplus06.html:<index 544 true>
+cplusplus06.html:<index 545 file modes>
+cplusplus06.html:<index 546 file flags>
+cplusplus06.html:<index 547 openmode>
+cplusplus06.html:<index 548 app>
+cplusplus06.html:<index 549 ate>
+cplusplus06.html:<index 550 in>
+cplusplus06.html:<index 551 file rewriting: preventing>
+cplusplus06.html:<index 552 binary>
+cplusplus06.html:<index 553 file: binary mode>
+cplusplus06.html:<index 554 MS-Windows>
+cplusplus06.html:<index 555 in>
+cplusplus06.html:<index 556 out>
+cplusplus06.html:<index 557 file is rewritten>
+cplusplus06.html:<index 558 trunc>
+cplusplus06.html:<index 559 streams: writing to memory>
+cplusplus06.html:<index 560 ostringstream>
+cplusplus06.html:<index 561 sstream>
+cplusplus06.html:<index 562 ostringstream>
+cplusplus06.html:<index 563 str>
+cplusplus06.html:<index 564 conversions: binary to text>
+cplusplus06.html:<index 565 input>
+cplusplus06.html:<index 566 istream>
+cplusplus06.html:<index 567 extraction operator>
+cplusplus06.html:<index 568 ifstream>
+cplusplus06.html:<index 569 fopen>
+cplusplus06.html:<index 570 istringstream>
+cplusplus06.html:<index 571 sscanf>
+cplusplus06.html:<index 572 istream>
+cplusplus06.html:<index 573 cin>
+cplusplus06.html:<index 574 istream constructor>
+cplusplus06.html:<index 575 ostream: define using 0-pointer>
+cplusplus06.html:<index 576 istream>
+cplusplus06.html:<index 577 cin>
+cplusplus06.html:<index 578 iostream>
+cplusplus06.html:<index 579 binary input>
+cplusplus06.html:<index 580 extraction operator>
+cplusplus06.html:<index 581 operator&gt;&gt;>
+cplusplus06.html:<index 582 type safe>
+cplusplus06.html:<index 583 formatted input>
+cplusplus06.html:<index 584 ASCII>
+cplusplus06.html:<index 585 string extraction>
+cplusplus06.html:<index 586 extracting strings>
+cplusplus06.html:<index 587 scanf>
+cplusplus06.html:<index 588 vscanf>
+cplusplus06.html:<index 589 binary file>
+cplusplus06.html:<index 590 ASCII>
+cplusplus06.html:<index 591 gcount>
+cplusplus06.html:<index 592 get>
+cplusplus06.html:<index 593 getline>
+cplusplus06.html:<index 594 ignore>
+cplusplus06.html:<index 595 peek>
+cplusplus06.html:<index 596 putback>
+cplusplus06.html:<index 597 read>
+cplusplus06.html:<index 598 readsome>
+cplusplus06.html:<index 599 unget>
+cplusplus06.html:<index 600 repositioning>
+cplusplus06.html:<index 601 database applications>
+cplusplus06.html:<index 602 tellg>
+cplusplus06.html:<index 603 pos_type>
+cplusplus06.html:<index 604 seekg>
+cplusplus06.html:<index 605 off_type>
+cplusplus06.html:<index 606 seekdir>
+cplusplus06.html:<index 607 beg>
+cplusplus06.html:<index 608 cur>
+cplusplus06.html:<index 609 end>
+cplusplus06.html:<index 610 seek beyond file boundaries>
+cplusplus06.html:<index 611 failbit>
+cplusplus06.html:<index 612 ifstream>
+cplusplus06.html:<index 613 access files>
+cplusplus06.html:<index 614 fstream>
+cplusplus06.html:<index 615 iostream>
+cplusplus06.html:<index 616 ifstream constructors>
+cplusplus06.html:<index 617 open>
+cplusplus06.html:<index 618 close>
+cplusplus06.html:<index 619 ios::fail>
+cplusplus06.html:<index 620 is_open>
+cplusplus06.html:<index 621 true>
+cplusplus06.html:<index 622 streams: reading to memory>
+cplusplus06.html:<index 623 istringstream>
+cplusplus06.html:<index 624 sstream>
+cplusplus06.html:<index 625 istringstream>
+cplusplus06.html:<index 626 str>
+cplusplus06.html:<index 627 conversions: text to binary>
+cplusplus06.html:<index 628 atoi>
+cplusplus06.html:<index 629 file: copying>
+cplusplus06.html:<index 630 stream: processing>
+cplusplus06.html:<index 631 read first, test later>
+cplusplus06.html:<index 632 streambuf>
+cplusplus06.html:<index 633 inserting streambuf *>
+cplusplus06.html:<index 634 ostream coupling>
+cplusplus06.html:<index 635 ios>
+cplusplus06.html:<index 636 tie>
+cplusplus06.html:<index 637 input>
+cplusplus06.html:<index 638 output>
+cplusplus06.html:<index 639 cout>
+cplusplus06.html:<index 640 cin>
+cplusplus06.html:<index 641 cerr>
+cplusplus06.html:<index 642 cout>
+cplusplus06.html:<index 643 rdbuf>
+cplusplus06.html:<index 644 rdbuf>
+cplusplus06.html:<index 645 redirection>
+cplusplus06.html:<index 646 file descriptor>
+cplusplus06.html:<index 647 Unix>
+cplusplus06.html:<index 648 bash>
+cplusplus06.html:<index 649 stream: read and write>
+cplusplus06.html:<index 650 fstream>
+cplusplus06.html:<index 651 in>
+cplusplus06.html:<index 652 out>
+cplusplus06.html:<index 653 app>
+cplusplus06.html:<index 654 trunc>
+cplusplus06.html:<index 655 ate>
+cplusplus06.html:<index 656 MS-WINDOWS>
+cplusplus06.html:<index 657 DOS>
+cplusplus06.html:<index 658 text files>
+cplusplus06.html:<index 659 binary>
+cplusplus06.html:<index 660 binary file>
+cplusplus06.html:<index 661 Unix>
+cplusplus06.html:<index 662 binary file>
+cplusplus06.html:<index 663 streams: associating>
+cplusplus06.html:<index 664 ifstream>
+cplusplus06.html:<index 665 ofstream>
+cplusplus06.html:<index 666 istream>
+cplusplus06.html:<index 667 ostream>
+cplusplus07.html:<index 668 member function>
+cplusplus07.html:<index 669 interface>
+cplusplus07.html:<index 670 implementation>
+cplusplus07.html:<index 671 one definition rule>
+cplusplus07.html:<index 672 data members>
+cplusplus07.html:<index 673 access rights>
+cplusplus07.html:<index 674 accessor>
+cplusplus07.html:<index 675 data hiding>
+cplusplus07.html:<index 676 Lakos, J.>
+cplusplus07.html:<index 677 manipulators>
+cplusplus07.html:<index 678 Qt>
+cplusplus07.html:<index 679 http://www.trolltech.com>
+cplusplus07.html:<index 680 Graphical User Interface Toolkit>
+cplusplus07.html:<index 681 destructor>
+cplusplus07.html:<index 682 constructor: default>
+cplusplus07.html:<index 683 static object>
+cplusplus07.html:<index 684 object: static/global>
+cplusplus07.html:<index 685 constructor: default>
+cplusplus07.html:<index 686 interface functions>
+cplusplus07.html:<index 687 data hiding>
+cplusplus07.html:<index 688 encapsulation>
+cplusplus07.html:<index 689 accessor>
+cplusplus07.html:<index 690 member: const>
+cplusplus07.html:<index 691 const member>
+cplusplus07.html:<index 692 backdoors>
+cplusplus07.html:<index 693 factory function>
+cplusplus07.html:<index 694 ambiguity>
+cplusplus07.html:<index 695 composition>
+cplusplus07.html:<index 696 member initializer>
+cplusplus07.html:<index 697 rule of thumb>
+cplusplus07.html:<index 698 reference parameter>
+cplusplus07.html:<index 699 data member initializers>
+cplusplus07.html:<index 700 stat>
+cplusplus07.html:<index 701 constructor: delegation>
+cplusplus07.html:<index 702 delegating constructors>
+cplusplus07.html:<index 703 data member: initialization>
+cplusplus07.html:<index 704 C++11>
+cplusplus07.html:<index 705 initialization>
+cplusplus07.html:<index 706 initializer list>
+cplusplus07.html:<index 707 uniform initialization>
+cplusplus07.html:<index 708 initializer_list: header file>
+cplusplus07.html:<index 709 initializer_list>
+cplusplus07.html:<index 710 size>
+cplusplus07.html:<index 711 begin>
+cplusplus07.html:<index 712 end>
+cplusplus07.html:<index 713 copy construction>
+cplusplus07.html:<index 714 default>
+cplusplus07.html:<index 715 = default>
+cplusplus07.html:<index 716 trivial default constructor>
+cplusplus07.html:<index 717 delete>
+cplusplus07.html:<index 718 = delete>
+cplusplus07.html:<index 719 const member functions>
+cplusplus07.html:<index 720 function overloading>
+cplusplus07.html:<index 721 const-qualification>
+cplusplus07.html:<index 722 anonymous object>
+cplusplus07.html:<index 723 object: anonymous>
+cplusplus07.html:<index 724 lifetime: anonymous objects>
+cplusplus07.html:<index 725 anonymous object: lifetime>
+cplusplus07.html:<index 726 copy constructor>
+cplusplus07.html:<index 727 inline>
+cplusplus07.html:<index 728 inline>
+cplusplus07.html:<index 729 members: in-class>
+cplusplus07.html:<index 730 inline function>
+cplusplus07.html:<index 731 inline>
+cplusplus07.html:<index 732 rule of thumb>
+cplusplus07.html:<index 733 profiler>
+cplusplus07.html:<index 734 inline: disadvantage>
+cplusplus07.html:<index 735 inline: avoid!>
+cplusplus07.html:<index 736 vague linkage>
+cplusplus07.html:<index 737 out-of-line functions>
+cplusplus07.html:<index 738 classes: local>
+cplusplus07.html:<index 739 local class>
+cplusplus07.html:<index 740 nested functions>
+cplusplus07.html:<index 741 Pascal>
+cplusplus07.html:<index 742 inheritance>
+cplusplus07.html:<index 743 mutable>
+cplusplus07.html:<index 744 rule of thumb>
+cplusplus07.html:<index 745 header file>
+cplusplus07.html:<index 746 INCLUDE>
+cplusplus07.html:<index 747 forward class reference>
+cplusplus07.html:<index 748 class-type return values>
+cplusplus07.html:<index 749 class-type parameters>
+cplusplus07.html:<index 750 composition>
+cplusplus07.html:<index 751 forward declarations>
+cplusplus07.html:<index 752 Lakos, J.>
+cplusplus07.html:<index 753 INCLUDE>
+cplusplus07.html:<index 754 .ih extension>
+cplusplus07.html:<index 755 internal header>
+cplusplus07.html:<index 756 namespace>
+cplusplus07.html:<index 757 header file>
+cplusplus07.html:<index 758 using>
+cplusplus07.html:<index 759 library>
+cplusplus07.html:<index 760 rule of thumb>
+cplusplus07.html:<index 761 sizeof>
+cplusplus08.html:<index 762 common data fields>
+cplusplus08.html:<index 763 static>
+cplusplus08.html:<index 764 static members>
+cplusplus08.html:<index 765 virtual: vs static>
+cplusplus08.html:<index 766 this>
+cplusplus08.html:<index 767 static: data members>
+cplusplus08.html:<index 768 global variables>
+cplusplus08.html:<index 769 initialization: static data member>
+cplusplus08.html:<index 770 static data members: initialization>
+cplusplus08.html:<index 771 data.cc>
+cplusplus08.html:<index 772 size specification>
+cplusplus08.html:<index 773 public>
+cplusplus08.html:<index 774 data hiding>
+cplusplus08.html:<index 775 static data: const>
+cplusplus08.html:<index 776 -O0>
+cplusplus08.html:<index 777 O0>
+cplusplus08.html:<index 778 noopt>
+cplusplus08.html:<index 779 macro>
+cplusplus08.html:<index 780 preprocessor>
+cplusplus08.html:<index 781 NULL>
+cplusplus08.html:<index 782 const: generalized expression>
+cplusplus08.html:<index 783 generalized const expression>
+cplusplus08.html:<index 784 constexpr>
+cplusplus08.html:<index 785 function: constant-expression>
+cplusplus08.html:<index 786 constant-expression function>
+cplusplus08.html:<index 787 named constant expression>
+cplusplus08.html:<index 788 constant-expression constructor>
+cplusplus08.html:<index 789 user-defined literal>
+cplusplus08.html:<index 790 static member functions>
+cplusplus08.html:<index 791 static member functions>
+cplusplus08.html:<index 792 this>
+cplusplus08.html:<index 793 global function>
+cplusplus08.html:<index 794 static inline member functions>
+cplusplus08.html:<index 795 inline: static members>
+cplusplus08.html:<index 796 this>
+cplusplus08.html:<index 797 pointer to function>
+cplusplus08.html:<index 798 wrapper functions>
+cplusplus08.html:<index 799 call back>
+cplusplus08.html:<index 800 double pointers>
+cplusplus08.html:<index 801 qsort()>
+cplusplus09.html:<index 802 memory allocation>
+cplusplus09.html:<index 803 malloc>
+cplusplus09.html:<index 804 new>
+cplusplus09.html:<index 805 delete>
+cplusplus09.html:<index 806 sizeof>
+cplusplus09.html:<index 807 type safe>
+cplusplus09.html:<index 808 calloc>
+cplusplus09.html:<index 809 NULL>
+cplusplus09.html:<index 810 free>
+cplusplus09.html:<index 811 memory leaks>
+cplusplus09.html:<index 812 str...>
+cplusplus09.html:<index 813 strdup>
+cplusplus09.html:<index 814 common pool>
+cplusplus09.html:<index 815 new>
+cplusplus09.html:<index 816 delete>
+cplusplus09.html:<index 817 type safe>
+cplusplus09.html:<index 818 memory leak>
+cplusplus09.html:<index 819 0-pointer>
+cplusplus09.html:<index 820 malloc>
+cplusplus09.html:<index 821 allocate primitive types>
+cplusplus09.html:<index 822 object: allocation>
+cplusplus09.html:<index 823 allocate objects>
+cplusplus09.html:<index 824 initialization>
+cplusplus09.html:<index 825 raw memory>
+cplusplus09.html:<index 826 operator new(sizeInBytes)>
+cplusplus09.html:<index 827 new[]>
+cplusplus09.html:<index 828 allocate arrays>
+cplusplus09.html:<index 829 array: dynamic>
+cplusplus09.html:<index 830 dynamic arrays>
+cplusplus09.html:<index 831 memory: initialization>
+cplusplus09.html:<index 832 default constructor>
+cplusplus09.html:<index 833 array: 0-sized>
+cplusplus09.html:<index 834 new Type[0]>
+cplusplus09.html:<index 835 array: local>
+cplusplus09.html:<index 836 local arrays>
+cplusplus09.html:<index 837 array: fixed size>
+cplusplus09.html:<index 838 renew>
+cplusplus09.html:<index 839 array: enlarge>
+cplusplus09.html:<index 840 delete[]>
+cplusplus09.html:<index 841 new[]>
+cplusplus09.html:<index 842 memory leak>
+cplusplus09.html:<index 843 rule of thumb>
+cplusplus09.html:<index 844 new[]>
+cplusplus09.html:<index 845 array: fixed size>
+cplusplus09.html:<index 846 renew>
+cplusplus09.html:<index 847 raw memory>
+cplusplus09.html:<index 848 operator new>
+cplusplus09.html:<index 849 malloc>
+cplusplus09.html:<index 850 operator delete>
+cplusplus09.html:<index 851 free>
+cplusplus09.html:<index 852 placement new>
+cplusplus09.html:<index 853 new: placement>
+cplusplus09.html:<index 854 memory: header file>
+cplusplus09.html:<index 855 sizeof>
+cplusplus09.html:<index 856 destructor: explicit call>
+cplusplus09.html:<index 857 destructor>
+cplusplus09.html:<index 858 exit: avoid>
+cplusplus09.html:<index 859 destructor: main task>
+cplusplus09.html:<index 860 destructor: explicit call>
+cplusplus09.html:<index 861 malloc>
+cplusplus09.html:<index 862 free>
+cplusplus09.html:<index 863 delete[]>
+cplusplus09.html:<index 864 trivial destructor>
+cplusplus09.html:<index 865 memory leak>
+cplusplus09.html:<index 866 wrapper>
+cplusplus09.html:<index 867 bad_alloc>
+cplusplus09.html:<index 868 exception: bad_alloc>
+cplusplus09.html:<index 869 set_new_handler>
+cplusplus09.html:<index 870 Gnu>
+cplusplus09.html:<index 871 swap area>
+cplusplus09.html:<index 872 out of memory>
+cplusplus09.html:<index 873 run-time sypport system>
+cplusplus09.html:<index 874 strdup>
+cplusplus09.html:<index 875 malloc>
+cplusplus09.html:<index 876 realloc>
+cplusplus09.html:<index 877 strdupnew>
+cplusplus09.html:<index 878 strdup>
+cplusplus09.html:<index 879 pointers to deleted memory>
+cplusplus09.html:<index 880 wild pointer>
+cplusplus09.html:<index 881 object: assign>
+cplusplus09.html:<index 882 operator overloading>
+cplusplus09.html:<index 883 operator>
+cplusplus09.html:<index 884 this>
+cplusplus09.html:<index 885 object: address>
+cplusplus09.html:<index 886 address of objects>
+cplusplus09.html:<index 887 assignment: sequential>
+cplusplus09.html:<index 888 initialization>
+cplusplus09.html:<index 889 default constructor>
+cplusplus09.html:<index 890 copy constructor>
+cplusplus09.html:<index 891 trivial copy constructor>
+cplusplus09.html:<index 892 object: parameter>
+cplusplus09.html:<index 893 swap>
+cplusplus09.html:<index 894 memcpy>
+cplusplus09.html:<index 895 move semantics>
+cplusplus09.html:<index 896 class: move-aware>
+cplusplus09.html:<index 897 function: returning rvalue reference>
+cplusplus09.html:<index 898 rvalue reference return type>
+cplusplus09.html:<index 899 move constructor>
+cplusplus09.html:<index 900 resource: stealing>
+cplusplus09.html:<index 901 copy constructor: suppressed>
+cplusplus09.html:<index 902 std::move>
+cplusplus09.html:<index 903 anonymize>
+cplusplus09.html:<index 904 utility>
+cplusplus09.html:<index 905 move assignment>
+cplusplus09.html:<index 906 move-aware>
+cplusplus09.html:<index 907 factory functions>
+cplusplus09.html:<index 908 = default>
+cplusplus09.html:<index 909 default: =>
+cplusplus09.html:<index 910 move: design principle>
+cplusplus09.html:<index 911 copy elision>
+cplusplus09.html:<index 912 return value optimization>
+cplusplus09.html:<index 913 plain old data>
+cplusplus09.html:<index 914 pod>
+cplusplus09.html:<index 915 trivial default constructor>
+cplusplus09.html:<index 916 trivial member>
+cplusplus09.html:<index 917 trivial copy constructor>
+cplusplus09.html:<index 918 trivial overloaded assignment operator>
+cplusplus09.html:<index 919 trivial destructor>
+cplusplus09.html:<index 920 standard layout>
+cplusplus09.html:<index 921 standard-layout>
+cplusplus10.html:<index 922 error code>
+cplusplus10.html:<index 923 postponing decisions>
+cplusplus10.html:<index 924 exit>
+cplusplus10.html:<index 925 setjmp>
+cplusplus10.html:<index 926 longjmp>
+cplusplus10.html:<index 927 goto>
+cplusplus10.html:<index 928 flow-breaking methods>
+cplusplus10.html:<index 929 exceptions>
+cplusplus10.html:<index 930 non-local return>
+cplusplus10.html:<index 931 return>
+cplusplus10.html:<index 932 exit>
+cplusplus10.html:<index 933 syntactic elements>
+cplusplus10.html:<index 934 throw>
+cplusplus10.html:<index 935 global <code>try</code> block>
+cplusplus10.html:<index 936 catch>
+cplusplus10.html:<index 937 setjmp>
+cplusplus10.html:<index 938 longjmp>
+cplusplus10.html:<index 939 jmp_buf>
+cplusplus10.html:<index 940 setjmp>
+cplusplus10.html:<index 941 longjmp>
+cplusplus10.html:<index 942 exit>
+cplusplus10.html:<index 943 throw>
+cplusplus10.html:<index 944 throw: pointer>
+cplusplus10.html:<index 945 wild pointer>
+cplusplus10.html:<index 946 memory leak>
+cplusplus10.html:<index 947 throw: empty>
+cplusplus10.html:<index 948 textMsg>
+cplusplus10.html:<index 949 try>
+cplusplus10.html:<index 950 catch>
+cplusplus10.html:<index 951 memory leak>
+cplusplus10.html:<index 952 exception handler: order>
+cplusplus10.html:<index 953 void *>
+cplusplus10.html:<index 954 throw list>
+cplusplus10.html:<index 955 function throw list>
+cplusplus10.html:<index 956 exception specification list>
+cplusplus10.html:<index 957 empty function throw list>
+cplusplus10.html:<index 958 run-time error>
+cplusplus10.html:<index 959 bad_exception>
+cplusplus10.html:<index 960 ios::exceptions>
+cplusplus10.html:<index 961 exceptions (function)>
+cplusplus10.html:<index 962 iostate>
+cplusplus10.html:<index 963 state flags>
+cplusplus10.html:<index 964 iostate>
+cplusplus10.html:<index 965 failure class>
+cplusplus10.html:<index 966 exception class>
+cplusplus10.html:<index 967 what>
+cplusplus10.html:<index 968 stdexcept: header file>
+cplusplus10.html:<index 969 standard exceptions>
+cplusplus10.html:<index 970 exception: standard>
+cplusplus10.html:<index 971 exception class>
+cplusplus10.html:<index 972 what>
+cplusplus10.html:<index 973 bad_alloc>
+cplusplus10.html:<index 974 new: header file>
+cplusplus10.html:<index 975 operator new>
+cplusplus10.html:<index 976 bad_exception>
+cplusplus10.html:<index 977 exception: header file>
+cplusplus10.html:<index 978 throw list>
+cplusplus10.html:<index 979 function throw list>
+cplusplus10.html:<index 980 bad_cast>
+cplusplus10.html:<index 981 typeinfo: header file>
+cplusplus10.html:<index 982 bad_typeid>
+cplusplus10.html:<index 983 typeinfo: header file>
+cplusplus10.html:<index 984 domain_error>
+cplusplus10.html:<index 985 invalid_argument>
+cplusplus10.html:<index 986 length_error>
+cplusplus10.html:<index 987 logic_error>
+cplusplus10.html:<index 988 out_of_range>
+cplusplus10.html:<index 989 overflow_error>
+cplusplus10.html:<index 990 range_error>
+cplusplus10.html:<index 991 runtime_error>
+cplusplus10.html:<index 992 underflow_error>
+cplusplus10.html:<index 993 std::system_error>
+cplusplus10.html:<index 994 system_error: header file>
+cplusplus10.html:<index 995 error_code>
+cplusplus10.html:<index 996 error_category>
+cplusplus10.html:<index 997 enum class errc>
+cplusplus10.html:<index 998 errc>
+cplusplus10.html:<index 999 Exception (Bobcat)>
+cplusplus10.html:<index 1000 Bobcat library>
+cplusplus10.html:<index 1001 http://bobcat.sourceforge.net>
+cplusplus10.html:<index 1002 error_code>
+cplusplus10.html:<index 1003 system_error: header file>
+cplusplus10.html:<index 1004 error_category>
+cplusplus10.html:<index 1005 system_error: header file>
+cplusplus10.html:<index 1006 errno>
+cplusplus10.html:<index 1007 Singleton>
+cplusplus10.html:<index 1008 design patterns>
+cplusplus10.html:<index 1009 Gamma, E.>
+cplusplus10.html:<index 1010 Design Patterns>
+cplusplus10.html:<index 1011 name>
+cplusplus10.html:<index 1012 message>
+cplusplus10.html:<index 1013 default_error_condition>
+cplusplus10.html:<index 1014 equivalent>
+cplusplus10.html:<index 1015 generic_category>
+cplusplus10.html:<index 1016 system_category>
+cplusplus10.html:<index 1017 exception safe>
+cplusplus10.html:<index 1018 exception guarantees>
+cplusplus10.html:<index 1019 basic guarantee>
+cplusplus10.html:<index 1020 bad_alloc>
+cplusplus10.html:<index 1021 new: and exceptions>
+cplusplus10.html:<index 1022 exception: and new>
+cplusplus10.html:<index 1023 strong guarantee>
+cplusplus10.html:<index 1024 rule of thumb>
+cplusplus10.html:<index 1025 Sutter, H.>
+cplusplus10.html:<index 1026 Exceptional C++>
+cplusplus10.html:<index 1027 exception neutral>
+cplusplus10.html:<index 1028 rule of thumb>
+cplusplus10.html:<index 1029 nothrow guarantee>
+cplusplus10.html:<index 1030 swap>
+cplusplus10.html:<index 1031 memcpy>
+cplusplus10.html:<index 1032 function try block>
+cplusplus10.html:<index 1033 abort exception>
+cplusplus10.html:<index 1034 exception: replace>
+cplusplus10.html:<index 1035 exception: and constructors>
+cplusplus10.html:<index 1036 constructor: and exceptions>
+cplusplus10.html:<index 1037 destructor: and exceptions>
+cplusplus10.html:<index 1038 exception: and destructors>
+cplusplus11.html:<index 1039 operator overloading>
+cplusplus11.html:<index 1040 array bounds overflow>
+cplusplus11.html:<index 1041 index operator>
+cplusplus11.html:<index 1042 operator[]>
+cplusplus11.html:<index 1043 lvalue>
+cplusplus11.html:<index 1044 rvalue>
+cplusplus11.html:<index 1045 private backdoor>
+cplusplus11.html:<index 1046 insertion operator>
+cplusplus11.html:<index 1047 free function>
+cplusplus11.html:<index 1048 modifier>
+cplusplus11.html:<index 1049 &gt;&gt;>
+cplusplus11.html:<index 1050 operator&gt;&gt;>
+cplusplus11.html:<index 1051 char *>
+cplusplus11.html:<index 1052 accessor member function>
+cplusplus11.html:<index 1053 operator[]>
+cplusplus11.html:<index 1054 conversion operator>
+cplusplus11.html:<index 1055 rule of thumb>
+cplusplus11.html:<index 1056 ellipsis>
+cplusplus11.html:<index 1057 promotion>
+cplusplus11.html:<index 1058 explicit>
+cplusplus11.html:<index 1059 rule of thumb>
+cplusplus11.html:<index 1060 explicit: conversion operator>
+cplusplus11.html:<index 1061 conversion operator: explicit>
+cplusplus11.html:<index 1062 increment operator>
+cplusplus11.html:<index 1063 operator++>
+cplusplus11.html:<index 1064 decrement operator>
+cplusplus11.html:<index 1065 operator-->
+cplusplus11.html:<index 1066 rvalue>
+cplusplus11.html:<index 1067 lvalue>
+cplusplus11.html:<index 1068 wrapper class>
+cplusplus11.html:<index 1069 kludge>
+cplusplus11.html:<index 1070 operator+>
+cplusplus11.html:<index 1071 operator: free>
+cplusplus11.html:<index 1072 function: free>
+cplusplus11.html:<index 1073 operator new>
+cplusplus11.html:<index 1074 new>
+cplusplus11.html:<index 1075 void *>
+cplusplus11.html:<index 1076 size_t>
+cplusplus11.html:<index 1077 new[]>
+cplusplus11.html:<index 1078 this>
+cplusplus11.html:<index 1079 new: placement>
+cplusplus11.html:<index 1080 placement new>
+cplusplus11.html:<index 1081 delete>
+cplusplus11.html:<index 1082 operator delete>
+cplusplus11.html:<index 1083 void *>
+cplusplus11.html:<index 1084 ::>
+cplusplus11.html:<index 1085 scope resolution operator>
+cplusplus11.html:<index 1086 rule of thumb>
+cplusplus11.html:<index 1087 allocate memory>
+cplusplus11.html:<index 1088 deallocate memory>
+cplusplus11.html:<index 1089 pointers to objects>
+cplusplus11.html:<index 1090 operator new[]>
+cplusplus11.html:<index 1091 void *>
+cplusplus11.html:<index 1092 placement new>
+cplusplus11.html:<index 1093 operator delete[]>
+cplusplus11.html:<index 1094 placement new>
+cplusplus11.html:<index 1095 new[]: and exceptions>
+cplusplus11.html:<index 1096 exception: and new[]>
+cplusplus11.html:<index 1097 bad_alloc>
+cplusplus11.html:<index 1098 function call operator>
+cplusplus11.html:<index 1099 operator()>
+cplusplus11.html:<index 1100 function object>
+cplusplus11.html:<index 1101 functor>
+cplusplus11.html:<index 1102 pointer: to function>
+cplusplus11.html:<index 1103 predicate>
+cplusplus11.html:<index 1104 lsearch>
+cplusplus11.html:<index 1105 lsearch>
+cplusplus11.html:<index 1106 lineair search>
+cplusplus11.html:<index 1107 operator!=>
+cplusplus11.html:<index 1108 linear search>
+cplusplus11.html:<index 1109 peculiar syntax>
+cplusplus11.html:<index 1110 operator()>
+cplusplus11.html:<index 1111 inline>
+cplusplus11.html:<index 1112 stack operations>
+cplusplus11.html:<index 1113 manipulator>
+cplusplus11.html:<index 1114 field width>
+cplusplus11.html:<index 1115 return value>
+cplusplus11.html:<index 1116 reference>
+cplusplus11.html:<index 1117 ostream>
+cplusplus11.html:<index 1118 pointer to a function>
+cplusplus11.html:<index 1119 macro>
+cplusplus11.html:<index 1120 preprocessor>
+cplusplus11.html:<index 1121 manipulator: as objects>
+cplusplus11.html:<index 1122 macro>
+cplusplus11.html:<index 1123 preprocessor>
+cplusplus11.html:<index 1124 ostream>
+cplusplus11.html:<index 1125 anonymous object>
+cplusplus11.html:<index 1126 constructor>
+cplusplus11.html:<index 1127 enum values: and arithmetic operators>
+cplusplus11.html:<index 1128 user-defined literals>
+cplusplus11.html:<index 1129 extensible literals>
+cplusplus11.html:<index 1130 literal operator>
+cplusplus11.html:<index 1131 identifier: initial underscore>
+cplusplus11.html:<index 1132 overloadable operators>
+cplusplus11.html:<index 1133 operators: textual alternatives>
+cplusplus11.html:<index 1134 and>
+cplusplus11.html:<index 1135 operator and>
+cplusplus11.html:<index 1136 and_eq>
+cplusplus11.html:<index 1137 operator and_eq>
+cplusplus11.html:<index 1138 bitand>
+cplusplus11.html:<index 1139 operator bitand>
+cplusplus11.html:<index 1140 bitor>
+cplusplus11.html:<index 1141 operator bitor>
+cplusplus11.html:<index 1142 compl>
+cplusplus11.html:<index 1143 operator compl>
+cplusplus11.html:<index 1144 not>
+cplusplus11.html:<index 1145 operator not>
+cplusplus11.html:<index 1146 not_eq>
+cplusplus11.html:<index 1147 operator not_eq>
+cplusplus11.html:<index 1148 or>
+cplusplus11.html:<index 1149 operator or>
+cplusplus11.html:<index 1150 or_eq>
+cplusplus11.html:<index 1151 operator or_eq>
+cplusplus11.html:<index 1152 xor>
+cplusplus11.html:<index 1153 operator xor>
+cplusplus11.html:<index 1154 xor_eq>
+cplusplus11.html:<index 1155 operator xor_eq>
+cplusplus11.html:<index 1156 operator overloading: within classes only>
+cplusplus12.html:<index 1157 container>
+cplusplus12.html:<index 1158 pair container>
+cplusplus12.html:<index 1159 FIFO>
+cplusplus12.html:<index 1160 first in, first out>
+cplusplus12.html:<index 1161 first in, last out>
+cplusplus12.html:<index 1162 FILO>
+cplusplus12.html:<index 1163 LIFO>
+cplusplus12.html:<index 1164 basic operators of containers>
+cplusplus12.html:<index 1165 containers: basic operators>
+cplusplus12.html:<index 1166 operators: of containers>
+cplusplus12.html:<index 1167 overloaded assignment>
+cplusplus12.html:<index 1168 containers: equality tests>
+cplusplus12.html:<index 1169 ==>
+cplusplus12.html:<index 1170 !=>
+cplusplus12.html:<index 1171 equality operator>
+cplusplus12.html:<index 1172 inequality operator>
+cplusplus12.html:<index 1173 containers: ordering>
+cplusplus12.html:<index 1174 &lt;>
+cplusplus12.html:<index 1175 &lt;=>
+cplusplus12.html:<index 1176 &gt;>
+cplusplus12.html:<index 1177 &gt;=>
+cplusplus12.html:<index 1178 left-hand>
+cplusplus12.html:<index 1179 right-hand>
+cplusplus12.html:<index 1180 containers: data type requirements>
+cplusplus12.html:<index 1181 default constructor>
+cplusplus12.html:<index 1182 equality operator>
+cplusplus12.html:<index 1183 ==>
+cplusplus12.html:<index 1184 less-than operator>
+cplusplus12.html:<index 1185 &lt;>
+cplusplus12.html:<index 1186 max_size>
+cplusplus12.html:<index 1187 generic algorithms>
+cplusplus12.html:<index 1188 overview of generic algorithms>
+cplusplus12.html:<index 1189 iterators>
+cplusplus12.html:<index 1190 http://www.sgi.com/.../STL>
+cplusplus12.html:<index 1191 container: storing pointers>
+cplusplus12.html:<index 1192 memory leak>
+cplusplus12.html:<index 1193 containter: storing const data>
+cplusplus12.html:<index 1194 const data and containers>
+cplusplus12.html:<index 1195 container without angle brackets>
+cplusplus12.html:<index 1196 angle bracket notation>
+cplusplus12.html:<index 1197 Type>
+cplusplus12.html:<index 1198 generic type>
+cplusplus12.html:<index 1199 iterators>
+cplusplus12.html:<index 1200 pair container>
+cplusplus12.html:<index 1201 pair>
+cplusplus12.html:<index 1202 first>
+cplusplus12.html:<index 1203 second>
+cplusplus12.html:<index 1204 utility: header file>
+cplusplus12.html:<index 1205 anonymous pair>
+cplusplus12.html:<index 1206 right-hand>
+cplusplus12.html:<index 1207 anonymous variable: generic form>
+cplusplus12.html:<index 1208 angle bracket notation>
+cplusplus12.html:<index 1209 typedef>
+cplusplus12.html:<index 1210 pair&lt;type1, type2&gt;>
+cplusplus12.html:<index 1211 functionality>
+cplusplus12.html:<index 1212 generalized pair>
+cplusplus12.html:<index 1213 allocator>
+cplusplus12.html:<index 1214 address>
+cplusplus12.html:<index 1215 allocate>
+cplusplus12.html:<index 1216 construct>
+cplusplus12.html:<index 1217 destroy>
+cplusplus12.html:<index 1218 deallocate>
+cplusplus12.html:<index 1219 max_size>
+cplusplus12.html:<index 1220 array>
+cplusplus12.html:<index 1221 array: fixed-size>
+cplusplus12.html:<index 1222 fixed-size array>
+cplusplus12.html:<index 1223 array: header file>
+cplusplus12.html:<index 1224 array constructors>
+cplusplus12.html:<index 1225 containers: initialization>
+cplusplus12.html:<index 1226 initialization>
+cplusplus12.html:<index 1227 index operator>
+cplusplus12.html:<index 1228 array bounds>
+cplusplus12.html:<index 1229 array: member functions>
+cplusplus12.html:<index 1230 at>
+cplusplus12.html:<index 1231 back>
+cplusplus12.html:<index 1232 responsibility of the programmer>
+cplusplus12.html:<index 1233 begin>
+cplusplus12.html:<index 1234 iterator>
+cplusplus12.html:<index 1235 cbegin>
+cplusplus12.html:<index 1236 const_iterator>
+cplusplus12.html:<index 1237 cend>
+cplusplus12.html:<index 1238 const_iterator>
+cplusplus12.html:<index 1239 crbegin>
+cplusplus12.html:<index 1240 const_reverse_iterator>
+cplusplus12.html:<index 1241 crend>
+cplusplus12.html:<index 1242 const_reverse_iterator>
+cplusplus12.html:<index 1243 data>
+cplusplus12.html:<index 1244 empty>
+cplusplus12.html:<index 1245 end>
+cplusplus12.html:<index 1246 fill>
+cplusplus12.html:<index 1247 front>
+cplusplus12.html:<index 1248 rbegin>
+cplusplus12.html:<index 1249 reverse_iterator>
+cplusplus12.html:<index 1250 rend>
+cplusplus12.html:<index 1251 size>
+cplusplus12.html:<index 1252 swap>
+cplusplus12.html:<index 1253 vector>
+cplusplus12.html:<index 1254 array: expandable>
+cplusplus12.html:<index 1255 expandable array>
+cplusplus12.html:<index 1256 vector: header file>
+cplusplus12.html:<index 1257 vector constructors>
+cplusplus12.html:<index 1258 iterators>
+cplusplus12.html:<index 1259 range of values>
+cplusplus12.html:<index 1260 notation>
+cplusplus12.html:<index 1261 [begin, end)>
+cplusplus12.html:<index 1262 index operator>
+cplusplus12.html:<index 1263 automatic expansion>
+cplusplus12.html:<index 1264 array bounds>
+cplusplus12.html:<index 1265 vector: member functions>
+cplusplus12.html:<index 1266 assign>
+cplusplus12.html:<index 1267 at>
+cplusplus12.html:<index 1268 back>
+cplusplus12.html:<index 1269 responsibility of the programmer>
+cplusplus12.html:<index 1270 begin>
+cplusplus12.html:<index 1271 iterator>
+cplusplus12.html:<index 1272 capacity>
+cplusplus12.html:<index 1273 cbegin>
+cplusplus12.html:<index 1274 const_iterator>
+cplusplus12.html:<index 1275 cend>
+cplusplus12.html:<index 1276 const_iterator>
+cplusplus12.html:<index 1277 clear>
+cplusplus12.html:<index 1278 crbegin>
+cplusplus12.html:<index 1279 const_reverse_iterator>
+cplusplus12.html:<index 1280 crend>
+cplusplus12.html:<index 1281 const_reverse_iterator>
+cplusplus12.html:<index 1282 data>
+cplusplus12.html:<index 1283 emplace>
+cplusplus12.html:<index 1284 emplace_back>
+cplusplus12.html:<index 1285 empty>
+cplusplus12.html:<index 1286 end>
+cplusplus12.html:<index 1287 erase>
+cplusplus12.html:<index 1288 front>
+cplusplus12.html:<index 1289 get_allocator>
+cplusplus12.html:<index 1290 insert>
+cplusplus12.html:<index 1291 iterator range>
+cplusplus12.html:<index 1292 [first, beyond)>
+cplusplus12.html:<index 1293 max_size>
+cplusplus12.html:<index 1294 pop_back>
+cplusplus12.html:<index 1295 empty vector>
+cplusplus12.html:<index 1296 push_back>
+cplusplus12.html:<index 1297 rbegin>
+cplusplus12.html:<index 1298 reverse_iterator>
+cplusplus12.html:<index 1299 rend>
+cplusplus12.html:<index 1300 reserve>
+cplusplus12.html:<index 1301 resize>
+cplusplus12.html:<index 1302 default value>
+cplusplus12.html:<index 1303 shrink_to_fit>
+cplusplus12.html:<index 1304 size>
+cplusplus12.html:<index 1305 swap>
+cplusplus12.html:<index 1306 list>
+cplusplus12.html:<index 1307 list container>
+cplusplus12.html:<index 1308 list: header file>
+cplusplus12.html:<index 1309 list: traversal>
+cplusplus12.html:<index 1310 list: circular>
+cplusplus12.html:<index 1311 Aho, A.V.>
+cplusplus12.html:<index 1312 Hopcroft J.E.>
+cplusplus12.html:<index 1313 Ullman, J.D.>
+cplusplus12.html:<index 1314 Data Structures and Algorithms>
+cplusplus12.html:<index 1315 storing data>
+cplusplus12.html:<index 1316 rule of thumb>
+cplusplus12.html:<index 1317 random>
+cplusplus12.html:<index 1318 insertions>
+cplusplus12.html:<index 1319 deletions>
+cplusplus12.html:<index 1320 dynamic growth>
+cplusplus12.html:<index 1321 copy non-involved data>
+cplusplus12.html:<index 1322 profiler>
+cplusplus12.html:<index 1323 list constructors>
+cplusplus12.html:<index 1324 member functions>
+cplusplus12.html:<index 1325 assign>
+cplusplus12.html:<index 1326 back>
+cplusplus12.html:<index 1327 responsibility of the programmer>
+cplusplus12.html:<index 1328 begin>
+cplusplus12.html:<index 1329 iterator>
+cplusplus12.html:<index 1330 clear>
+cplusplus12.html:<index 1331 empty>
+cplusplus12.html:<index 1332 end>
+cplusplus12.html:<index 1333 erase>
+cplusplus12.html:<index 1334 front>
+cplusplus12.html:<index 1335 get_allocator>
+cplusplus12.html:<index 1336 insert>
+cplusplus12.html:<index 1337 iterator range>
+cplusplus12.html:<index 1338 [first, beyond)>
+cplusplus12.html:<index 1339 max_size>
+cplusplus12.html:<index 1340 merge>
+cplusplus12.html:<index 1341 pop_back>
+cplusplus12.html:<index 1342 empty list>
+cplusplus12.html:<index 1343 pop_front>
+cplusplus12.html:<index 1344 empty list>
+cplusplus12.html:<index 1345 push_back>
+cplusplus12.html:<index 1346 push_front>
+cplusplus12.html:<index 1347 rbegin>
+cplusplus12.html:<index 1348 reverse_iterator>
+cplusplus12.html:<index 1349 remove>
+cplusplus12.html:<index 1350 remove_if>
+cplusplus12.html:<index 1351 rend>
+cplusplus12.html:<index 1352 resize>
+cplusplus12.html:<index 1353 default value>
+cplusplus12.html:<index 1354 reverse>
+cplusplus12.html:<index 1355 size>
+cplusplus12.html:<index 1356 sort>
+cplusplus12.html:<index 1357 splice>
+cplusplus12.html:<index 1358 swap>
+cplusplus12.html:<index 1359 unique>
+cplusplus12.html:<index 1360 queue>
+cplusplus12.html:<index 1361 queue data structure>
+cplusplus12.html:<index 1362 queue: header file>
+cplusplus12.html:<index 1363 FIFO>
+cplusplus12.html:<index 1364 first in, first out>
+cplusplus12.html:<index 1365 queue>
+cplusplus12.html:<index 1366 member functions>
+cplusplus12.html:<index 1367 back>
+cplusplus12.html:<index 1368 responsibility of the programmer>
+cplusplus12.html:<index 1369 empty>
+cplusplus12.html:<index 1370 front>
+cplusplus12.html:<index 1371 pop>
+cplusplus12.html:<index 1372 push>
+cplusplus12.html:<index 1373 size>
+cplusplus12.html:<index 1374 priority_queue>
+cplusplus12.html:<index 1375 priority queue data structure>
+cplusplus12.html:<index 1376 queue: header file>
+cplusplus12.html:<index 1377 priority rules>
+cplusplus12.html:<index 1378 ASCII>
+cplusplus12.html:<index 1379 priority_queue>
+cplusplus12.html:<index 1380 copy constructor>
+cplusplus12.html:<index 1381 member functions>
+cplusplus12.html:<index 1382 empty>
+cplusplus12.html:<index 1383 pop>
+cplusplus12.html:<index 1384 push>
+cplusplus12.html:<index 1385 size>
+cplusplus12.html:<index 1386 top>
+cplusplus12.html:<index 1387 deque>
+cplusplus12.html:<index 1388 doubly ended queue>
+cplusplus12.html:<index 1389 deque: header file>
+cplusplus12.html:<index 1390 deque constructors>
+cplusplus12.html:<index 1391 index operator>
+cplusplus12.html:<index 1392 assign>
+cplusplus12.html:<index 1393 at>
+cplusplus12.html:<index 1394 back>
+cplusplus12.html:<index 1395 responsibility of the programmer>
+cplusplus12.html:<index 1396 begin>
+cplusplus12.html:<index 1397 iterator>
+cplusplus12.html:<index 1398 cbegin>
+cplusplus12.html:<index 1399 const_iterator>
+cplusplus12.html:<index 1400 cend>
+cplusplus12.html:<index 1401 const_iterator>
+cplusplus12.html:<index 1402 clear>
+cplusplus12.html:<index 1403 crbegin>
+cplusplus12.html:<index 1404 const_reverse_iterator>
+cplusplus12.html:<index 1405 crend>
+cplusplus12.html:<index 1406 const_reverse_iterator>
+cplusplus12.html:<index 1407 emplace>
+cplusplus12.html:<index 1408 emplace_back>
+cplusplus12.html:<index 1409 emplace_front>
+cplusplus12.html:<index 1410 empty>
+cplusplus12.html:<index 1411 end>
+cplusplus12.html:<index 1412 erase>
+cplusplus12.html:<index 1413 front>
+cplusplus12.html:<index 1414 get_allocator>
+cplusplus12.html:<index 1415 insert>
+cplusplus12.html:<index 1416 iterator range>
+cplusplus12.html:<index 1417 [first, beyond)>
+cplusplus12.html:<index 1418 max_size>
+cplusplus12.html:<index 1419 pop_back>
+cplusplus12.html:<index 1420 empty deque>
+cplusplus12.html:<index 1421 pop_front>
+cplusplus12.html:<index 1422 empty deque>
+cplusplus12.html:<index 1423 push_back>
+cplusplus12.html:<index 1424 push_front>
+cplusplus12.html:<index 1425 rbegin>
+cplusplus12.html:<index 1426 reverse_iterator>
+cplusplus12.html:<index 1427 rend>
+cplusplus12.html:<index 1428 resize>
+cplusplus12.html:<index 1429 default value>
+cplusplus12.html:<index 1430 shrink_to_fit>
+cplusplus12.html:<index 1431 size>
+cplusplus12.html:<index 1432 swap>
+cplusplus12.html:<index 1433 map>
+cplusplus12.html:<index 1434 associative array>
+cplusplus12.html:<index 1435 map: header file>
+cplusplus12.html:<index 1436 key/value>
+cplusplus12.html:<index 1437 key>
+cplusplus12.html:<index 1438 value>
+cplusplus12.html:<index 1439 operator&lt;>
+cplusplus12.html:<index 1440 value_type>
+cplusplus12.html:<index 1441 typedef>
+cplusplus12.html:<index 1442 map constructors>
+cplusplus12.html:<index 1443 nested container>
+cplusplus12.html:<index 1444 container: nested>
+cplusplus12.html:<index 1445 &gt;&gt;: with templates>
+cplusplus12.html:<index 1446 angle brackets: consecutive>
+cplusplus12.html:<index 1447 consecutive closing angle brackets>
+cplusplus12.html:<index 1448 C++11>
+cplusplus12.html:<index 1449 pair>
+cplusplus12.html:<index 1450 index operator>
+cplusplus12.html:<index 1451 at>
+cplusplus12.html:<index 1452 begin>
+cplusplus12.html:<index 1453 cbegin>
+cplusplus12.html:<index 1454 const_iterator>
+cplusplus12.html:<index 1455 cend>
+cplusplus12.html:<index 1456 const_iterator>
+cplusplus12.html:<index 1457 clear>
+cplusplus12.html:<index 1458 count>
+cplusplus12.html:<index 1459 crbegin>
+cplusplus12.html:<index 1460 reverse_iterator>
+cplusplus12.html:<index 1461 rend>
+cplusplus12.html:<index 1462 emplace>
+cplusplus12.html:<index 1463 emplace_hint>
+cplusplus12.html:<index 1464 empty>
+cplusplus12.html:<index 1465 end>
+cplusplus12.html:<index 1466 equal_range>
+cplusplus12.html:<index 1467 erase>
+cplusplus12.html:<index 1468 find>
+cplusplus12.html:<index 1469 get_allocator>
+cplusplus12.html:<index 1470 insert>
+cplusplus12.html:<index 1471 pair&lt;map::iterator, bool&gt;>
+cplusplus12.html:<index 1472 bool>
+cplusplus12.html:<index 1473 key_comp>
+cplusplus12.html:<index 1474 lower_bound>
+cplusplus12.html:<index 1475 max_size>
+cplusplus12.html:<index 1476 rbegin>
+cplusplus12.html:<index 1477 reverse_iterator>
+cplusplus12.html:<index 1478 rend>
+cplusplus12.html:<index 1479 size>
+cplusplus12.html:<index 1480 swap>
+cplusplus12.html:<index 1481 upper_bound>
+cplusplus12.html:<index 1482 value_comp>
+cplusplus12.html:<index 1483 multimap>
+cplusplus12.html:<index 1484 associative array>
+cplusplus12.html:<index 1485 map: header file>
+cplusplus12.html:<index 1486 index operator>
+cplusplus12.html:<index 1487 multimap: no operator[]>
+cplusplus12.html:<index 1488 count>
+cplusplus12.html:<index 1489 erase>
+cplusplus12.html:<index 1490 equal_range>
+cplusplus12.html:<index 1491 find>
+cplusplus12.html:<index 1492 insert>
+cplusplus12.html:<index 1493 set>
+cplusplus12.html:<index 1494 sorted collection of values>
+cplusplus12.html:<index 1495 set: header file>
+cplusplus12.html:<index 1496 value_type>
+cplusplus12.html:<index 1497 begin>
+cplusplus12.html:<index 1498 iterator>
+cplusplus12.html:<index 1499 clear>
+cplusplus12.html:<index 1500 count>
+cplusplus12.html:<index 1501 empty>
+cplusplus12.html:<index 1502 end>
+cplusplus12.html:<index 1503 equal_range>
+cplusplus12.html:<index 1504 erase>
+cplusplus12.html:<index 1505 find>
+cplusplus12.html:<index 1506 get_allocator>
+cplusplus12.html:<index 1507 insert>
+cplusplus12.html:<index 1508 pair&lt;set::iterator, bool&gt;>
+cplusplus12.html:<index 1509 bool>
+cplusplus12.html:<index 1510 iterator range>
+cplusplus12.html:<index 1511 [first, beyond)>
+cplusplus12.html:<index 1512 key_comp>
+cplusplus12.html:<index 1513 lower_bound>
+cplusplus12.html:<index 1514 max_size>
+cplusplus12.html:<index 1515 rbegin>
+cplusplus12.html:<index 1516 reverse_iterator>
+cplusplus12.html:<index 1517 rend>
+cplusplus12.html:<index 1518 size>
+cplusplus12.html:<index 1519 swap>
+cplusplus12.html:<index 1520 upper_bound>
+cplusplus12.html:<index 1521 value_comp>
+cplusplus12.html:<index 1522 multiset>
+cplusplus12.html:<index 1523 sorted collection of value>
+cplusplus12.html:<index 1524 set: header file>
+cplusplus12.html:<index 1525 count>
+cplusplus12.html:<index 1526 erase>
+cplusplus12.html:<index 1527 equal_range>
+cplusplus12.html:<index 1528 find>
+cplusplus12.html:<index 1529 insert>
+cplusplus12.html:<index 1530 multiset::iterator>
+cplusplus12.html:<index 1531 stack>
+cplusplus12.html:<index 1532 stack data structure>
+cplusplus12.html:<index 1533 stack: header file>
+cplusplus12.html:<index 1534 first in, last out>
+cplusplus12.html:<index 1535 FILO>
+cplusplus12.html:<index 1536 LIFO>
+cplusplus12.html:<index 1537 Reverse Polish Notation>
+cplusplus12.html:<index 1538 RPN>
+cplusplus12.html:<index 1539 token>
+cplusplus12.html:<index 1540 top>
+cplusplus12.html:<index 1541 stack constructors>
+cplusplus12.html:<index 1542 empty>
+cplusplus12.html:<index 1543 pop>
+cplusplus12.html:<index 1544 push>
+cplusplus12.html:<index 1545 size>
+cplusplus12.html:<index 1546 top>
+cplusplus12.html:<index 1547 responsibility of the programmer>
+cplusplus12.html:<index 1548 C++11>
+cplusplus12.html:<index 1549 unordered_map>
+cplusplus12.html:<index 1550 unordered_map: header file>
+cplusplus12.html:<index 1551 associative array>
+cplusplus12.html:<index 1552 operator&lt;>
+cplusplus12.html:<index 1553 hashing>
+cplusplus12.html:<index 1554 hash function>
+cplusplus12.html:<index 1555 bucket number>
+cplusplus12.html:<index 1556 hash value>
+cplusplus12.html:<index 1557 collision>
+cplusplus12.html:<index 1558 linear chaining>
+cplusplus12.html:<index 1559 efficiency>
+cplusplus12.html:<index 1560 unordered_map>
+cplusplus12.html:<index 1561 KeyType>
+cplusplus12.html:<index 1562 unordered_map::key_type>
+cplusplus12.html:<index 1563 ValueType>
+cplusplus12.html:<index 1564 unordered_map::mapped_type>
+cplusplus12.html:<index 1565 unordered_map::hasher>
+cplusplus12.html:<index 1566 unordered_map::key_equal>
+cplusplus12.html:<index 1567 operator==>
+cplusplus12.html:<index 1568 function object>
+cplusplus12.html:<index 1569 unordered_map: member functions>
+cplusplus12.html:<index 1570 at>
+cplusplus12.html:<index 1571 begin>
+cplusplus12.html:<index 1572 iterator>
+cplusplus12.html:<index 1573 bucket>
+cplusplus12.html:<index 1574 bucket_count>
+cplusplus12.html:<index 1575 bucket_size>
+cplusplus12.html:<index 1576 cbegin>
+cplusplus12.html:<index 1577 const_iterator>
+cplusplus12.html:<index 1578 cend>
+cplusplus12.html:<index 1579 const_iterator>
+cplusplus12.html:<index 1580 clear>
+cplusplus12.html:<index 1581 count>
+cplusplus12.html:<index 1582 emplace>
+cplusplus12.html:<index 1583 emplace_hint>
+cplusplus12.html:<index 1584 empty>
+cplusplus12.html:<index 1585 end>
+cplusplus12.html:<index 1586 equal_range>
+cplusplus12.html:<index 1587 erase>
+cplusplus12.html:<index 1588 find>
+cplusplus12.html:<index 1589 get_allocator>
+cplusplus12.html:<index 1590 hash_function>
+cplusplus12.html:<index 1591 insert>
+cplusplus12.html:<index 1592 key_equal>
+cplusplus12.html:<index 1593 load_factor>
+cplusplus12.html:<index 1594 max_bucket_count>
+cplusplus12.html:<index 1595 max_load_factor>
+cplusplus12.html:<index 1596 max_load_factor>
+cplusplus12.html:<index 1597 max_size>
+cplusplus12.html:<index 1598 rehash>
+cplusplus12.html:<index 1599 reserve>
+cplusplus12.html:<index 1600 size>
+cplusplus12.html:<index 1601 swap>
+cplusplus12.html:<index 1602 unordered_multimap>
+cplusplus12.html:<index 1603 count>
+cplusplus12.html:<index 1604 emplace>
+cplusplus12.html:<index 1605 emplace_hint>
+cplusplus12.html:<index 1606 equal_range>
+cplusplus12.html:<index 1607 find>
+cplusplus12.html:<index 1608 insert>
+cplusplus12.html:<index 1609 unordered_set>
+cplusplus12.html:<index 1610 unordered_set: header file>
+cplusplus12.html:<index 1611 unordered_set>
+cplusplus12.html:<index 1612 KeyType>
+cplusplus12.html:<index 1613 unordered_set::key_type>
+cplusplus12.html:<index 1614 unordered_set::hasher>
+cplusplus12.html:<index 1615 unordered_set::key_equal>
+cplusplus12.html:<index 1616 emplace>
+cplusplus12.html:<index 1617 emplace_hint>
+cplusplus12.html:<index 1618 erase>
+cplusplus12.html:<index 1619 unordered_multiset>
+cplusplus12.html:<index 1620 count>
+cplusplus12.html:<index 1621 emplace>
+cplusplus12.html:<index 1622 emplace_hint>
+cplusplus12.html:<index 1623 equal_range>
+cplusplus12.html:<index 1624 find>
+cplusplus12.html:<index 1625 insert>
+cplusplus12.html:<index 1626 C++11>
+cplusplus12.html:<index 1627 regular expressions>
+cplusplus12.html:<index 1628 regex: header file>
+cplusplus12.html:<index 1629 regcomp>
+cplusplus12.html:<index 1630 regexec>
+cplusplus12.html:<index 1631 Pattern>
+cplusplus12.html:<index 1632 Bobcat library>
+cplusplus12.html:<index 1633 http://bobcat.sourceforge.net>
+cplusplus12.html:<index 1634 Friedl, J.E.F>
+cplusplus12.html:<index 1635 regex>
+cplusplus12.html:<index 1636 regex_search>
+cplusplus12.html:<index 1637 cmatch>
+cplusplus12.html:<index 1638 regex_replace>
+cplusplus12.html:<index 1639 complex>
+cplusplus12.html:<index 1640 complex numbers>
+cplusplus12.html:<index 1641 complex: header file>
+cplusplus12.html:<index 1642 imaginary part>
+cplusplus12.html:<index 1643 real part>
+cplusplus12.html:<index 1644 scalar type>
+cplusplus12.html:<index 1645 operator+>
+cplusplus12.html:<index 1646 operator->
+cplusplus12.html:<index 1647 operator*>
+cplusplus12.html:<index 1648 operator/>
+cplusplus12.html:<index 1649 operator+=>
+cplusplus12.html:<index 1650 operator-=>
+cplusplus12.html:<index 1651 operator*=>
+cplusplus12.html:<index 1652 operator/=>
+cplusplus12.html:<index 1653 real>
+cplusplus12.html:<index 1654 real part>
+cplusplus12.html:<index 1655 imag>
+cplusplus12.html:<index 1656 imaginary part>
+cplusplus12.html:<index 1657 mathematical functions>
+cplusplus12.html:<index 1658 abs>
+cplusplus12.html:<index 1659 arg>
+cplusplus12.html:<index 1660 conj>
+cplusplus12.html:<index 1661 cos>
+cplusplus12.html:<index 1662 cosh>
+cplusplus12.html:<index 1663 exp>
+cplusplus12.html:<index 1664 log>
+cplusplus12.html:<index 1665 norm>
+cplusplus12.html:<index 1666 polar>
+cplusplus12.html:<index 1667 pow>
+cplusplus12.html:<index 1668 sin>
+cplusplus12.html:<index 1669 sinh>
+cplusplus12.html:<index 1670 sqrt>
+cplusplus12.html:<index 1671 operator&gt;&gt;>
+cplusplus12.html:<index 1672 operator&lt;&lt;>
+cplusplus12.html:<index 1673 ordered pair>
+cplusplus12.html:<index 1674 unrestricted unions>
+cplusplus12.html:<index 1675 tag>
+cplusplus13.html:<index 1676 hierarchy of code>
+cplusplus13.html:<index 1677 relationship between code and data>
+cplusplus13.html:<index 1678 composition>
+cplusplus13.html:<index 1679 derivation>
+cplusplus13.html:<index 1680 inheritance>
+cplusplus13.html:<index 1681 base class>
+cplusplus13.html:<index 1682 derived class>
+cplusplus13.html:<index 1683 problem analysis>
+cplusplus13.html:<index 1684 class hierarchy>
+cplusplus13.html:<index 1685 object hierarchy>
+cplusplus13.html:<index 1686 inheritance>
+cplusplus13.html:<index 1687 rule of thumb>
+cplusplus13.html:<index 1688 encapsulation>
+cplusplus13.html:<index 1689 data hiding>
+cplusplus13.html:<index 1690 rule of thumb>
+cplusplus13.html:<index 1691 recompilation>
+cplusplus13.html:<index 1692 nested derivation>
+cplusplus13.html:<index 1693 direct base class>
+cplusplus13.html:<index 1694 indirect base class>
+cplusplus13.html:<index 1695 protected>
+cplusplus13.html:<index 1696 data hiding>
+cplusplus13.html:<index 1697 private derivation: too restrictive>
+cplusplus13.html:<index 1698 protected derivation: too restrictive>
+cplusplus13.html:<index 1699 shadow member>
+cplusplus13.html:<index 1700 inheritance: access to base class member>
+cplusplus13.html:<index 1701 access promotion>
+cplusplus13.html:<index 1702 constructor: of derived classes>
+cplusplus13.html:<index 1703 default constructor>
+cplusplus13.html:<index 1704 base class initializer>
+cplusplus13.html:<index 1705 copy constructor>
+cplusplus13.html:<index 1706 move constructor>
+cplusplus13.html:<index 1707 inheritance: no derived class constructors>
+cplusplus13.html:<index 1708 construction: delegate to base classes>
+cplusplus13.html:<index 1709 destructor: derived class>
+cplusplus13.html:<index 1710 constructor: calling order>
+cplusplus13.html:<index 1711 destructor: calling order>
+cplusplus13.html:<index 1712 derived class destructor>
+cplusplus13.html:<index 1713 base class destructor>
+cplusplus13.html:<index 1714 hiding: base class  members>
+cplusplus13.html:<index 1715 base class: hiding members>
+cplusplus13.html:<index 1716 member function: called explicitly>
+cplusplus13.html:<index 1717 scope resolution operator>
+cplusplus13.html:<index 1718 derived class: using declaration>
+cplusplus13.html:<index 1719 using: in derived classes>
+cplusplus13.html:<index 1720 init>
+cplusplus13.html:<index 1721 single inheritance>
+cplusplus13.html:<index 1722 inheritance: multiple>
+cplusplus13.html:<index 1723 multiple inheritance>
+cplusplus13.html:<index 1724 composition>
+cplusplus13.html:<index 1725 Swiss army knife>
+cplusplus13.html:<index 1726 public>
+cplusplus13.html:<index 1727 private derivation>
+cplusplus13.html:<index 1728 constructor>
+cplusplus13.html:<index 1729 base class initializers: calling order>
+cplusplus13.html:<index 1730 calling order of base class initializers>
+cplusplus13.html:<index 1731 identically named member functions>
+cplusplus13.html:<index 1732 member functions: identically named>
+cplusplus13.html:<index 1733 scope resolution operator>
+cplusplus13.html:<index 1734 wrapper class>
+cplusplus13.html:<index 1735 assignment>
+cplusplus13.html:<index 1736 slicing>
+cplusplus13.html:<index 1737 assignment: refused>
+cplusplus13.html:<index 1738 implicit conversion>
+cplusplus13.html:<index 1739 derived class>
+cplusplus13.html:<index 1740 base class>
+cplusplus13.html:<index 1741 reference>
+cplusplus13.html:<index 1742 pointer in disguise>
+cplusplus13.html:<index 1743 pointer to an object>
+cplusplus13.html:<index 1744 type of the pointer>
+cplusplus13.html:<index 1745 available member functions>
+cplusplus13.html:<index 1746 member functions: available>
+cplusplus13.html:<index 1747 static_cast>
+cplusplus13.html:<index 1748 new[]: and non-default constructors>
+cplusplus13.html:<index 1749 double initialization>
+cplusplus13.html:<index 1750 derived class vs. base class size>
+cplusplus13.html:<index 1751 sizeof derived vs base classes>
+cplusplus13.html:<index 1752 local class>
+cplusplus13.html:<index 1753 classes: local>
+cplusplus13.html:<index 1754 mutex>
+cplusplus14.html:<index 1755 implemented-in-terms-of>
+cplusplus14.html:<index 1756 is-a>
+cplusplus14.html:<index 1757 polymorphism>
+cplusplus14.html:<index 1758 Liskov Substitution Principle>
+cplusplus14.html:<index 1759 LSP>
+cplusplus14.html:<index 1760 polymorphism>
+cplusplus14.html:<index 1761 late binding>
+cplusplus14.html:<index 1762 static binding>
+cplusplus14.html:<index 1763 early binding>
+cplusplus14.html:<index 1764 run-time>
+cplusplus14.html:<index 1765 compile-time>
+cplusplus14.html:<index 1766 early binding>
+cplusplus14.html:<index 1767 static binding>
+cplusplus14.html:<index 1768 compile-time>
+cplusplus14.html:<index 1769 late bining>
+cplusplus14.html:<index 1770 dynamic binding>
+cplusplus14.html:<index 1771 virtual member function>
+cplusplus14.html:<index 1772 virtual>
+cplusplus14.html:<index 1773 override>
+cplusplus14.html:<index 1774 user interface>
+cplusplus14.html:<index 1775 class hierarchy>
+cplusplus14.html:<index 1776 members: overriding>
+cplusplus14.html:<index 1777 overriding members>
+cplusplus14.html:<index 1778 destructor>
+cplusplus14.html:<index 1779 memory leak>
+cplusplus14.html:<index 1780 destructor: virtual>
+cplusplus14.html:<index 1781 virtual destructor>
+cplusplus14.html:<index 1782 empty destructor>
+cplusplus14.html:<index 1783 destructor: empty>
+cplusplus14.html:<index 1784 destructor: inline>
+cplusplus14.html:<index 1785 inline>
+cplusplus14.html:<index 1786 rule of thumb>
+cplusplus14.html:<index 1787 Java interface>
+cplusplus14.html:<index 1788 interface>
+cplusplus14.html:<index 1789 protocol>
+cplusplus14.html:<index 1790 class: abstract>
+cplusplus14.html:<index 1791 abstract classes>
+cplusplus14.html:<index 1792 design pattern>
+cplusplus14.html:<index 1793 Gamma, E.>
+cplusplus14.html:<index 1794 reusable software>
+cplusplus14.html:<index 1795 Template Method>
+cplusplus14.html:<index 1796 pure virtual functions>
+cplusplus14.html:<index 1797 = 0>
+cplusplus14.html:<index 1798 ostream>
+cplusplus14.html:<index 1799 virtual destructor>
+cplusplus14.html:<index 1800 const member functions>
+cplusplus14.html:<index 1801 non-constant member functions>
+cplusplus14.html:<index 1802 classes: without data members>
+cplusplus14.html:<index 1803 member function: pure virtual implementation>
+cplusplus14.html:<index 1804 pure virtual member: implementation>
+cplusplus14.html:<index 1805 final>
+cplusplus14.html:<index 1806 override>
+cplusplus14.html:<index 1807 ambiguity>
+cplusplus14.html:<index 1808 nested inheritance>
+cplusplus14.html:<index 1809 ambiguity>
+cplusplus14.html:<index 1810 scope resolution operator>
+cplusplus14.html:<index 1811 ambiguity>
+cplusplus14.html:<index 1812 base class: virtual>
+cplusplus14.html:<index 1813 virtual base class>
+cplusplus14.html:<index 1814 virtual derivation>
+cplusplus14.html:<index 1815 compile-time>
+cplusplus14.html:<index 1816 type identification: run-time>
+cplusplus14.html:<index 1817 Java>
+cplusplus14.html:<index 1818 static type checking>
+cplusplus14.html:<index 1819 static type identification>
+cplusplus14.html:<index 1820 dynamic cast>
+cplusplus14.html:<index 1821 typeid>
+cplusplus14.html:<index 1822 base class: converting to derived class>
+cplusplus14.html:<index 1823 down-casting>
+cplusplus14.html:<index 1824 typeid>
+cplusplus14.html:<index 1825 expression: actual type>
+cplusplus14.html:<index 1826 dynamic_cast&lt;&gt;>
+cplusplus14.html:<index 1827 base class: converting to derived class>
+cplusplus14.html:<index 1828 derived class>
+cplusplus14.html:<index 1829 down-casting>
+cplusplus14.html:<index 1830 run-time>
+cplusplus14.html:<index 1831 exception>
+cplusplus14.html:<index 1832 bad_cast>
+cplusplus14.html:<index 1833 dynamic_cast>
+cplusplus14.html:<index 1834 typeid>
+cplusplus14.html:<index 1835 typeinfo: header file>
+cplusplus14.html:<index 1836 class name>
+cplusplus14.html:<index 1837 expression: type of>
+cplusplus14.html:<index 1838 typeid: argument>
+cplusplus14.html:<index 1839 collating order>
+cplusplus14.html:<index 1840 bad_typeid>
+cplusplus14.html:<index 1841 Liskov Substitution Principle>
+cplusplus14.html:<index 1842 LSP>
+cplusplus14.html:<index 1843 is-a>
+cplusplus14.html:<index 1844 is-implemented-in-terms-of>
+cplusplus14.html:<index 1845 private inheritance>
+cplusplus14.html:<index 1846 bridge design pattern>
+cplusplus14.html:<index 1847 compiler firewal>
+cplusplus14.html:<index 1848 pimpl>
+cplusplus14.html:<index 1849 is-a>
+cplusplus14.html:<index 1850 base class: prototype>
+cplusplus14.html:<index 1851 streambuf>
+cplusplus14.html:<index 1852 chain of command>
+cplusplus14.html:<index 1853 reusable software>
+cplusplus14.html:<index 1854 TCP/IP stack>
+cplusplus14.html:<index 1855 streamsize>
+cplusplus14.html:<index 1856 streambuf: and exceptions>
+cplusplus14.html:<index 1857 exception: and streambuf>
+cplusplus14.html:<index 1858 in_avail>
+cplusplus14.html:<index 1859 sbumpc>
+cplusplus14.html:<index 1860 uflow>
+cplusplus14.html:<index 1861 sgetc>
+cplusplus14.html:<index 1862 sgetn>
+cplusplus14.html:<index 1863 xsgetn>
+cplusplus14.html:<index 1864 snextc>
+cplusplus14.html:<index 1865 sputback>
+cplusplus14.html:<index 1866 sungetc>
+cplusplus14.html:<index 1867 pubsync>
+cplusplus14.html:<index 1868 sputc>
+cplusplus14.html:<index 1869 overflow>
+cplusplus14.html:<index 1870 sputn>
+cplusplus14.html:<index 1871 xsputn>
+cplusplus14.html:<index 1872 pubseekoff>
+cplusplus14.html:<index 1873 seekdir>
+cplusplus14.html:<index 1874 pubseekpos>
+cplusplus14.html:<index 1875 absolute position>
+cplusplus14.html:<index 1876 pubsetbuf>
+cplusplus14.html:<index 1877 buffer>
+cplusplus14.html:<index 1878 data members>
+cplusplus14.html:<index 1879 member functions>
+cplusplus14.html:<index 1880 data hiding>
+cplusplus14.html:<index 1881 eback>
+cplusplus14.html:<index 1882 egptr>
+cplusplus14.html:<index 1883 gbump>
+cplusplus14.html:<index 1884 gptr>
+cplusplus14.html:<index 1885 pbackfail>
+cplusplus14.html:<index 1886 setg>
+cplusplus14.html:<index 1887 showmanyc>
+cplusplus14.html:<index 1888 uflow>
+cplusplus14.html:<index 1889 underflow>
+cplusplus14.html:<index 1890 split buffer>
+cplusplus14.html:<index 1891 xsgetn>
+cplusplus14.html:<index 1892 overflow>
+cplusplus14.html:<index 1893 default implementation>
+cplusplus14.html:<index 1894 pbase>
+cplusplus14.html:<index 1895 pptr>
+cplusplus14.html:<index 1896 pbump>
+cplusplus14.html:<index 1897 pptr>
+cplusplus14.html:<index 1898 setp>
+cplusplus14.html:<index 1899 no buffering>
+cplusplus14.html:<index 1900 xsputn>
+cplusplus14.html:<index 1901 setbuf>
+cplusplus14.html:<index 1902 seekoff>
+cplusplus14.html:<index 1903 cur>
+cplusplus14.html:<index 1904 beg>
+cplusplus14.html:<index 1905 end>
+cplusplus14.html:<index 1906 pubseekoff>
+cplusplus14.html:<index 1907 seekpos>
+cplusplus14.html:<index 1908 sync>
+cplusplus14.html:<index 1909 filebuf>
+cplusplus14.html:<index 1910 stream>
+cplusplus14.html:<index 1911 fstream: header file>
+cplusplus14.html:<index 1912 filebuf>
+cplusplus14.html:<index 1913 is_open>
+cplusplus14.html:<index 1914 open>
+cplusplus14.html:<index 1915 openmode>
+cplusplus14.html:<index 1916 close>
+cplusplus14.html:<index 1917 polymorphism>
+cplusplus14.html:<index 1918 terminate>
+cplusplus14.html:<index 1919 polymorphism: how>
+cplusplus14.html:<index 1920 hidden data member>
+cplusplus14.html:<index 1921 vpointer>
+cplusplus14.html:<index 1922 vtable>
+cplusplus14.html:<index 1923 memory consumption>
+cplusplus14.html:<index 1924 multiple inheritance: vtable>
+cplusplus14.html:<index 1925 vtable: and multiple inheritance>
+cplusplus14.html:<index 1926 undefined reference to vtable>
+cplusplus14.html:<index 1927 vtable: undefined reference>
+cplusplus14.html:<index 1928 virtual constructor>
+cplusplus14.html:<index 1929 Gamma, E.>
+cplusplus14.html:<index 1930 Prototype design pattern>
+cplusplus14.html:<index 1931 design pattern: Prototype>
+cplusplus14.html:<index 1932 abstract base class>
+cplusplus15.html:<index 1933 encapsulation>
+cplusplus15.html:<index 1934 data hiding>
+cplusplus15.html:<index 1935 data integrity>
+cplusplus15.html:<index 1936 implementation dependent>
+cplusplus15.html:<index 1937 friend>
+cplusplus15.html:<index 1938 friendship among classes>
+cplusplus15.html:<index 1939 class: concept defined>
+cplusplus15.html:<index 1940 class: externally declared functions>
+cplusplus15.html:<index 1941 friend: function declaration>
+cplusplus15.html:<index 1942 extended friend>
+cplusplus15.html:<index 1943 friend: extended declaration>
+cplusplus16.html:<index 1944 pointer to members>
+cplusplus16.html:<index 1945 pointer to members>
+cplusplus16.html:<index 1946 scope: global>
+cplusplus16.html:<index 1947 global scope>
+cplusplus16.html:<index 1948 scope: class>
+cplusplus16.html:<index 1949 class scope>
+cplusplus16.html:<index 1950 pointer to members: defining>
+cplusplus16.html:<index 1951 pointer: to a data member>
+cplusplus16.html:<index 1952 rule of thumb>
+cplusplus16.html:<index 1953 relative address>
+cplusplus16.html:<index 1954 pointer to members: assignment>
+cplusplus16.html:<index 1955 assignment: pointer to members>
+cplusplus16.html:<index 1956 pointer to members: virtual members>
+cplusplus16.html:<index 1957 field selector>
+cplusplus16.html:<index 1958 -&gt;>
+cplusplus16.html:<index 1959 pointer to member field selector>
+cplusplus16.html:<index 1960 .*>
+cplusplus16.html:<index 1961 -&gt;*>
+cplusplus16.html:<index 1962 static: members>
+cplusplus16.html:<index 1963 size: of pointers to members>
+cplusplus16.html:<index 1964 pointer to members: size of>
+cplusplus17.html:<index 1965 nested class>
+cplusplus17.html:<index 1966 string::iterator>
+cplusplus17.html:<index 1967 iterator>
+cplusplus17.html:<index 1968 member: class as member>
+cplusplus17.html:<index 1969 visibility: nested classes>
+cplusplus17.html:<index 1970 inline member functions>
+cplusplus17.html:<index 1971 fully qualified name: nested class members>
+cplusplus17.html:<index 1972 nested class: static members>
+cplusplus17.html:<index 1973 nested class: declaration>
+cplusplus17.html:<index 1974 friend: nested classes>
+cplusplus17.html:<index 1975 nested class: member access>
+cplusplus17.html:<index 1976 forward declaration>
+cplusplus17.html:<index 1977 friend: as forward declaration>
+cplusplus17.html:<index 1978 enumeration: nested>
+cplusplus17.html:<index 1979 nested enumerations>
+cplusplus17.html:<index 1980 ios>
+cplusplus17.html:<index 1981 Gnu>
+cplusplus17.html:<index 1982 seek_dir>
+cplusplus17.html:<index 1983 type: without values>
+cplusplus17.html:<index 1984 empty enum>
+cplusplus17.html:<index 1985 catch: empty enum>
+cplusplus17.html:<index 1986 class>
+cplusplus18.html:<index 1987 Standard Template Library>
+cplusplus18.html:<index 1988 STL>
+cplusplus18.html:<index 1989 template>
+cplusplus18.html:<index 1990 allocator class>
+cplusplus18.html:<index 1991 standard namespace: and STL>
+cplusplus18.html:<index 1992 angle bracket notation>
+cplusplus18.html:<index 1993 functional: header file>
+cplusplus18.html:<index 1994 constructor>
+cplusplus18.html:<index 1995 inline>
+cplusplus18.html:<index 1996 strcasecmp>
+cplusplus18.html:<index 1997 inline>
+cplusplus18.html:<index 1998 predefined function object>
+cplusplus18.html:<index 1999 function adaptors>
+cplusplus18.html:<index 2000 function object: arithmetic>
+cplusplus18.html:<index 2001 arithmetic function object>
+cplusplus18.html:<index 2002 arithmetic operations>
+cplusplus18.html:<index 2003 plus>
+cplusplus18.html:<index 2004 operator+>
+cplusplus18.html:<index 2005 anonymous>
+cplusplus18.html:<index 2006 plus>
+cplusplus18.html:<index 2007 operator+>
+cplusplus18.html:<index 2008 minus>
+cplusplus18.html:<index 2009 operator->
+cplusplus18.html:<index 2010 multiplies>
+cplusplus18.html:<index 2011 operator*>
+cplusplus18.html:<index 2012 divides>
+cplusplus18.html:<index 2013 operator/>
+cplusplus18.html:<index 2014 modulus>
+cplusplus18.html:<index 2015 operator%>
+cplusplus18.html:<index 2016 negate>
+cplusplus18.html:<index 2017 transform>
+cplusplus18.html:<index 2018 function object: relational>
+cplusplus18.html:<index 2019 relational function object>
+cplusplus18.html:<index 2020 equal_to>
+cplusplus18.html:<index 2021 operator==>
+cplusplus18.html:<index 2022 not_equal_to>
+cplusplus18.html:<index 2023 operator!=>
+cplusplus18.html:<index 2024 greater>
+cplusplus18.html:<index 2025 operator&gt;>
+cplusplus18.html:<index 2026 greater_equal>
+cplusplus18.html:<index 2027 operator&gt;=>
+cplusplus18.html:<index 2028 less>
+cplusplus18.html:<index 2029 operator&lt;>
+cplusplus18.html:<index 2030 less_equal>
+cplusplus18.html:<index 2031 operator&lt;=>
+cplusplus18.html:<index 2032 sort>
+cplusplus18.html:<index 2033 logical operators>
+cplusplus18.html:<index 2034 function object: logical>
+cplusplus18.html:<index 2035 logical function object>
+cplusplus18.html:<index 2036 logical_and>
+cplusplus18.html:<index 2037 operator&amp;&amp;>
+cplusplus18.html:<index 2038 logical_or>
+cplusplus18.html:<index 2039 operator||>
+cplusplus18.html:<index 2040 logical_not>
+cplusplus18.html:<index 2041 transform>
+cplusplus18.html:<index 2042 function adaptor>
+cplusplus18.html:<index 2043 binder>
+cplusplus18.html:<index 2044 binary function object>
+cplusplus18.html:<index 2045 unary function object>
+cplusplus18.html:<index 2046 bind1st>
+cplusplus18.html:<index 2047 bind2nd>
+cplusplus18.html:<index 2048 count_if>
+cplusplus18.html:<index 2049 predicate function>
+cplusplus18.html:<index 2050 true>
+cplusplus18.html:<index 2051 negators>
+cplusplus18.html:<index 2052 negator function>
+cplusplus18.html:<index 2053 not1>
+cplusplus18.html:<index 2054 not2>
+cplusplus18.html:<index 2055 binary predicate>
+cplusplus18.html:<index 2056 adaptor: object to iterator>
+cplusplus18.html:<index 2057 iterator: header file>
+cplusplus18.html:<index 2058 iterator>
+cplusplus18.html:<index 2059 reversed_iterator>
+cplusplus18.html:<index 2060 vector>
+cplusplus18.html:<index 2061 deque>
+cplusplus18.html:<index 2062 iterator>
+cplusplus18.html:<index 2063 begin>
+cplusplus18.html:<index 2064 end>
+cplusplus18.html:<index 2065 rbegin>
+cplusplus18.html:<index 2066 rend>
+cplusplus18.html:<index 2067 iterator: range>
+cplusplus18.html:<index 2068 [left, right)>
+cplusplus18.html:<index 2069 iterator: to const elements>
+cplusplus18.html:<index 2070 const_iterator>
+cplusplus18.html:<index 2071 pointers: as iterators>
+cplusplus18.html:<index 2072 iterator: types>
+cplusplus18.html:<index 2073 iterator: requirements>
+cplusplus18.html:<index 2074 operator==>
+cplusplus18.html:<index 2075 operator!=>
+cplusplus18.html:<index 2076 operator++>
+cplusplus18.html:<index 2077 operator*>
+cplusplus18.html:<index 2078 InputIterator>
+cplusplus18.html:<index 2079 rvalue>
+cplusplus18.html:<index 2080 InputIterator1>
+cplusplus18.html:<index 2081 InputIterator2>
+cplusplus18.html:<index 2082 OutputIterator>
+cplusplus18.html:<index 2083 lvalue>
+cplusplus18.html:<index 2084 ForwardIterator>
+cplusplus18.html:<index 2085 BidirectionalIterator>
+cplusplus18.html:<index 2086 RandomAccessIterator>
+cplusplus18.html:<index 2087 random access>
+cplusplus18.html:<index 2088 inserter>
+cplusplus18.html:<index 2089 adaptor: inserter>
+cplusplus18.html:<index 2090 back_inserter>
+cplusplus18.html:<index 2091 push_back>
+cplusplus18.html:<index 2092 front_inserter>
+cplusplus18.html:<index 2093 push_front>
+cplusplus18.html:<index 2094 inserter>
+cplusplus18.html:<index 2095 insert>
+cplusplus18.html:<index 2096 adaptor: required typedefs>
+cplusplus18.html:<index 2097 inserter: required typedefs>
+cplusplus18.html:<index 2098 inserter: and non-STL classes>
+cplusplus18.html:<index 2099 istream_iterator>
+cplusplus18.html:<index 2100 istream: iterator>
+cplusplus18.html:<index 2101 end-of-stream>
+cplusplus18.html:<index 2102 anonymous>
+cplusplus18.html:<index 2103 streambuf>
+cplusplus18.html:<index 2104 istreambuf_iterator>
+cplusplus18.html:<index 2105 end-of-stream>
+cplusplus18.html:<index 2106 ostream_iterator>
+cplusplus18.html:<index 2107 ostream: iterator>
+cplusplus18.html:<index 2108 delimiter>
+cplusplus18.html:<index 2109 skipws>
+cplusplus18.html:<index 2110 streambuf>
+cplusplus18.html:<index 2111 ostreambuf_iterator>
+cplusplus18.html:<index 2112 istreambuf_iterator>
+cplusplus18.html:<index 2113 memory: header file>
+cplusplus18.html:<index 2114 memory leak>
+cplusplus18.html:<index 2115 unique_ptr>
+cplusplus18.html:<index 2116 pointer: wild>
+cplusplus18.html:<index 2117 auto_ptr: deprecated>
+cplusplus18.html:<index 2118 unique_ptr: defining>
+cplusplus18.html:<index 2119 deleter>
+cplusplus18.html:<index 2120 unique_ptr: default>
+cplusplus18.html:<index 2121 unique_ptr: 0-pointer>
+cplusplus18.html:<index 2122 get>
+cplusplus18.html:<index 2123 unique_ptr: move constructor>
+cplusplus18.html:<index 2124 unique_ptr: assignment>
+cplusplus18.html:<index 2125 segmentation fault>
+cplusplus18.html:<index 2126 unique_ptr: initialization>
+cplusplus18.html:<index 2127 deleter>
+cplusplus18.html:<index 2128 unique_ptr: used type>
+cplusplus18.html:<index 2129 unique_ptr: reaching members>
+cplusplus18.html:<index 2130 unique_ptr: operators>
+cplusplus18.html:<index 2131 operator=>
+cplusplus18.html:<index 2132 rvalue>
+cplusplus18.html:<index 2133 lvalue>
+cplusplus18.html:<index 2134 move>
+cplusplus18.html:<index 2135 operator bool>
+cplusplus18.html:<index 2136 operator*>
+cplusplus18.html:<index 2137 operator-&gt;>
+cplusplus18.html:<index 2138 member function>
+cplusplus18.html:<index 2139 get>
+cplusplus18.html:<index 2140 get_deleter>
+cplusplus18.html:<index 2141 release>
+cplusplus18.html:<index 2142 responsibility of the programmer>
+cplusplus18.html:<index 2143 reset>
+cplusplus18.html:<index 2144 swap>
+cplusplus18.html:<index 2145 auto_ptr>
+cplusplus18.html:<index 2146 move semantics>
+cplusplus18.html:<index 2147 shared_ptr>
+cplusplus18.html:<index 2148 memory: header file>
+cplusplus18.html:<index 2149 shared_ptr: defining>
+cplusplus18.html:<index 2150 deleter>
+cplusplus18.html:<index 2151 shared_ptr: default>
+cplusplus18.html:<index 2152 shared_ptr: 0-pointer>
+cplusplus18.html:<index 2153 get>
+cplusplus18.html:<index 2154 shared_ptr: initialization>
+cplusplus18.html:<index 2155 deleter>
+cplusplus18.html:<index 2156 shared_ptr: used type>
+cplusplus18.html:<index 2157 shared_ptr: operators>
+cplusplus18.html:<index 2158 operator=>
+cplusplus18.html:<index 2159 operator=>
+cplusplus18.html:<index 2160 operator bool>
+cplusplus18.html:<index 2161 operator*>
+cplusplus18.html:<index 2162 operator-&gt;>
+cplusplus18.html:<index 2163 member function>
+cplusplus18.html:<index 2164 get>
+cplusplus18.html:<index 2165 get_deleter>
+cplusplus18.html:<index 2166 reset>
+cplusplus18.html:<index 2167 swap>
+cplusplus18.html:<index 2168 unique>
+cplusplus18.html:<index 2169 use_count>
+cplusplus18.html:<index 2170 double free>
+cplusplus18.html:<index 2171 static_pointer_cast>
+cplusplus18.html:<index 2172 const_pointer_cast>
+cplusplus18.html:<index 2173 dynamic_pointer_cast>
+cplusplus18.html:<index 2174 make_shared>
+cplusplus18.html:<index 2175 memory: header file>
+cplusplus18.html:<index 2176 class: having pointers>
+cplusplus18.html:<index 2177 pointer: wild>
+cplusplus18.html:<index 2178 memory leak>
+cplusplus18.html:<index 2179 rule of thumb>
+cplusplus18.html:<index 2180 chrono: header file>
+cplusplus18.html:<index 2181 num>
+cplusplus18.html:<index 2182 den>
+cplusplus18.html:<index 2183 ratio: header file>
+cplusplus18.html:<index 2184 chrono: header file>
+cplusplus18.html:<index 2185 ratio: num>
+cplusplus18.html:<index 2186 ratio: den>
+cplusplus18.html:<index 2187 yocto>
+cplusplus18.html:<index 2188 zepto>
+cplusplus18.html:<index 2189 atto>
+cplusplus18.html:<index 2190 femto>
+cplusplus18.html:<index 2191 pico>
+cplusplus18.html:<index 2192 nano>
+cplusplus18.html:<index 2193 micro>
+cplusplus18.html:<index 2194 milli>
+cplusplus18.html:<index 2195 centi>
+cplusplus18.html:<index 2196 deci>
+cplusplus18.html:<index 2197 deca>
+cplusplus18.html:<index 2198 hecto>
+cplusplus18.html:<index 2199 kilo>
+cplusplus18.html:<index 2200 mega>
+cplusplus18.html:<index 2201 giga>
+cplusplus18.html:<index 2202 tera>
+cplusplus18.html:<index 2203 peta>
+cplusplus18.html:<index 2204 exa>
+cplusplus18.html:<index 2205 zetta>
+cplusplus18.html:<index 2206 yotta>
+cplusplus18.html:<index 2207 duration>
+cplusplus18.html:<index 2208 chrono: header file>
+cplusplus18.html:<index 2209 ratio: header file>
+cplusplus18.html:<index 2210 int64_t>
+cplusplus18.html:<index 2211 nanoseconds>
+cplusplus18.html:<index 2212 microseconds>
+cplusplus18.html:<index 2213 milliseconds>
+cplusplus18.html:<index 2214 seconds>
+cplusplus18.html:<index 2215 minutes>
+cplusplus18.html:<index 2216 hours>
+cplusplus18.html:<index 2217 rep>
+cplusplus18.html:<index 2218 period>
+cplusplus18.html:<index 2219 count>
+cplusplus18.html:<index 2220 period>
+cplusplus18.html:<index 2221 zero>
+cplusplus18.html:<index 2222 min>
+cplusplus18.html:<index 2223 max>
+cplusplus18.html:<index 2224 clock>
+cplusplus18.html:<index 2225 chrono: header file>
+cplusplus18.html:<index 2226 ratio: header file>
+cplusplus18.html:<index 2227 duration>
+cplusplus18.html:<index 2228 period>
+cplusplus18.html:<index 2229 rep>
+cplusplus18.html:<index 2230 time_point>
+cplusplus18.html:<index 2231 clock: now>
+cplusplus18.html:<index 2232 system_clock>
+cplusplus18.html:<index 2233 system_clock: to_time_t>
+cplusplus18.html:<index 2234 system_clock: from_time_t>
+cplusplus18.html:<index 2235 steady_clock>
+cplusplus18.html:<index 2236 high_resolution_clock>
+cplusplus18.html:<index 2237 time_point>
+cplusplus18.html:<index 2238 chrono: header file>
+cplusplus18.html:<index 2239 ratio: header file>
+cplusplus18.html:<index 2240 epoch>
+cplusplus18.html:<index 2241 time_since_epoch>
+cplusplus18.html:<index 2242 min>
+cplusplus18.html:<index 2243 max>
+cplusplus18.html:<index 2244 multi threading>
+cplusplus18.html:<index 2245 Nichols, B>
+cplusplus18.html:<index 2246 Pthreads Programming>
+cplusplus18.html:<index 2247 http://oreilly.com/catalog/>
+cplusplus18.html:<index 2248 multi threading: using g++>
+cplusplus18.html:<index 2249 compiler flag: -pthread>
+cplusplus18.html:<index 2250 multi threading: -pthread>
+cplusplus18.html:<index 2251 namespace this_thread>
+cplusplus18.html:<index 2252 this_thread>
+cplusplus18.html:<index 2253 get_id>
+cplusplus18.html:<index 2254 yield>
+cplusplus18.html:<index 2255 sleep_for>
+cplusplus18.html:<index 2256 sleep_until>
+cplusplus18.html:<index 2257 thread>
+cplusplus18.html:<index 2258 thread: header file>
+cplusplus18.html:<index 2259 thread: detached>
+cplusplus18.html:<index 2260 move constructible>
+cplusplus18.html:<index 2261 detach>
+cplusplus18.html:<index 2262 get_id>
+cplusplus18.html:<index 2263 join>
+cplusplus18.html:<index 2264 joinable>
+cplusplus18.html:<index 2265 swap>
+cplusplus18.html:<index 2266 local context>
+cplusplus18.html:<index 2267 mutex>
+cplusplus18.html:<index 2268 mutex: header file>
+cplusplus18.html:<index 2269 context switch>
+cplusplus18.html:<index 2270 recursive_mutex>
+cplusplus18.html:<index 2271 timed_mutex>
+cplusplus18.html:<index 2272 recursive_timed_mutex>
+cplusplus18.html:<index 2273 lock>
+cplusplus18.html:<index 2274 lock count>
+cplusplus18.html:<index 2275 try_lock>
+cplusplus18.html:<index 2276 lock count>
+cplusplus18.html:<index 2277 unlock>
+cplusplus18.html:<index 2278 try_lock_for>
+cplusplus18.html:<index 2279 lock count>
+cplusplus18.html:<index 2280 try_lock_until>
+cplusplus18.html:<index 2281 lock count>
+cplusplus18.html:<index 2282 unique_lock>
+cplusplus18.html:<index 2283 lock_guard>
+cplusplus18.html:<index 2284 tag type>
+cplusplus18.html:<index 2285 defer_lock_t>
+cplusplus18.html:<index 2286 defer_lock>
+cplusplus18.html:<index 2287 try_to_lock_t>
+cplusplus18.html:<index 2288 try_to_lock>
+cplusplus18.html:<index 2289 adopt_lock_t>
+cplusplus18.html:<index 2290 adopt_lock>
+cplusplus18.html:<index 2291 lock_guard>
+cplusplus18.html:<index 2292 unique_lock>
+cplusplus18.html:<index 2293 lock>
+cplusplus18.html:<index 2294 owns_lock>
+cplusplus18.html:<index 2295 release>
+cplusplus18.html:<index 2296 swap>
+cplusplus18.html:<index 2297 try_lock>
+cplusplus18.html:<index 2298 try_lock_for>
+cplusplus18.html:<index 2299 try_lock_until>
+cplusplus18.html:<index 2300 unlock>
+cplusplus18.html:<index 2301 mutex>
+cplusplus18.html:<index 2302 deadlock>
+cplusplus18.html:<index 2303 lock>
+cplusplus18.html:<index 2304 constexpr>
+cplusplus18.html:<index 2305 static variable: initialization>
+cplusplus18.html:<index 2306 call_once>
+cplusplus18.html:<index 2307 once_flag>
+cplusplus18.html:<index 2308 condition_variable: header file>
+cplusplus18.html:<index 2309 condition_variable>
+cplusplus18.html:<index 2310 condition_variable_any>
+cplusplus18.html:<index 2311 notify_all_at_thread_exit>
+cplusplus18.html:<index 2312 cv_status>
+cplusplus18.html:<index 2313 condition_variable>
+cplusplus18.html:<index 2314 condition_variable: header file>
+cplusplus18.html:<index 2315 notify_one>
+cplusplus18.html:<index 2316 notify_all>
+cplusplus18.html:<index 2317 wait>
+cplusplus18.html:<index 2318 wait_for>
+cplusplus18.html:<index 2319 wait_until>
+cplusplus18.html:<index 2320 condition_variable_any>
+cplusplus18.html:<index 2321 condition_variable: header file>
+cplusplus18.html:<index 2322 Lock>
+cplusplus18.html:<index 2323 notify_one>
+cplusplus18.html:<index 2324 notify_all>
+cplusplus18.html:<index 2325 wait>
+cplusplus18.html:<index 2326 wait_until>
+cplusplus18.html:<index 2327 wait_for>
+cplusplus18.html:<index 2328 condition_variable>
+cplusplus18.html:<index 2329 semaphore>
+cplusplus18.html:<index 2330 notify_all>
+cplusplus18.html:<index 2331 Tanenbaum, A.S.>
+cplusplus18.html:<index 2332 Austin, T.>
+cplusplus18.html:<index 2333 Structured Computer Organization>
+cplusplus18.html:<index 2334 lambda expression>
+cplusplus18.html:<index 2335 lambda expression>
+cplusplus18.html:<index 2336 anonymous function object>
+cplusplus18.html:<index 2337 function object: anonymous>
+cplusplus18.html:<index 2338 closure object>
+cplusplus18.html:<index 2339 closure type>
+cplusplus18.html:<index 2340 lambda-introducer>
+cplusplus18.html:<index 2341 lambda-declarator>
+cplusplus18.html:<index 2342 return type: implicit>
+cplusplus18.html:<index 2343 return type: late-specified>
+cplusplus18.html:<index 2344 late-specified return type>
+cplusplus18.html:<index 2345 lambda-capture>
+cplusplus18.html:<index 2346 local context>
+cplusplus18.html:<index 2347 random: header file>
+cplusplus18.html:<index 2348 rand>
+cplusplus18.html:<index 2349 probability density function>
+cplusplus18.html:<index 2350 cumulative distribution function>
+cplusplus18.html:<index 2351 Stuart, A. &amp; Ord, K>
+cplusplus18.html:<index 2352 Kendall's Advanced Theory of Statistics>
+cplusplus18.html:<index 2353 generator: random number>
+cplusplus18.html:<index 2354 linear_congruential_engine>
+cplusplus18.html:<index 2355 subtract_with_carry_engine>
+cplusplus18.html:<index 2356 linear_congruential_engine>
+cplusplus18.html:<index 2357 subtract_with_carry_engine>
+cplusplus18.html:<index 2358 random: header file>
+cplusplus18.html:<index 2359 mt19937>
+cplusplus18.html:<index 2360 Lewis, P.A.W.>
+cplusplus18.html:<index 2361 min>
+cplusplus18.html:<index 2362 max>
+cplusplus18.html:<index 2363 RNG>
+cplusplus18.html:<index 2364 URNG>
+cplusplus18.html:<index 2365 bernoulli_distribution>
+cplusplus18.html:<index 2366 binomial_distribution&lt;IntType = int&gt;>
+cplusplus18.html:<index 2367 cauchy_distribution&lt;RealType = double&gt;>
+cplusplus18.html:<index 2368 chi_squared_distribution&lt;RealType = double&gt;>
+cplusplus18.html:<index 2369 extreme_value_distribution&lt;RealType = double&gt;>
+cplusplus18.html:<index 2370 exponential_distribution&lt;RealType = double&gt;>
+cplusplus18.html:<index 2371 fisher_f_distribution&lt;RealType = double&gt;>
+cplusplus18.html:<index 2372 gamma_distribution&lt;RealType = double&gt;>
+cplusplus18.html:<index 2373 geometric_distribution&lt;IntType = int&gt;>
+cplusplus18.html:<index 2374 lognormal_distribution&lt;RealType = double&gt;>
+cplusplus18.html:<index 2375 normal_distribution&lt;RealType = double&gt;>
+cplusplus18.html:<index 2376 standard normal distribution>
+cplusplus18.html:<index 2377 negative_binomial_distribution&lt;IntType = int&gt;>
+cplusplus18.html:<index 2378 poisson_distribution&lt;IntType = int&gt;>
+cplusplus18.html:<index 2379 student_t_distribution&lt;RealType = double&gt;>
+cplusplus18.html:<index 2380 uniform_int_distribution&lt;IntType = int&gt;>
+cplusplus18.html:<index 2381 uniform_real_distribution&lt;RealType = double&gt;>
+cplusplus18.html:<index 2382 weibull_distribution&lt;RealType = double&gt;>
+cplusplus19.html:<index 2383 algorithm: header file>
+cplusplus19.html:<index 2384 numeric: header file>
+cplusplus19.html:<index 2385 generic algorithms>
+cplusplus19.html:<index 2386 generic algorithms>
+cplusplus19.html:<index 2387 generic data type>
+cplusplus19.html:<index 2388 [first, last)>
+cplusplus19.html:<index 2389 generic algorithm: categories>
+cplusplus19.html:<index 2390 max-heap>
+cplusplus19.html:<index 2391 sorting>
+cplusplus19.html:<index 2392 merging>
+cplusplus19.html:<index 2393 permuting>
+cplusplus19.html:<index 2394 shuffling>
+cplusplus19.html:<index 2395 swapping>
+cplusplus19.html:<index 2396 accumulate>
+cplusplus19.html:<index 2397 operator+>
+cplusplus19.html:<index 2398 adjacent_difference>
+cplusplus19.html:<index 2399 adjacent_find>
+cplusplus19.html:<index 2400 binary_search>
+cplusplus19.html:<index 2401 copy>
+cplusplus19.html:<index 2402 copy_backward>
+cplusplus19.html:<index 2403 count>
+cplusplus19.html:<index 2404 count_if>
+cplusplus19.html:<index 2405 unary predicate>
+cplusplus19.html:<index 2406 equal>
+cplusplus19.html:<index 2407 equal_range>
+cplusplus19.html:<index 2408 fill>
+cplusplus19.html:<index 2409 fill_n>
+cplusplus19.html:<index 2410 find>
+cplusplus19.html:<index 2411 find_end>
+cplusplus19.html:<index 2412 find_first_of>
+cplusplus19.html:<index 2413 find_if>
+cplusplus19.html:<index 2414 for_each>
+cplusplus19.html:<index 2415 lambda function>
+cplusplus19.html:<index 2416 generate>
+cplusplus19.html:<index 2417 generate_n>
+cplusplus19.html:<index 2418 includes>
+cplusplus19.html:<index 2419 inner_product>
+cplusplus19.html:<index 2420 inplace_merge>
+cplusplus19.html:<index 2421 iter_swap>
+cplusplus19.html:<index 2422 lexicographical_compare>
+cplusplus19.html:<index 2423 true>
+cplusplus19.html:<index 2424 false>
+cplusplus19.html:<index 2425 lower_bound>
+cplusplus19.html:<index 2426 max>
+cplusplus19.html:<index 2427 max_element>
+cplusplus19.html:<index 2428 operator&lt;>
+cplusplus19.html:<index 2429 merge>
+cplusplus19.html:<index 2430 operator&lt;>
+cplusplus19.html:<index 2431 min>
+cplusplus19.html:<index 2432 min_element>
+cplusplus19.html:<index 2433 next_permutation>
+cplusplus19.html:<index 2434 operator&lt;>
+cplusplus19.html:<index 2435 true>
+cplusplus19.html:<index 2436 false>
+cplusplus19.html:<index 2437 nth_element>
+cplusplus19.html:<index 2438 partial_sort>
+cplusplus19.html:<index 2439 operator&lt;>
+cplusplus19.html:<index 2440 partial_sort_copy>
+cplusplus19.html:<index 2441 operator&lt;>
+cplusplus19.html:<index 2442 partial_sum>
+cplusplus19.html:<index 2443 partition>
+cplusplus19.html:<index 2444 prev_permutation>
+cplusplus19.html:<index 2445 operator&lt;>
+cplusplus19.html:<index 2446 random_shuffle>
+cplusplus19.html:<index 2447 random number generator>
+cplusplus19.html:<index 2448 operator()>
+cplusplus19.html:<index 2449 Press, W.H.>
+cplusplus19.html:<index 2450 Numerical Recipes in C>
+cplusplus19.html:<index 2451 remove>
+cplusplus19.html:<index 2452 leftover>
+cplusplus19.html:<index 2453 remove_copy>
+cplusplus19.html:<index 2454 remove_copy_if>
+cplusplus19.html:<index 2455 remove_if>
+cplusplus19.html:<index 2456 replace>
+cplusplus19.html:<index 2457 replace_copy>
+cplusplus19.html:<index 2458 replace_copy_if>
+cplusplus19.html:<index 2459 replace_if>
+cplusplus19.html:<index 2460 reverse>
+cplusplus19.html:<index 2461 reverse_copy>
+cplusplus19.html:<index 2462 rotate>
+cplusplus19.html:<index 2463 rotate_copy>
+cplusplus19.html:<index 2464 search>
+cplusplus19.html:<index 2465 operator==>
+cplusplus19.html:<index 2466 search_n>
+cplusplus19.html:<index 2467 operator==>
+cplusplus19.html:<index 2468 set_difference>
+cplusplus19.html:<index 2469 operator&lt;>
+cplusplus19.html:<index 2470 set_intersection>
+cplusplus19.html:<index 2471 operator&lt;>
+cplusplus19.html:<index 2472 set_symmetric_difference>
+cplusplus19.html:<index 2473 operator&lt;>
+cplusplus19.html:<index 2474 set_union>
+cplusplus19.html:<index 2475 operator&lt;>
+cplusplus19.html:<index 2476 sort>
+cplusplus19.html:<index 2477 operator&lt;>
+cplusplus19.html:<index 2478 stable_partition>
+cplusplus19.html:<index 2479 stable_sort>
+cplusplus19.html:<index 2480 operator&lt;>
+cplusplus19.html:<index 2481 sort: multiple hierarchal criteria>
+cplusplus19.html:<index 2482 wrapper>
+cplusplus19.html:<index 2483 namespace: off limits>
+cplusplus19.html:<index 2484 std namespace: off limits>
+cplusplus19.html:<index 2485 swap>
+cplusplus19.html:<index 2486 swap_ranges>
+cplusplus19.html:<index 2487 transform>
+cplusplus19.html:<index 2488 for_each: vs. transform>
+cplusplus19.html:<index 2489 transform: vs. for_each>
+cplusplus19.html:<index 2490 unique>
+cplusplus19.html:<index 2491 operator==>
+cplusplus19.html:<index 2492 leftover>
+cplusplus19.html:<index 2493 leftover>
+cplusplus19.html:<index 2494 unique_copy>
+cplusplus19.html:<index 2495 operator==>
+cplusplus19.html:<index 2496 upper_bound>
+cplusplus19.html:<index 2497 operator&lt;>
+cplusplus19.html:<index 2498 heap>
+cplusplus19.html:<index 2499 binary tree>
+cplusplus19.html:<index 2500 make_heap>
+cplusplus19.html:<index 2501 max-heap>
+cplusplus19.html:<index 2502 operator&lt;>
+cplusplus19.html:<index 2503 pop_heap>
+cplusplus19.html:<index 2504 push_heap>
+cplusplus19.html:<index 2505 sort_heap>
+cplusplus19.html:<index 2506 operator&lt;>
+cplusplus19.html:<index 2507 functional: header file>
+cplusplus19.html:<index 2508 argument_type>
+cplusplus19.html:<index 2509 first_argument_type>
+cplusplus19.html:<index 2510 second_argument_type>
+cplusplus19.html:<index 2511 result_type>
+cplusplus19.html:<index 2512 pointer_to_unary_function>
+cplusplus19.html:<index 2513 pointer_to_binary_function>
+cplusplus19.html:<index 2514 ptr_fun>
+cplusplus19.html:<index 2515 strcasecmp>
+cplusplus20.html:<index 2516 template mechanism>
+cplusplus20.html:<index 2517 compile-time>
+cplusplus20.html:<index 2518 instantiation>
+cplusplus20.html:<index 2519 function template>
+cplusplus20.html:<index 2520 ordinary function>
+cplusplus20.html:<index 2521 ordinary class>
+cplusplus20.html:<index 2522 function template>
+cplusplus20.html:<index 2523 formal types>
+cplusplus20.html:<index 2524 template mechanism>
+cplusplus20.html:<index 2525 template>
+cplusplus20.html:<index 2526 template parameter list>
+cplusplus20.html:<index 2527 formal type>
+cplusplus20.html:<index 2528 template type parameter>
+cplusplus20.html:<index 2529 class>
+cplusplus20.html:<index 2530 class vs. typename>
+cplusplus20.html:<index 2531 template header>
+cplusplus20.html:<index 2532 instantiation>
+cplusplus20.html:<index 2533 rule of thumb>
+cplusplus20.html:<index 2534 template parameter list>
+cplusplus20.html:<index 2535 template non-type parameter>
+cplusplus20.html:<index 2536 constant expression>
+cplusplus20.html:<index 2537 template type: initialization>
+cplusplus20.html:<index 2538 constructor: primitive type>
+cplusplus20.html:<index 2539 C++: function prevalence rule>
+cplusplus20.html:<index 2540 function prevalence rule>
+cplusplus20.html:<index 2541 templates vs. using>
+cplusplus20.html:<index 2542 using vs. templates>
+cplusplus20.html:<index 2543 fully qualified name>
+cplusplus20.html:<index 2544 name: fully qualified>
+cplusplus20.html:<index 2545 decltype>
+cplusplus20.html:<index 2546 C++11>
+cplusplus20.html:<index 2547 late-specified return type>
+cplusplus20.html:<index 2548 unimplemented: mangling dotstar_expr>
+cplusplus20.html:<index 2549 functional: header file>
+cplusplus20.html:<index 2550 ref(arg)>
+cplusplus20.html:<index 2551 cref(arg)>
+cplusplus20.html:<index 2552 reference wrapper>
+cplusplus20.html:<index 2553 anonymous type>
+cplusplus20.html:<index 2554 unnamed type>
+cplusplus20.html:<index 2555 type: anonymous, local>
+cplusplus20.html:<index 2556 anonymous type>
+cplusplus20.html:<index 2557 local type>
+cplusplus20.html:<index 2558 template parameter deduction>
+cplusplus20.html:<index 2559 type specification: explicit>
+cplusplus20.html:<index 2560 explicit type specification>
+cplusplus20.html:<index 2561 template: parameter type transformation>
+cplusplus20.html:<index 2562 lvalue transformations>
+cplusplus20.html:<index 2563 lvalue-to-rvalue transformation>
+cplusplus20.html:<index 2564 array-to-pointer transformation>
+cplusplus20.html:<index 2565 function-to-pointer transformation>
+cplusplus20.html:<index 2566 qualification transformation>
+cplusplus20.html:<index 2567 const>
+cplusplus20.html:<index 2568 volatile>
+cplusplus20.html:<index 2569 ordinary class>
+cplusplus20.html:<index 2570 class: ordinary>
+cplusplus20.html:<index 2571 class template>
+cplusplus20.html:<index 2572 transformation to a base class>
+cplusplus20.html:<index 2573 class template: transformation to a base class>
+cplusplus20.html:<index 2574 template type deduction>
+cplusplus20.html:<index 2575 template parameters: identical types>
+cplusplus20.html:<index 2576 perfect forwarding>
+cplusplus20.html:<index 2577 function templates: multiply included>
+cplusplus20.html:<index 2578 one definition rule>
+cplusplus20.html:<index 2579 template meta programming>
+cplusplus20.html:<index 2580 precompiled header>
+cplusplus20.html:<index 2581 template declaration>
+cplusplus20.html:<index 2582 ios>
+cplusplus20.html:<index 2583 instantiation declaration>
+cplusplus20.html:<index 2584 explicit instantiation declaration>
+cplusplus20.html:<index 2585 template: point of instantiation>
+cplusplus20.html:<index 2586 point of instantiation>
+cplusplus20.html:<index 2587 static_cast>
+cplusplus20.html:<index 2588 linker: removing identical template instantiations>
+cplusplus20.html:<index 2589 explicit template type arguments>
+cplusplus20.html:<index 2590 overloading: function template>
+cplusplus20.html:<index 2591 function template: overloading>
+cplusplus20.html:<index 2592 templates: overloading type parameter list>
+cplusplus20.html:<index 2593 function templates: specialized type parameters>
+cplusplus20.html:<index 2594 rule of thumb>
+cplusplus20.html:<index 2595 template explicit specialization>
+cplusplus20.html:<index 2596 template: explicit specialization>
+cplusplus20.html:<index 2597 template: id-declaration mismatch>
+cplusplus20.html:<index 2598 angle brackets>
+cplusplus20.html:<index 2599 template instantiation declaration>
+cplusplus20.html:<index 2600 template explicit type specification: omitting>
+cplusplus20.html:<index 2601 function template: specialization vs. overloading>
+cplusplus20.html:<index 2602 static_assert>
+cplusplus20.html:<index 2603 preprocessor directive: error vs. static_assert>
+cplusplus20.html:<index 2604 #error>
+cplusplus20.html:<index 2605 compile-time>
+cplusplus20.html:<index 2606 run-time>
+cplusplus20.html:<index 2607 climits: header file>
+cplusplus20.html:<index 2608 INT_MAX>
+cplusplus20.html:<index 2609 numeric_limits>
+cplusplus20.html:<index 2610 limits: header file>
+cplusplus20.html:<index 2611 denorm_min>
+cplusplus20.html:<index 2612 digits>
+cplusplus20.html:<index 2613 digits10>
+cplusplus20.html:<index 2614 epsilon>
+cplusplus20.html:<index 2615 has_denorm>
+cplusplus20.html:<index 2616 float_denorm_style>
+cplusplus20.html:<index 2617 denorm_style>
+cplusplus20.html:<index 2618 has_denorm_loss>
+cplusplus20.html:<index 2619 has_infinity>
+cplusplus20.html:<index 2620 has_quiet_NaN>
+cplusplus20.html:<index 2621 NaN>
+cplusplus20.html:<index 2622 Not-a-Number>
+cplusplus20.html:<index 2623 has_signaling_NaN>
+cplusplus20.html:<index 2624 infinity>
+cplusplus20.html:<index 2625 is_bounded>
+cplusplus20.html:<index 2626 is_exact>
+cplusplus20.html:<index 2627 is_iec559>
+cplusplus20.html:<index 2628 IEC-559>
+cplusplus20.html:<index 2629 IEEE-754>
+cplusplus20.html:<index 2630 is_integer>
+cplusplus20.html:<index 2631 is_modulo>
+cplusplus20.html:<index 2632 is_signed>
+cplusplus20.html:<index 2633 is_specialized>
+cplusplus20.html:<index 2634 lowest>
+cplusplus20.html:<index 2635 max>
+cplusplus20.html:<index 2636 min>
+cplusplus20.html:<index 2637 max_exponent>
+cplusplus20.html:<index 2638 max_exponent10>
+cplusplus20.html:<index 2639 min_exponent>
+cplusplus20.html:<index 2640 min_exponent10>
+cplusplus20.html:<index 2641 quiet_NaN>
+cplusplus20.html:<index 2642 radix>
+cplusplus20.html:<index 2643 round_error>
+cplusplus20.html:<index 2644 round_style>
+cplusplus20.html:<index 2645 float_round_style>
+cplusplus20.html:<index 2646 round_style>
+cplusplus20.html:<index 2647 signaling_NaN>
+cplusplus20.html:<index 2648 tinyness_before>
+cplusplus20.html:<index 2649 traps>
+cplusplus20.html:<index 2650 polymorphous wrapper>
+cplusplus20.html:<index 2651 function pointer: polymorphic>
+cplusplus20.html:<index 2652 functional: header file>
+cplusplus20.html:<index 2653 function (std::)>
+cplusplus20.html:<index 2654 bad_function_call>
+cplusplus20.html:<index 2655 template: statements depending on type parameters>
+cplusplus20.html:<index 2656 template: point of instantiation>
+cplusplus20.html:<index 2657 point of instantiation>
+cplusplus20.html:<index 2658 rule of thumb>
+cplusplus20.html:<index 2659 function selection>
+cplusplus20.html:<index 2660 functions: candidate>
+cplusplus20.html:<index 2661 candidate functions>
+cplusplus20.html:<index 2662 functions: viable>
+cplusplus20.html:<index 2663 viable functions>
+cplusplus20.html:<index 2664 type conversions>
+cplusplus20.html:<index 2665 substitution failure>
+cplusplus20.html:<index 2666 SFINAE>
+cplusplus20.html:<index 2667 class template: friend function template>
+cplusplus21.html:<index 2668 class template>
+cplusplus21.html:<index 2669 Sutter, H.>
+cplusplus21.html:<index 2670 Alexandrescu, A.>
+cplusplus21.html:<index 2671 static polymorphism>
+cplusplus21.html:<index 2672 polymorphism: static>
+cplusplus21.html:<index 2673 polymorphism: dynamic>
+cplusplus21.html:<index 2674 dynamic polymorphism>
+cplusplus21.html:<index 2675 class template: generate types>
+cplusplus21.html:<index 2676 circular queue>
+cplusplus21.html:<index 2677 template: class>
+cplusplus21.html:<index 2678 class template>
+cplusplus21.html:<index 2679 template parameter list>
+cplusplus21.html:<index 2680 template>
+cplusplus21.html:<index 2681 template parameter list>
+cplusplus21.html:<index 2682 formal type>
+cplusplus21.html:<index 2683 class template: non-type parameter>
+cplusplus21.html:<index 2684 template parameter: default value>
+cplusplus21.html:<index 2685 global variable>
+cplusplus21.html:<index 2686 local variables>
+cplusplus21.html:<index 2687 dynamically allocated variables>
+cplusplus21.html:<index 2688 lvalue transformations>
+cplusplus21.html:<index 2689 conversions>
+cplusplus21.html:<index 2690 qualification conversions>
+cplusplus21.html:<index 2691 promotions>
+cplusplus21.html:<index 2692 integral conversions>
+cplusplus21.html:<index 2693 member template>
+cplusplus21.html:<index 2694 class template: member template>
+cplusplus21.html:<index 2695 template header: for member templates>
+cplusplus21.html:<index 2696 class template: shadowing parameters>
+cplusplus21.html:<index 2697 class template: default arguments>
+cplusplus21.html:<index 2698 class template: declaration>
+cplusplus21.html:<index 2699 class template: default argument>
+cplusplus21.html:<index 2700 rule of thumb>
+cplusplus21.html:<index 2701 template: when instantiated>
+cplusplus21.html:<index 2702 template: preventing instantiation>
+cplusplus21.html:<index 2703 extern template>
+cplusplus21.html:<index 2704 extern template>
+cplusplus21.html:<index 2705 instantiation source>
+cplusplus21.html:<index 2706 instantiation function>
+cplusplus21.html:<index 2707 instantiation declaration>
+cplusplus21.html:<index 2708 extern template>
+cplusplus21.html:<index 2709 static members>
+cplusplus21.html:<index 2710 class template: static members>
+cplusplus21.html:<index 2711 class template: static members>
+cplusplus21.html:<index 2712 pointer to objects>
+cplusplus21.html:<index 2713 typename: disambiguating code>
+cplusplus21.html:<index 2714 template: identifying subtypes>
+cplusplus21.html:<index 2715 class template: identifying subtypes>
+cplusplus21.html:<index 2716 typename: and template subtypes>
+cplusplus21.html:<index 2717 template: embedded in typedefs>
+cplusplus21.html:<index 2718 template: specialization>
+cplusplus21.html:<index 2719 partial class template specialization>
+cplusplus21.html:<index 2720 partial specialization>
+cplusplus21.html:<index 2721 class template: partial specialization>
+cplusplus21.html:<index 2722 class template: partial specialization>
+cplusplus21.html:<index 2723 rule of thumb>
+cplusplus21.html:<index 2724 template: variadic>
+cplusplus21.html:<index 2725 variadic templates>
+cplusplus21.html:<index 2726 variadic functions>
+cplusplus21.html:<index 2727 typename ...Params>
+cplusplus21.html:<index 2728 printf>
+cplusplus21.html:<index 2729 ellipsis>
+cplusplus21.html:<index 2730 ...>
+cplusplus21.html:<index 2731 parameter pack>
+cplusplus21.html:<index 2732 unpack operator>
+cplusplus21.html:<index 2733 variadic template: number of arguments>
+cplusplus21.html:<index 2734 sizeof>
+cplusplus21.html:<index 2735 forward>
+cplusplus21.html:<index 2736 perfect forwarding>
+cplusplus21.html:<index 2737 parameter pack: rvalue reference>
+cplusplus21.html:<index 2738 forward>
+cplusplus21.html:<index 2739 utility: header file>
+cplusplus21.html:<index 2740 forward: parameters>
+cplusplus21.html:<index 2741 Class(T&amp;) cannot be overloaded with Class(T const&amp;)>
+cplusplus21.html:<index 2742 binders.h>
+cplusplus21.html:<index 2743 bind2nd: perfect forwarding>
+cplusplus21.html:<index 2744 unpack operator>
+cplusplus21.html:<index 2745 perfect forwarding: inheritance>
+cplusplus21.html:<index 2746 parameter packs not expanded>
+cplusplus21.html:<index 2747 parameter packs not expanded with `...'>
+cplusplus21.html:<index 2748 variadic non-type parameters>
+cplusplus21.html:<index 2749 generalized pair>
+cplusplus21.html:<index 2750 tuple>
+cplusplus21.html:<index 2751 tuple: header file>
+cplusplus21.html:<index 2752 get>
+cplusplus21.html:<index 2753 tuple_size>
+cplusplus21.html:<index 2754 tuple_element>
+cplusplus21.html:<index 2755 perfect forwarding: to data members>
+cplusplus21.html:<index 2756 result_of>
+cplusplus21.html:<index 2757 functional: header file>
+cplusplus21.html:<index 2758 class template: instantiation>
+cplusplus21.html:<index 2759 class template: deducing parameters>
+cplusplus21.html:<index 2760 extern>
+cplusplus21.html:<index 2761 class template: declaration>
+cplusplus21.html:<index 2762 reference: to class template>
+cplusplus21.html:<index 2763 pointer: to class template>
+cplusplus21.html:<index 2764 class template: reference to>
+cplusplus21.html:<index 2765 class template: pointer to>
+cplusplus21.html:<index 2766 class template: member instantiation>
+cplusplus21.html:<index 2767 nm>
+cplusplus21.html:<index 2768 qsort>
+cplusplus21.html:<index 2769 cstdlib: header file>
+cplusplus21.html:<index 2770 point of instantiation>
+cplusplus21.html:<index 2771 friend>
+cplusplus21.html:<index 2772 class template: using friend>
+cplusplus21.html:<index 2773 friend: in class templates>
+cplusplus21.html:<index 2774 bound friend>
+cplusplus21.html:<index 2775 friend: bound>
+cplusplus21.html:<index 2776 unbound friend>
+cplusplus21.html:<index 2777 friend>
+cplusplus21.html:<index 2778 private members>
+cplusplus21.html:<index 2779 class interface>
+cplusplus21.html:<index 2780 field `...' has incomplete type>
+cplusplus21.html:<index 2781 bound friend>
+cplusplus21.html:<index 2782 friend: bound>
+cplusplus21.html:<index 2783 friend: unbound>
+cplusplus21.html:<index 2784 unbound friend>
+cplusplus21.html:<index 2785 extended friend>
+cplusplus21.html:<index 2786 class template: partially compiled>
+cplusplus21.html:<index 2787 class template: derivation>
+cplusplus21.html:<index 2788 class template: adding functionality>
+cplusplus21.html:<index 2789 inheritance: private derivation>
+cplusplus21.html:<index 2790 hierarchic sort>
+cplusplus21.html:<index 2791 sort criteria: hierarchic sorting>
+cplusplus21.html:<index 2792 stable_sort>
+cplusplus21.html:<index 2793 copy>
+cplusplus21.html:<index 2794 class template: derived from ordinary class>
+cplusplus21.html:<index 2795 dynamic polymorphism>
+cplusplus21.html:<index 2796 late binding>
+cplusplus21.html:<index 2797 code bloat>
+cplusplus21.html:<index 2798 static polymorphism>
+cplusplus21.html:<index 2799 curiously recurring template pattern>
+cplusplus21.html:<index 2800 template meta programming>
+cplusplus21.html:<index 2801 curiously recurring template pattern>
+cplusplus21.html:<index 2802 static polymorphism: downsides>
+cplusplus21.html:<index 2803 code bloat>
+cplusplus21.html:<index 2804 class template: nested>
+cplusplus21.html:<index 2805 private>
+cplusplus21.html:<index 2806 bound friend>
+cplusplus21.html:<index 2807 enumeration: nested>
+cplusplus21.html:<index 2808 typedefs: nested>
+cplusplus21.html:<index 2809 iterator>
+cplusplus21.html:<index 2810 iterator: header file>
+cplusplus21.html:<index 2811 iterator: common characteristics>
+cplusplus21.html:<index 2812 iterator: requirements>
+cplusplus21.html:<index 2813 iterator: and generic algorithms>
+cplusplus21.html:<index 2814 iterator: class type>
+cplusplus21.html:<index 2815 iterator: data type>
+cplusplus21.html:<index 2816 iterator_tag>
+cplusplus21.html:<index 2817 input_iterator_tag>
+cplusplus21.html:<index 2818 InputIterator>
+cplusplus21.html:<index 2819 output_iterator_tag>
+cplusplus21.html:<index 2820 OutputIterator>
+cplusplus21.html:<index 2821 forward_iterator_tag>
+cplusplus21.html:<index 2822 ForwardIterator>
+cplusplus21.html:<index 2823 bidirectional_iterator_tag>
+cplusplus21.html:<index 2824 BidirectionalIterator>
+cplusplus21.html:<index 2825 random_access_iterator_tag>
+cplusplus21.html:<index 2826 RandomAccessIterator>
+cplusplus21.html:<index 2827 unique_ptr>
+cplusplus21.html:<index 2828 shared_ptr>
+cplusplus21.html:<index 2829 RandomAccessIterator>
+cplusplus21.html:<index 2830 reverse iterator>
+cplusplus21.html:<index 2831 reverse_iterator>
+cplusplus21.html:<index 2832 rbegin>
+cplusplus21.html:<index 2833 rend>
+cplusplus21.html:<index 2834 reverse_iterator: initialized by iterator>
+cplusplus21.html:<index 2835 ptrdiff_t>
+cplusplus22.html:<index 2836 template meta programming>
+cplusplus22.html:<index 2837 template template parameter>
+cplusplus22.html:<index 2838 Alexandrescu, A.>
+cplusplus22.html:<index 2839 Josutis, N.>
+cplusplus22.html:<index 2840 Vandevoorde, D.>
+cplusplus22.html:<index 2841 typename>
+cplusplus22.html:<index 2842 expected constructor, destructor, or type conversion>
+cplusplus22.html:<index 2843 template: subtypes inside templates>
+cplusplus22.html:<index 2844 class template: subtype vs. static members>
+cplusplus22.html:<index 2845 no arguments depending on a template parameter>
+cplusplus22.html:<index 2846 template members: without template type parameters>
+cplusplus22.html:<index 2847 polymorphism: bypassing>
+cplusplus22.html:<index 2848 template: specified within template>
+cplusplus22.html:<index 2849 template: and the &lt; token>
+cplusplus22.html:<index 2850 ::template>
+cplusplus22.html:<index 2851 .template>
+cplusplus22.html:<index 2852 template programming>
+cplusplus22.html:<index 2853 reinterpret_cast>
+cplusplus22.html:<index 2854 reinterpret_to_smaller_cast>
+cplusplus22.html:<index 2855 Alexandrescu, A.>
+cplusplus22.html:<index 2856 run-time vs. compile-time>
+cplusplus22.html:<index 2857 template: embedding integral values>
+cplusplus22.html:<index 2858 class template: defining a type>
+cplusplus22.html:<index 2859 class template: values without objects>
+cplusplus22.html:<index 2860 template: IfElse>
+cplusplus22.html:<index 2861 template: select type given bool>
+cplusplus22.html:<index 2862 class template: conditional data organization>
+cplusplus22.html:<index 2863 templates: iteration by recursion>
+cplusplus22.html:<index 2864 class: enforcing constraints>
+cplusplus22.html:<index 2865 operator[]>
+cplusplus22.html:<index 2866 class: policy>
+cplusplus22.html:<index 2867 policy>
+cplusplus22.html:<index 2868 class: policy>
+cplusplus22.html:<index 2869 inner types>
+cplusplus22.html:<index 2870 member functions>
+cplusplus22.html:<index 2871 data members>
+cplusplus22.html:<index 2872 allocator>
+cplusplus22.html:<index 2873 memory: header file>
+cplusplus22.html:<index 2874 placement new>
+cplusplus22.html:<index 2875 template template parameter>
+cplusplus22.html:<index 2876 template template parameter>
+cplusplus22.html:<index 2877 policy>
+cplusplus22.html:<index 2878 class>
+cplusplus22.html:<index 2879 typename vs. class>
+cplusplus22.html:<index 2880 class template: as base class>
+cplusplus22.html:<index 2881 pointer: to policy base class>
+cplusplus22.html:<index 2882 vtable>
+cplusplus22.html:<index 2883 dynamic polymorphism>
+cplusplus22.html:<index 2884 static polymorphism>
+cplusplus22.html:<index 2885 code bloat>
+cplusplus22.html:<index 2886 destructor: for policy classes>
+cplusplus22.html:<index 2887 policy class: defining structure>
+cplusplus22.html:<index 2888 pointer juggling>
+cplusplus22.html:<index 2889 template alias>
+cplusplus22.html:<index 2890 trait class>
+cplusplus22.html:<index 2891 class: trait>
+cplusplus22.html:<index 2892 generic algorithms: required types>
+cplusplus22.html:<index 2893 argument_type>
+cplusplus22.html:<index 2894 first_argument_type>
+cplusplus22.html:<index 2895 second_argument_type>
+cplusplus22.html:<index 2896 result_type>
+cplusplus22.html:<index 2897 trait class: nested>
+cplusplus22.html:<index 2898 nested trait class>
+cplusplus22.html:<index 2899 trait class: class detection>
+cplusplus22.html:<index 2900 pointer to members>
+cplusplus22.html:<index 2901 parameter: ellipsis>
+cplusplus22.html:<index 2902 ellipsis>
+cplusplus22.html:<index 2903 enum values: evaluated at compile-time>
+cplusplus22.html:<index 2904 sizeof>
+cplusplus22.html:<index 2905 type_traits: header file>
+cplusplus22.html:<index 2906 arithmetic type>
+cplusplus22.html:<index 2907 class type>
+cplusplus22.html:<index 2908 compound type>
+cplusplus22.html:<index 2909 fundamental type>
+cplusplus22.html:<index 2910 integral type>
+cplusplus22.html:<index 2911 literal type>
+cplusplus22.html:<index 2912 is_nothrow_... type trait>
+cplusplus22.html:<index 2913 trivial type>
+cplusplus22.html:<index 2914 trivial class type>
+cplusplus22.html:<index 2915 trivial member function>
+cplusplus22.html:<index 2916 add_const>
+cplusplus22.html:<index 2917 add_cv>
+cplusplus22.html:<index 2918 add_lvalue_reference>
+cplusplus22.html:<index 2919 add_lvalue_reference>
+cplusplus22.html:<index 2920 add_pointer>
+cplusplus22.html:<index 2921 add_rvalue_reference>
+cplusplus22.html:<index 2922 add_volatile>
+cplusplus22.html:<index 2923 conditional>
+cplusplus22.html:<index 2924 enable_if>
+cplusplus22.html:<index 2925 has_nothrow_assign>
+cplusplus22.html:<index 2926 has_nothrow_copy_constructor>
+cplusplus22.html:<index 2927 has_nothrow_default_constructor>
+cplusplus22.html:<index 2928 has_nothrow_destructor>
+cplusplus22.html:<index 2929 has_trivial_assign>
+cplusplus22.html:<index 2930 has_trivial_copy_constructor>
+cplusplus22.html:<index 2931 has_trivial_copy_constructor>
+cplusplus22.html:<index 2932 has_trivial_destructor>
+cplusplus22.html:<index 2933 has_virtual_destructor>
+cplusplus22.html:<index 2934 is_abstract>
+cplusplus22.html:<index 2935 is_arithmetic>
+cplusplus22.html:<index 2936 is_array>
+cplusplus22.html:<index 2937 is_assignable>
+cplusplus22.html:<index 2938 is_base_of>
+cplusplus22.html:<index 2939 is_class>
+cplusplus22.html:<index 2940 is_compound>
+cplusplus22.html:<index 2941 is_const>
+cplusplus22.html:<index 2942 is_constructible>
+cplusplus22.html:<index 2943 is_convertible>
+cplusplus22.html:<index 2944 is_copy_assignable>
+cplusplus22.html:<index 2945 is_copy_constructible>
+cplusplus22.html:<index 2946 is_default_constructible>
+cplusplus22.html:<index 2947 is_destructible>
+cplusplus22.html:<index 2948 is_empty>
+cplusplus22.html:<index 2949 is_enum>
+cplusplus22.html:<index 2950 is_floating_point>
+cplusplus22.html:<index 2951 is_function>
+cplusplus22.html:<index 2952 is_fundamental>
+cplusplus22.html:<index 2953 is_integral>
+cplusplus22.html:<index 2954 is_literal_type>
+cplusplus22.html:<index 2955 is_lvalue_reference>
+cplusplus22.html:<index 2956 is_member_function_pointer>
+cplusplus22.html:<index 2957 is_member_object_pointer>
+cplusplus22.html:<index 2958 is_member_pointer>
+cplusplus22.html:<index 2959 is_move_assignable>
+cplusplus22.html:<index 2960 is_move_constructible>
+cplusplus22.html:<index 2961 is_nothrow_assignable>
+cplusplus22.html:<index 2962 is_nothrow_constructible>
+cplusplus22.html:<index 2963 is_nothrow_constructible>
+cplusplus22.html:<index 2964 is_nothrow_copy_constructible>
+cplusplus22.html:<index 2965 is_nothrow_default_constructible>
+cplusplus22.html:<index 2966 is_nothrow_destructible>
+cplusplus22.html:<index 2967 is_nothrow_move_assignable>
+cplusplus22.html:<index 2968 is_nothrow_move_constructible>
+cplusplus22.html:<index 2969 is_object>
+cplusplus22.html:<index 2970 is_pod>
+cplusplus22.html:<index 2971 plain old data>
+cplusplus22.html:<index 2972 is_pointer>
+cplusplus22.html:<index 2973 is_polymorphic>
+cplusplus22.html:<index 2974 is_reference>
+cplusplus22.html:<index 2975 is_rvalue_reference>
+cplusplus22.html:<index 2976 is_same>
+cplusplus22.html:<index 2977 is_scalar>
+cplusplus22.html:<index 2978 is_signed>
+cplusplus22.html:<index 2979 is_standard_layout>
+cplusplus22.html:<index 2980 is_trivial>
+cplusplus22.html:<index 2981 is_trivially_assignable>
+cplusplus22.html:<index 2982 is_trivially_constructible>
+cplusplus22.html:<index 2983 is_trivially_copy_assignable>
+cplusplus22.html:<index 2984 is_trivially_copy_constructible>
+cplusplus22.html:<index 2985 is_trivially_copyable>
+cplusplus22.html:<index 2986 is_trivially_default_constructible>
+cplusplus22.html:<index 2987 is_trivially_default_destructible>
+cplusplus22.html:<index 2988 is_trivially_move_assignable>
+cplusplus22.html:<index 2989 is_trivially_move_constructible>
+cplusplus22.html:<index 2990 is_union>
+cplusplus22.html:<index 2991 is_unsigned>
+cplusplus22.html:<index 2992 is_void>
+cplusplus22.html:<index 2993 is_volatile>
+cplusplus22.html:<index 2994 make_signed>
+cplusplus22.html:<index 2995 make_unsigned>
+cplusplus22.html:<index 2996 remove_all_extents>
+cplusplus22.html:<index 2997 remove_const>
+cplusplus22.html:<index 2998 remove_cv>
+cplusplus22.html:<index 2999 remove_extent>
+cplusplus22.html:<index 3000 remove_pointer>
+cplusplus22.html:<index 3001 remove_reference>
+cplusplus22.html:<index 3002 remove_volatile>
+cplusplus22.html:<index 3003 noexcept>
+cplusplus22.html:<index 3004 rule of thumb>
+cplusplus22.html:<index 3005 type_traits: header file>
+cplusplus22.html:<index 3006 is_nothrow_constructible>
+cplusplus22.html:<index 3007 is_nothrow_default_constructible>
+cplusplus22.html:<index 3008 is_nothrow_move_constructible>
+cplusplus22.html:<index 3009 is_nothrow_copy_constructible>
+cplusplus22.html:<index 3010 is_nothrow_assignable>
+cplusplus22.html:<index 3011 is_nothrow_move_assignable>
+cplusplus22.html:<index 3012 is_nothrow_copy_assignable>
+cplusplus22.html:<index 3013 is_nothrow_destructible>
+cplusplus22.html:<index 3014 empty struct>
+cplusplus22.html:<index 3015 struct: empty>
+cplusplus22.html:<index 3016 NullType>
+cplusplus22.html:<index 3017 Alexandrescu, H.>
+cplusplus22.html:<index 3018 ellipsis>
+cplusplus22.html:<index 3019 Alexandrescu, A.>
+cplusplus22.html:<index 3020 Alexandrescu, A.>
+cplusplus22.html:<index 3021 Multi>
+cplusplus22.html:<index 3022 template pack: and template template parameters>
+cplusplus22.html:<index 3023 template template parameter: and template packs>
+cplusplus22.html:<index 3024 class template: wrapped in simpler template>
+cplusplus22.html:<index 3025 Alexandrescu, A.>
+cplusplus23.html:<index 3026 scanner>
+cplusplus23.html:<index 3027 parser>
+cplusplus23.html:<index 3028 grammar>
+cplusplus23.html:<index 3029 parse-tree>
+cplusplus23.html:<index 3030 file descriptors>
+cplusplus23.html:<index 3031 device>
+cplusplus23.html:<index 3032 streambuf>
+cplusplus23.html:<index 3033 pipe>
+cplusplus23.html:<index 3034 socket>
+cplusplus23.html:<index 3035 overflow>
+cplusplus23.html:<index 3036 sync>
+cplusplus23.html:<index 3037 unistd.h: header file>
+cplusplus23.html:<index 3038 Bobcat library>
+cplusplus23.html:<index 3039 http://bobcat.sourceforge.net>
+cplusplus23.html:<index 3040 open>
+cplusplus23.html:<index 3041 setp>
+cplusplus23.html:<index 3042 pbase>
+cplusplus23.html:<index 3043 pptr>
+cplusplus23.html:<index 3044 epptr>
+cplusplus23.html:<index 3045 sync>
+cplusplus23.html:<index 3046 overflow>
+cplusplus23.html:<index 3047 pbump>
+cplusplus23.html:<index 3048 STDOUT_FILENO>
+cplusplus23.html:<index 3049 std::streambuf>
+cplusplus23.html:<index 3050 IFdStreambuf>
+cplusplus23.html:<index 3051 underflow>
+cplusplus23.html:<index 3052 setg>
+cplusplus23.html:<index 3053 eback>
+cplusplus23.html:<index 3054 gptr>
+cplusplus23.html:<index 3055 egptr>
+cplusplus23.html:<index 3056 unistd.h: header file>
+cplusplus23.html:<index 3057 streambuf>
+cplusplus23.html:<index 3058 protected>
+cplusplus23.html:<index 3059 gptr>
+cplusplus23.html:<index 3060 egptr>
+cplusplus23.html:<index 3061 setg>
+cplusplus23.html:<index 3062 IFdNStreambuf>
+cplusplus23.html:<index 3063 xsgetn>
+cplusplus23.html:<index 3064 unistd.h: header file>
+cplusplus23.html:<index 3065 streambuf>
+cplusplus23.html:<index 3066 Bobcat library>
+cplusplus23.html:<index 3067 http://bobcat.sourceforge.net>
+cplusplus23.html:<index 3068 setg>
+cplusplus23.html:<index 3069 eback>
+cplusplus23.html:<index 3070 gptr>
+cplusplus23.html:<index 3071 egptr>
+cplusplus23.html:<index 3072 xsgetn>
+cplusplus23.html:<index 3073 sbumpc>
+cplusplus23.html:<index 3074 gbump>
+cplusplus23.html:<index 3075 xsgetn>
+cplusplus23.html:<index 3076 sgetn>
+cplusplus23.html:<index 3077 streambuf>
+cplusplus23.html:<index 3078 seekoff>
+cplusplus23.html:<index 3079 seekpos>
+cplusplus23.html:<index 3080 IFdSeek>
+cplusplus23.html:<index 3081 unistd.h: header file>
+cplusplus23.html:<index 3082 ios>
+cplusplus23.html:<index 3083 ios: header file>
+cplusplus23.html:<index 3084 file descriptor>
+cplusplus23.html:<index 3085 base class>
+cplusplus23.html:<index 3086 seek_off>
+cplusplus23.html:<index 3087 lseek>
+cplusplus23.html:<index 3088 setg>
+cplusplus23.html:<index 3089 seekpos>
+cplusplus23.html:<index 3090 streambuf>
+cplusplus23.html:<index 3091 unget>
+cplusplus23.html:<index 3092 putback>
+cplusplus23.html:<index 3093 file descriptor>
+cplusplus23.html:<index 3094 eback>
+cplusplus23.html:<index 3095 gptr>
+cplusplus23.html:<index 3096 egptr>
+cplusplus23.html:<index 3097 ascii-value>
+cplusplus23.html:<index 3098 istringstream>
+cplusplus23.html:<index 3099 Fistream>
+cplusplus23.html:<index 3100 wrapper>
+cplusplus23.html:<index 3101 fork>
+cplusplus23.html:<index 3102 system>
+cplusplus23.html:<index 3103 child process>
+cplusplus23.html:<index 3104 design patterns>
+cplusplus23.html:<index 3105 Gamma, E.>
+cplusplus23.html:<index 3106 Design Patterns>
+cplusplus23.html:<index 3107 parent process>
+cplusplus23.html:<index 3108 child process>
+cplusplus23.html:<index 3109 process ID>
+cplusplus23.html:<index 3110 template method design pattern>
+cplusplus23.html:<index 3111 design pattern: template method>
+cplusplus23.html:<index 3112 abstract base class>
+cplusplus23.html:<index 3113 base class>
+cplusplus23.html:<index 3114 process id>
+cplusplus23.html:<index 3115 fork>
+cplusplus23.html:<index 3116 exit status>
+cplusplus23.html:<index 3117 waitpid>
+cplusplus23.html:<index 3118 parent process>
+cplusplus23.html:<index 3119 child process>
+cplusplus23.html:<index 3120 internal header file>
+cplusplus23.html:<index 3121 exec...>
+cplusplus23.html:<index 3122 exit>
+cplusplus23.html:<index 3123 destructor: called at exit>
+cplusplus23.html:<index 3124 exit: calling destructors>
+cplusplus23.html:<index 3125 signal>
+cplusplus23.html:<index 3126 zombie>
+cplusplus23.html:<index 3127 daemon>
+cplusplus23.html:<index 3128 init>
+cplusplus23.html:<index 3129 init>
+cplusplus23.html:<index 3130 redirection>
+cplusplus23.html:<index 3131 rdbuf>
+cplusplus23.html:<index 3132 system>
+cplusplus23.html:<index 3133 cout>
+cplusplus23.html:<index 3134 Unix>
+cplusplus23.html:<index 3135 dup>
+cplusplus23.html:<index 3136 dup2>
+cplusplus23.html:<index 3137 fork>
+cplusplus23.html:<index 3138 init>
+cplusplus23.html:<index 3139 Unix>
+cplusplus23.html:<index 3140 daemon>
+cplusplus23.html:<index 3141 background process>
+cplusplus23.html:<index 3142 exit>
+cplusplus23.html:<index 3143 file descriptors>
+cplusplus23.html:<index 3144 pipe>
+cplusplus23.html:<index 3145 unistd.h: header file>
+cplusplus23.html:<index 3146 STDIN_FILENO>
+cplusplus23.html:<index 3147 STDOUT_FILENO>
+cplusplus23.html:<index 3148 STDERR_FILENO>
+cplusplus23.html:<index 3149 dup2>
+cplusplus23.html:<index 3150 ParentSlurp>
+cplusplus23.html:<index 3151 command language>
+cplusplus23.html:<index 3152 asynchronous input>
+cplusplus23.html:<index 3153 select>
+cplusplus23.html:<index 3154 select>
+cplusplus23.html:<index 3155 multiplexing>
+cplusplus23.html:<index 3156 I/O multiplexing>
+cplusplus23.html:<index 3157 asynchronous alarm>
+cplusplus23.html:<index 3158 timeval>
+cplusplus23.html:<index 3159 Selector>
+cplusplus23.html:<index 3160 wait>
+cplusplus23.html:<index 3161 nReady>
+cplusplus23.html:<index 3162 readFd>
+cplusplus23.html:<index 3163 writeFd>
+cplusplus23.html:<index 3164 exceptFd>
+cplusplus23.html:<index 3165 setAlarm>
+cplusplus23.html:<index 3166 noAlarm>
+cplusplus23.html:<index 3167 addReadFd>
+cplusplus23.html:<index 3168 addWriteFd>
+cplusplus23.html:<index 3169 addExceptFd>
+cplusplus23.html:<index 3170 rmReadFd>
+cplusplus23.html:<index 3171 rmWriteFd>
+cplusplus23.html:<index 3172 rmExceptFd>
+cplusplus23.html:<index 3173 zombie>
+cplusplus23.html:<index 3174 IFdStreambuf>
+cplusplus23.html:<index 3175 daemon>
+cplusplus23.html:<index 3176 for_each>
+cplusplus23.html:<index 3177 daemon>
+cplusplus23.html:<index 3178 predefined function object>
+cplusplus23.html:<index 3179 arithmetic operations>
+cplusplus23.html:<index 3180 relational operations>
+cplusplus23.html:<index 3181 logical operations>
+cplusplus23.html:<index 3182 binary operator>
+cplusplus23.html:<index 3183 unary operator>
+cplusplus23.html:<index 3184 bitwise operations>
+cplusplus23.html:<index 3185 class template>
+cplusplus23.html:<index 3186 bitwise and>
+cplusplus23.html:<index 3187 operator&amp;>
+cplusplus23.html:<index 3188 unary not>
+cplusplus23.html:<index 3189 operator~>
+cplusplus23.html:<index 3190 bitwise>
+cplusplus23.html:<index 3191 bitfunctional>
+cplusplus23.html:<index 3192 binary_function>
+cplusplus23.html:<index 3193 unary_function>
+cplusplus23.html:<index 3194 types: required by STL>
+cplusplus23.html:<index 3195 STL: required types>
+cplusplus23.html:<index 3196 bits/stl_function.h>
+cplusplus23.html:<index 3197 range-based for-loop>
+cplusplus23.html:<index 3198 Ranger>
+cplusplus23.html:<index 3199 operator[]>
+cplusplus23.html:<index 3200 lvalue: distinguish from rvalue>
+cplusplus23.html:<index 3201 rvalue: distinguish from lvalue>
+cplusplus23.html:<index 3202 Proxy Design Pattern>
+cplusplus23.html:<index 3203 Gamma, E.>
+cplusplus23.html:<index 3204 Proxy: stream insertion and extraction>
+cplusplus23.html:<index 3205 iterator: as class template>
+cplusplus23.html:<index 3206 RandomIterator>
+cplusplus23.html:<index 3207 friend: using a template parameter>
+cplusplus23.html:<index 3208 parser>
+cplusplus23.html:<index 3209 scanner>
+cplusplus23.html:<index 3210 scanner generator>
+cplusplus23.html:<index 3211 flex>
+cplusplus23.html:<index 3212 parser generator>
+cplusplus23.html:<index 3213 bison>
+cplusplus23.html:<index 3214 yacc>
+cplusplus23.html:<index 3215 lex>
+cplusplus23.html:<index 3216 http://www.oreilly.com/catalog/lex>
+cplusplus23.html:<index 3217 ftp::/prep.ai.mit.edu/pub/non-gnu>
+cplusplus23.html:<index 3218 %option c++>
+cplusplus23.html:<index 3219 bison>
+cplusplus23.html:<index 3220 bison++>
+cplusplus23.html:<index 3221 bisonc++>
+cplusplus23.html:<index 3222 parse()>
+cplusplus23.html:<index 3223 flexc++>
+cplusplus23.html:<index 3224 parser generator>
+cplusplus23.html:<index 3225 nesting depth>
+cplusplus23.html:<index 3226 ScannerBase>
+cplusplus23.html:<index 3227 flexc++>
+cplusplus23.html:<index 3228 regular expression>
+cplusplus23.html:<index 3229 Scanner>
+cplusplus23.html:<index 3230 #include>
+cplusplus23.html:<index 3231 preprocessor directive>
+cplusplus23.html:<index 3232 mini scanner>
+cplusplus23.html:<index 3233 lexical scanner specification file>
+cplusplus23.html:<index 3234 symbol area>
+cplusplus23.html:<index 3235 mini scanner>
+cplusplus23.html:<index 3236 options>
+cplusplus23.html:<index 3237 %debug>
+cplusplus23.html:<index 3238 flexc++: debugging code>
+cplusplus23.html:<index 3239 setDebug>
+cplusplus23.html:<index 3240 flexc++: setDebug>
+cplusplus23.html:<index 3241 %filenames>
+cplusplus23.html:<index 3242 ECHO>
+cplusplus23.html:<index 3243 flexc++>
+cplusplus23.html:<index 3244 Unix>
+cplusplus23.html:<index 3245 flexc++>
+cplusplus23.html:<index 3246 Gnu>
+cplusplus23.html:<index 3247 g++>
+cplusplus23.html:<index 3248 http://flexcpp.org/>
+cplusplus23.html:<index 3249 bobcat>
+cplusplus23.html:<index 3250 http://bobcat.sf.net/>
+cplusplus23.html:<index 3251 input language>
+cplusplus23.html:<index 3252 parser>
+cplusplus23.html:<index 3253 parser generator>
+cplusplus23.html:<index 3254 token>
+cplusplus23.html:<index 3255 grammar>
+cplusplus23.html:<index 3256 scanner>
+cplusplus23.html:<index 3257 actions>
+cplusplus23.html:<index 3258 flexc++>
+cplusplus23.html:<index 3259 bisonc++>
+cplusplus23.html:<index 3260 bison>
+cplusplus23.html:<index 3261 bison++>
+cplusplus23.html:<index 3262 Coetmeur, A.>
+cplusplus23.html:<index 3263 grammar specification file>
+cplusplus23.html:<index 3264 bisonc++>
+cplusplus23.html:<index 3265 bison>
+cplusplus23.html:<index 3266 lex>
+cplusplus23.html:<index 3267 error>
+cplusplus23.html:<index 3268 bisonc++: grammar file>
+cplusplus23.html:<index 3269 grammatical rules>
+cplusplus23.html:<index 3270 header section>
+cplusplus23.html:<index 3271 declaration section>
+cplusplus23.html:<index 3272 %baseclass-preinclude>
+cplusplus23.html:<index 3273 %union>
+cplusplus23.html:<index 3274 %filenames>
+cplusplus23.html:<index 3275 %scanner>
+cplusplus23.html:<index 3276 %stype>
+cplusplus23.html:<index 3277 %union>
+cplusplus23.html:<index 3278 union>
+cplusplus23.html:<index 3279 string: as union member>
+cplusplus23.html:<index 3280 matched>
+cplusplus23.html:<index 3281 %token>
+cplusplus23.html:<index 3282 %type>
+cplusplus23.html:<index 3283 %left>
+cplusplus23.html:<index 3284 %right>
+cplusplus23.html:<index 3285 %nonassoc>
+cplusplus23.html:<index 3286 %prec>
+cplusplus23.html:<index 3287 flexc++>
+cplusplus23.html:<index 3288 Unix>
+cplusplus23.html:<index 3289 bobcat>
+cplusplus23.html:<index 3290 http://bisoncpp.sourceforge.net/>
+cplusplus23.html:<index 3291 TagTrait>
+cplusplus23.html:<index 3292 union: polymorphic>
+cplusplus23.html:<index 3293 polymorphic semantic union>
+cplusplus23.html:<index 3294 downcast>
+cplusplus23.html:<index 3295 as (SemBase::as)>
+cplusplus23.html:<index 3296 flexc++>

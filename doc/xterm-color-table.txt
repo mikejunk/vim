@@ -1,0 +1,39 @@
+*xtermcolortable* All 256 xterm colors with their RGB equivalents.
+
+DESCRIPTION                                            *xterm-color-table.vim*
+    All the 256 xterm colors with their rgb equivalents.
+
+INSTALLATION                                  *xterm-color-table-installation*
+    For local installation, put the |xterm-color-table.vim| file in your
+    ~/.vim/plugin directory and put the |xterm-color-table.txt| file in
+    your ~/.vim/doc directory. To install globally put them in
+    $VIMRUNTIME/plugin and $VIMRUNTIME/doc directories respectively.
+
+OPTIONS                                            *xterm-color-table-options*
+
+    The default window opening command used by |:XtermColorTable|
+      |XtermColorTableDefaultOpen|   : The window opening command (split)
+
+------------------------------------------------------------------------------
+COMMANDS                                          *xterm-color-table_commands*
+
+    |:XtermColorTable|  : Create a new buffer, or open an existing buffer
+    |:SXtermColorTable| : Same, but (re)open in a split window
+    |:VXtermColorTable| : Same, but (re)open in a vertical split window
+    |:TXtermColorTable| : Same, but (re)open in a new tab
+    |:EXtermColorTable| : Same, but (re)open in current window
+    |:OXtermColorTable| : Same, but (re)open and make it the only window
+
+------------------------------------------------------------------------------
+MAPPINGS                                          *xterm-color-table_mappings*
+
+    While in the XtermColorTable buffer,
+      - Press <t> to toggle RGB text visibility            *XtermColorTable-t*
+      - Press <f> to set RGB text to current color         *XtermColorTable-f*
+      - Press <#> to yank current color (shortcut for yiw) *XtermColorTable-#*
+
+------------------------------------------------------------------------------
+>
+ Maintainer	: Gautam Iyer <gautamATmathDOTuchicagoDOTedu>
+ Modified	: Thu 18 May 2006 04:28:25 PM CDT
+ vim: ft=help:tw=78:iskeyword=!-~,^*,^|,^":ai:
