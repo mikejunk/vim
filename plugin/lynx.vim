@@ -164,9 +164,7 @@ fun! s:LynxPopLink()
 endfun
 
 fun! s:LynxBufferInit()
-    "
     " if the lynx buffer exists, 
-    "
     if bufexists(s:lynxBufferNumber)
         exe "sbuffer " . s:lynxBufferNumber	
     else
@@ -175,18 +173,14 @@ fun! s:LynxBufferInit()
         exe "setlocal buftype=nowrite"
         exe "setlocal bufhidden=delete"
         exe "setlocal nomodifiable"
-    endif	
-
-
-
+        exe "setlocal noswapfile"
+   endif	
     " remove all insert mode abbreviations
     iabc <buffer>
-
     " add our own mappings
     noremap <buffer> <CR>	:call <SID>LynxFollowLink()<cr>
     noremap <buffer> <C-]>	:call <SID>LynxFollowLink()<cr>
     noremap <buffer> <C-T>  :call <SID>LynxBacktrackLink()<cr>
-
 endfun!
 
 command! -complete=file -nargs=1 Lynx call s:LynxLink(<f-args>)

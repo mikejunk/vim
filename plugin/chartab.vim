@@ -86,7 +86,7 @@ let ct_chartable = 1
 
 " the mappings:
 if !hasmapto('<Plug>CT_CharTable')
-    map <silent> <unique> <Leader>ct <Plug>CT_CharTable
+    map <silent> <unique> <Leader>at <Plug>CT_CharTable
 endif
 
 map <silent> <unique> <script> <Plug>CT_CharTable  :call <SID>CT_CharTable()<CR>
