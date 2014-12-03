@@ -282,6 +282,7 @@ endfunction
 " macro: imap macro: @@ inserted by this .vim script.
 " The aliases file is assumed to be ~/.aliases, or whatever your ~/.muttrc file
 " says.  " You can override by setting: let g:mutt_aliases_file="~/.blarg"
+let g:mutt_aliases_file="~/Mail/mutt_aliases"
 fun! Read_Aliases()
     let lines = readfile(s:aliases_file)
     for line in lines
@@ -320,9 +321,9 @@ let s:muttrc_file = expand("~/.muttrc")
 if filereadable(s:muttrc_file)
     let lines = readfile(s:muttrc_file)
     for l in lines
-        if l =~ '\s*set\s\+alias_file\s*='  " strictly speaking, this is just the append point...
-            let ll = split(l, "=")          " how would you detect a matching source .string location?
-            let le = eval(ll[1])
+        if l =~ '\s*set\s\+alias_file\s*='
+            let ll = split(l, "=")
+            silent! let le = eval(ll[1])
             let s:aliases_file = le
             break
         endif
@@ -336,8 +337,6 @@ if filereadable(s:aliases_file)
     call Read_Aliases()
     set completefunc=Complete_Emails
     imap @@ <C-X><C-U>
-else
-    echo "could not read aliases file: " s:aliases_file
 endif
 
 
@@ -916,7 +915,7 @@ let g:ConqueTerm_TERM='xterm-256color'
 let g:ConqueTerm_PyExe='/usr/bin/python.exe'
 let g:ConqueTerm_ColorMode='conceal'
 
-let g:airline_theme='badwolf'
+let g:airline_theme='powerlineish'
 
 "remap snipmate's trigger key from tab to ^j
 imap <c-j> <plug>snipMateNextOrTrigger
@@ -976,10 +975,8 @@ let g:ctrlp_prompt_mappings = {
             \ }
 
 
-" xterm16 colormaps: 'soft', 'softlight', 'standard' or 'allblue'
-" xterm16 brightness: 'low', 'med', 'high', 'default' or custom levels
-let g:xterm16_colormap='soft'
-let g:xterm16_brightness='high'
+let g:xterm16_colormap='soft' "'soft', 'softlight', 'standard', 'allblue'
+let g:xterm16_brightness='high' "'low', 'med', 'high', 'default', custom
+set background=dark
 colorscheme xterm16
-syntax enable
 
